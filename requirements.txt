@@ -1,0 +1,10 @@
+# Tested with Python 3.12 on macOS Apple Silicon.
+torch==2.14.1
+torchvision==0.29.1
+pillow==13.0.0
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+jupyterlab==4.6.4
+coremltools==9.0

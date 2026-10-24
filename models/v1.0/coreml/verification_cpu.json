@@ -1,0 +1,2567 @@
+{
+  "release": "v1.0",
+  "split": "dev",
+  "test_images_used": 0,
+  "tasks": [
+    {
+      "task": "life_stage",
+      "model": "models/v1.0/coreml/LifeStage.mlpackage",
+      "precision": "float16",
+      "compute_units": "cpu",
+      "n": 110,
+      "label_agreement": 110,
+      "coreml_correct": 107,
+      "pytorch_correct": 107,
+      "max_abs_probability_difference": 0.005782127380371094,
+      "mean_abs_probability_difference": 0.0007604005492546341,
+      "disagreements": [],
+      "predictions": [
+        {
+          "tick_id": "279926",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.0419921875,
+            0.9580078125
+          ],
+          "max_abs_difference": 0.0004966855049133301
+        },
+        {
+          "tick_id": "280444",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9931640625,
+            0.006317138671875
+          ],
+          "max_abs_difference": 0.0005564689636230469
+        },
+        {
+          "tick_id": "280623",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.0419921875,
+            0.9580078125
+          ],
+          "max_abs_difference": 0.00016636401414871216
+        },
+        {
+          "tick_id": "281272",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.97705078125,
+            0.022796630859375
+          ],
+          "max_abs_difference": 0.00013488158583641052
+        },
+        {
+          "tick_id": "281789",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.0921630859375,
+            0.90771484375
+          ],
+          "max_abs_difference": 0.0010666251182556152
+        },
+        {
+          "tick_id": "281942",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.059356689453125,
+            0.9404296875
+          ],
+          "max_abs_difference": 0.0008739233016967773
+        },
+        {
+          "tick_id": "282023",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9951171875,
+            0.004947662353515625
+          ],
+          "max_abs_difference": 0.0001666545867919922
+        },
+        {
+          "tick_id": "282033",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.049285888671875,
+            0.95068359375
+          ],
+          "max_abs_difference": 0.0001560114324092865
+        },
+        {
+          "tick_id": "282250",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.06585693359375,
+            0.93408203125
+          ],
+          "max_abs_difference": 0.0014505535364151
+        },
+        {
+          "tick_id": "282368",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.054473876953125,
+            0.9453125
+          ],
+          "max_abs_difference": 0.0006426945328712463
+        },
+        {
+          "tick_id": "282478",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.06646728515625,
+            0.93359375
+          ],
+          "max_abs_difference": 0.0006308481097221375
+        },
+        {
+          "tick_id": "282675",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.345703125,
+            0.65478515625
+          ],
+          "max_abs_difference": 0.004922091960906982
+        },
+        {
+          "tick_id": "282705",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.06463623046875,
+            0.93505859375
+          ],
+          "max_abs_difference": 0.0018262267112731934
+        },
+        {
+          "tick_id": "283062",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.986328125,
+            0.013031005859375
+          ],
+          "max_abs_difference": 0.0007167458534240723
+        },
+        {
+          "tick_id": "283122",
+          "true": "adult female",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.446533203125,
+            0.5537109375
+          ],
+          "max_abs_difference": 0.002277970314025879
+        },
+        {
+          "tick_id": "283220",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.07318115234375,
+            0.9267578125
+          ],
+          "max_abs_difference": 0.00017589330673217773
+        },
+        {
+          "tick_id": "283453",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.0711669921875,
+            0.92919921875
+          ],
+          "max_abs_difference": 0.0004155859351158142
+        },
+        {
+          "tick_id": "283587",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.8359375,
+            0.164306640625
+          ],
+          "max_abs_difference": 0.0007898509502410889
+        },
+        {
+          "tick_id": "283819",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.06396484375,
+            0.93603515625
+          ],
+          "max_abs_difference": 0.00029599666595458984
+        },
+        {
+          "tick_id": "283821",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9970703125,
+            0.00278472900390625
+          ],
+          "max_abs_difference": 0.00014543533325195312
+        },
+        {
+          "tick_id": "283830",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.06524658203125,
+            0.93505859375
+          ],
+          "max_abs_difference": 0.0005954578518867493
+        },
+        {
+          "tick_id": "284128",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.054168701171875,
+            0.9453125
+          ],
+          "max_abs_difference": 0.0007222294807434082
+        },
+        {
+          "tick_id": "284150",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.0560302734375,
+            0.94384765625
+          ],
+          "max_abs_difference": 0.0010091327130794525
+        },
+        {
+          "tick_id": "284282",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9912109375,
+            0.00867462158203125
+          ],
+          "max_abs_difference": 6.196647882461548e-05
+        },
+        {
+          "tick_id": "284421",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.81640625,
+            0.1832275390625
+          ],
+          "max_abs_difference": 0.001858636736869812
+        },
+        {
+          "tick_id": "284425",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.96875,
+            0.0316162109375
+          ],
+          "max_abs_difference": 0.0006016679108142853
+        },
+        {
+          "tick_id": "284445",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.09478759765625,
+            0.9052734375
+          ],
+          "max_abs_difference": 0.000790908932685852
+        },
+        {
+          "tick_id": "284510",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.064208984375,
+            0.93603515625
+          ],
+          "max_abs_difference": 0.001512289047241211
+        },
+        {
+          "tick_id": "284606",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.96142578125,
+            0.038848876953125
+          ],
+          "max_abs_difference": 0.00017178058624267578
+        },
+        {
+          "tick_id": "284881",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.0307159423828125,
+            0.9697265625
+          ],
+          "max_abs_difference": 0.00036084651947021484
+        },
+        {
+          "tick_id": "284993",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9921875,
+            0.0081634521484375
+          ],
+          "max_abs_difference": 0.000306546688079834
+        },
+        {
+          "tick_id": "285002",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.98193359375,
+            0.0182952880859375
+          ],
+          "max_abs_difference": 0.0001977086067199707
+        },
+        {
+          "tick_id": "285053",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.04876708984375,
+            0.95068359375
+          ],
+          "max_abs_difference": 0.0004231259226799011
+        },
+        {
+          "tick_id": "285159",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.058380126953125,
+            0.94189453125
+          ],
+          "max_abs_difference": 0.00020096823573112488
+        },
+        {
+          "tick_id": "285258",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.05230712890625,
+            0.9482421875
+          ],
+          "max_abs_difference": 0.0006576180458068848
+        },
+        {
+          "tick_id": "285506",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.046600341796875,
+            0.95361328125
+          ],
+          "max_abs_difference": 0.00011610984802246094
+        },
+        {
+          "tick_id": "285514",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9951171875,
+            0.0046844482421875
+          ],
+          "max_abs_difference": 0.00012135505676269531
+        },
+        {
+          "tick_id": "285562",
+          "true": "adult female",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.1077880859375,
+            0.89208984375
+          ],
+          "max_abs_difference": 0.0011148229241371155
+        },
+        {
+          "tick_id": "285726",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.0259552001953125,
+            0.97412109375
+          ],
+          "max_abs_difference": 0.0002818107604980469
+        },
+        {
+          "tick_id": "285761",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.06475830078125,
+            0.93505859375
+          ],
+          "max_abs_difference": 0.0011525079607963562
+        },
+        {
+          "tick_id": "285774",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.1302490234375,
+            0.8701171875
+          ],
+          "max_abs_difference": 0.0015207529067993164
+        },
+        {
+          "tick_id": "286015",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.06353759765625,
+            0.93701171875
+          ],
+          "max_abs_difference": 0.0010772943496704102
+        },
+        {
+          "tick_id": "286183",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.03363037109375,
+            0.9658203125
+          ],
+          "max_abs_difference": 0.0003043040633201599
+        },
+        {
+          "tick_id": "286235",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.035858154296875,
+            0.96435546875
+          ],
+          "max_abs_difference": 0.0008174777030944824
+        },
+        {
+          "tick_id": "286236",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.64697265625,
+            0.353271484375
+          ],
+          "max_abs_difference": 0.0014459490776062012
+        },
+        {
+          "tick_id": "286398",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.07244873046875,
+            0.927734375
+          ],
+          "max_abs_difference": 0.0006588101387023926
+        },
+        {
+          "tick_id": "286514",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.08941650390625,
+            0.91015625
+          ],
+          "max_abs_difference": 0.000904083251953125
+        },
+        {
+          "tick_id": "286576",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.049285888671875,
+            0.95068359375
+          ],
+          "max_abs_difference": 0.00021457672119140625
+        },
+        {
+          "tick_id": "286752",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.03118896484375,
+            0.96875
+          ],
+          "max_abs_difference": 0.00041794776916503906
+        },
+        {
+          "tick_id": "286868",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.050994873046875,
+            0.94921875
+          ],
+          "max_abs_difference": 0.00047719478607177734
+        },
+        {
+          "tick_id": "286879",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.69677734375,
+            0.3037109375
+          ],
+          "max_abs_difference": 0.002710878849029541
+        },
+        {
+          "tick_id": "286999",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.07257080078125,
+            0.927734375
+          ],
+          "max_abs_difference": 0.0010526180267333984
+        },
+        {
+          "tick_id": "287067",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.0307769775390625,
+            0.96875
+          ],
+          "max_abs_difference": 0.0003272891044616699
+        },
+        {
+          "tick_id": "287120",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.11016845703125,
+            0.8896484375
+          ],
+          "max_abs_difference": 0.0002570897340774536
+        },
+        {
+          "tick_id": "287439",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.057525634765625,
+            0.94287109375
+          ],
+          "max_abs_difference": 0.0008594393730163574
+        },
+        {
+          "tick_id": "287553",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9677734375,
+            0.031646728515625
+          ],
+          "max_abs_difference": 0.0007597208023071289
+        },
+        {
+          "tick_id": "287613",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.990234375,
+            0.009429931640625
+          ],
+          "max_abs_difference": 0.00030434131622314453
+        },
+        {
+          "tick_id": "287679",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.1768798828125,
+            0.8232421875
+          ],
+          "max_abs_difference": 0.0018702149391174316
+        },
+        {
+          "tick_id": "287850",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9931640625,
+            0.006816864013671875
+          ],
+          "max_abs_difference": 5.7847704738378525e-05
+        },
+        {
+          "tick_id": "287996",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.55322265625,
+            0.44677734375
+          ],
+          "max_abs_difference": 0.0017061233520507812
+        },
+        {
+          "tick_id": "288022",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.08245849609375,
+            0.91748046875
+          ],
+          "max_abs_difference": 0.0006813406944274902
+        },
+        {
+          "tick_id": "288026",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.041473388671875,
+            0.958984375
+          ],
+          "max_abs_difference": 0.0012920498847961426
+        },
+        {
+          "tick_id": "288031",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.0247955322265625,
+            0.97509765625
+          ],
+          "max_abs_difference": 0.00037425756454467773
+        },
+        {
+          "tick_id": "288036",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.051910400390625,
+            0.9482421875
+          ],
+          "max_abs_difference": 0.00019954517483711243
+        },
+        {
+          "tick_id": "288075",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9892578125,
+            0.010986328125
+          ],
+          "max_abs_difference": 0.00016884878277778625
+        },
+        {
+          "tick_id": "288172",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9892578125,
+            0.010406494140625
+          ],
+          "max_abs_difference": 0.0005997419357299805
+        },
+        {
+          "tick_id": "288293",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.05206298828125,
+            0.9482421875
+          ],
+          "max_abs_difference": 0.00021354109048843384
+        },
+        {
+          "tick_id": "288297",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.040618896484375,
+            0.95947265625
+          ],
+          "max_abs_difference": 0.00046521425247192383
+        },
+        {
+          "tick_id": "288432",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.06756591796875,
+            0.9326171875
+          ],
+          "max_abs_difference": 0.0010363459587097168
+        },
+        {
+          "tick_id": "288552",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.0494384765625,
+            0.95068359375
+          ],
+          "max_abs_difference": 0.00021380186080932617
+        },
+        {
+          "tick_id": "288614",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.05206298828125,
+            0.9482421875
+          ],
+          "max_abs_difference": 0.0006136298179626465
+        },
+        {
+          "tick_id": "288615",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.10638427734375,
+            0.8935546875
+          ],
+          "max_abs_difference": 0.0009036660194396973
+        },
+        {
+          "tick_id": "288817",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.053375244140625,
+            0.9462890625
+          ],
+          "max_abs_difference": 0.0003921985626220703
+        },
+        {
+          "tick_id": "288819",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.045166015625,
+            0.955078125
+          ],
+          "max_abs_difference": 0.00038421154022216797
+        },
+        {
+          "tick_id": "288899",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.05230712890625,
+            0.9482421875
+          ],
+          "max_abs_difference": 0.0012334585189819336
+        },
+        {
+          "tick_id": "288982",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.05206298828125,
+            0.9482421875
+          ],
+          "max_abs_difference": 0.00027852505445480347
+        },
+        {
+          "tick_id": "289043",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.036407470703125,
+            0.96337890625
+          ],
+          "max_abs_difference": 0.0007564425468444824
+        },
+        {
+          "tick_id": "289171",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.039581298828125,
+            0.96044921875
+          ],
+          "max_abs_difference": 0.00012736022472381592
+        },
+        {
+          "tick_id": "289203",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.039031982421875,
+            0.96044921875
+          ],
+          "max_abs_difference": 0.0005592107772827148
+        },
+        {
+          "tick_id": "289267",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.0762939453125,
+            0.92431640625
+          ],
+          "max_abs_difference": 0.0008096694946289062
+        },
+        {
+          "tick_id": "289314",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.0543212890625,
+            0.9453125
+          ],
+          "max_abs_difference": 0.0009372234344482422
+        },
+        {
+          "tick_id": "289422",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.1380615234375,
+            0.86181640625
+          ],
+          "max_abs_difference": 0.0017359256744384766
+        },
+        {
+          "tick_id": "289511",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.075927734375,
+            0.92431640625
+          ],
+          "max_abs_difference": 0.0008566975593566895
+        },
+        {
+          "tick_id": "289656",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.224853515625,
+            0.775390625
+          ],
+          "max_abs_difference": 0.005782127380371094
+        },
+        {
+          "tick_id": "289688",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.07244873046875,
+            0.927734375
+          ],
+          "max_abs_difference": 0.0007581114768981934
+        },
+        {
+          "tick_id": "289789",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.027801513671875,
+            0.97265625
+          ],
+          "max_abs_difference": 0.0007099509239196777
+        },
+        {
+          "tick_id": "289797",
+          "true": "nymph",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.8056640625,
+            0.1944580078125
+          ],
+          "max_abs_difference": 0.0014861822128295898
+        },
+        {
+          "tick_id": "289815",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9951171875,
+            0.00440216064453125
+          ],
+          "max_abs_difference": 0.0004329681396484375
+        },
+        {
+          "tick_id": "289819",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.984375,
+            0.0155029296875
+          ],
+          "max_abs_difference": 0.00018095970153808594
+        },
+        {
+          "tick_id": "289862",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9853515625,
+            0.01446533203125
+          ],
+          "max_abs_difference": 0.0003217458724975586
+        },
+        {
+          "tick_id": "290043",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.060333251953125,
+            0.939453125
+          ],
+          "max_abs_difference": 0.0005243420600891113
+        },
+        {
+          "tick_id": "290075",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.036773681640625,
+            0.96337890625
+          ],
+          "max_abs_difference": 0.00023323297500610352
+        },
+        {
+          "tick_id": "290148",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9921875,
+            0.007404327392578125
+          ],
+          "max_abs_difference": 0.0005636215209960938
+        },
+        {
+          "tick_id": "290231",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9912109375,
+            0.0086517333984375
+          ],
+          "max_abs_difference": 0.00020897388458251953
+        },
+        {
+          "tick_id": "290421",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9853515625,
+            0.01396942138671875
+          ],
+          "max_abs_difference": 0.0006008148193359375
+        },
+        {
+          "tick_id": "290639",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9970703125,
+            0.002498626708984375
+          ],
+          "max_abs_difference": 0.00043195486068725586
+        },
+        {
+          "tick_id": "290714",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.994140625,
+            0.005641937255859375
+          ],
+          "max_abs_difference": 0.00014118151739239693
+        },
+        {
+          "tick_id": "290727",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.9873046875,
+            0.0125274658203125
+          ],
+          "max_abs_difference": 0.00012564659118652344
+        },
+        {
+          "tick_id": "291062",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.83056640625,
+            0.169677734375
+          ],
+          "max_abs_difference": 0.0024664998054504395
+        },
+        {
+          "tick_id": "291213",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.127197265625,
+            0.873046875
+          ],
+          "max_abs_difference": 0.0008508563041687012
+        },
+        {
+          "tick_id": "291279",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.045166015625,
+            0.955078125
+          ],
+          "max_abs_difference": 0.0002760887145996094
+        },
+        {
+          "tick_id": "291285",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.02447509765625,
+            0.97509765625
+          ],
+          "max_abs_difference": 0.00022698193788528442
+        },
+        {
+          "tick_id": "291327",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.302001953125,
+            0.69873046875
+          ],
+          "max_abs_difference": 0.0006167590618133545
+        },
+        {
+          "tick_id": "291341",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.048309326171875,
+            0.95166015625
+          ],
+          "max_abs_difference": 0.0004987791180610657
+        },
+        {
+          "tick_id": "291358",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.045745849609375,
+            0.9541015625
+          ],
+          "max_abs_difference": 0.00012731552124023438
+        },
+        {
+          "tick_id": "291431",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.09075927734375,
+            0.9091796875
+          ],
+          "max_abs_difference": 0.00018496811389923096
+        },
+        {
+          "tick_id": "291692",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.043121337890625,
+            0.95703125
+          ],
+          "max_abs_difference": 0.00048261508345603943
+        },
+        {
+          "tick_id": "291891",
+          "true": "nymph",
+          "pytorch": "nymph",
+          "coreml": "nymph",
+          "coreml_probabilities": [
+            0.112548828125,
+            0.88720703125
+          ],
+          "max_abs_difference": 0.0010030865669250488
+        },
+        {
+          "tick_id": "292292",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.94287109375,
+            0.057525634765625
+          ],
+          "max_abs_difference": 0.0011519156396389008
+        },
+        {
+          "tick_id": "293074",
+          "true": "adult female",
+          "pytorch": "adult female",
+          "coreml": "adult female",
+          "coreml_probabilities": [
+            0.94482421875,
+            0.05548095703125
+          ],
+          "max_abs_difference": 0.0005145221948623657
+        }
+      ]
+    },
+    {
+      "task": "engorgement_level",
+      "model": "models/v1.0/coreml/EngorgementLevel.mlpackage",
+      "precision": "float16",
+      "compute_units": "cpu",
+      "n": 110,
+      "label_agreement": 110,
+      "coreml_correct": 95,
+      "pytorch_correct": 95,
+      "max_abs_probability_difference": 0.010365098714828491,
+      "mean_abs_probability_difference": 0.0012144772488020615,
+      "disagreements": [],
+      "predictions": [
+        {
+          "tick_id": "279926",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.052581787109375,
+            0.92529296875,
+            0.022308349609375
+          ],
+          "max_abs_difference": 0.000159501563757658
+        },
+        {
+          "tick_id": "280444",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.0234832763671875,
+            0.01043701171875,
+            0.96630859375
+          ],
+          "max_abs_difference": 0.00019899080507457256
+        },
+        {
+          "tick_id": "280623",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.031707763671875,
+            0.183837890625,
+            0.7841796875
+          ],
+          "max_abs_difference": 0.0020035281777381897
+        },
+        {
+          "tick_id": "281272",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.38916015625,
+            0.09283447265625,
+            0.517578125
+          ],
+          "max_abs_difference": 0.0009104260243475437
+        },
+        {
+          "tick_id": "281789",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.059783935546875,
+            0.92041015625,
+            0.019927978515625
+          ],
+          "max_abs_difference": 0.0007750093936920166
+        },
+        {
+          "tick_id": "281942",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0279083251953125,
+            0.91357421875,
+            0.05816650390625
+          ],
+          "max_abs_difference": 0.0007351036183536053
+        },
+        {
+          "tick_id": "282023",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.017059326171875,
+            0.01299285888671875,
+            0.9697265625
+          ],
+          "max_abs_difference": 0.00015476683620363474
+        },
+        {
+          "tick_id": "282033",
+          "true": "fully engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.98291015625,
+            0.0137481689453125,
+            0.00337982177734375
+          ],
+          "max_abs_difference": 0.0001867935061454773
+        },
+        {
+          "tick_id": "282250",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.10174560546875,
+            0.8916015625,
+            0.00685882568359375
+          ],
+          "max_abs_difference": 0.00016736239194869995
+        },
+        {
+          "tick_id": "282368",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.04595947265625,
+            0.9306640625,
+            0.023651123046875
+          ],
+          "max_abs_difference": 0.00028339773416519165
+        },
+        {
+          "tick_id": "282478",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0305023193359375,
+            0.9482421875,
+            0.0212860107421875
+          ],
+          "max_abs_difference": 0.0002626110799610615
+        },
+        {
+          "tick_id": "282675",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.036956787109375,
+            0.8857421875,
+            0.07763671875
+          ],
+          "max_abs_difference": 0.003118060529232025
+        },
+        {
+          "tick_id": "282705",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0273590087890625,
+            0.93798828125,
+            0.03472900390625
+          ],
+          "max_abs_difference": 0.0004969197325408459
+        },
+        {
+          "tick_id": "283062",
+          "true": "semi-engorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.0092620849609375,
+            0.007129669189453125,
+            0.9833984375
+          ],
+          "max_abs_difference": 0.0001472756266593933
+        },
+        {
+          "tick_id": "283122",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.0138092041015625,
+            0.005523681640625,
+            0.98095703125
+          ],
+          "max_abs_difference": 0.00034243613481521606
+        },
+        {
+          "tick_id": "283220",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.040283203125,
+            0.9501953125,
+            0.00936126708984375
+          ],
+          "max_abs_difference": 0.00010607304284349084
+        },
+        {
+          "tick_id": "283453",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0419921875,
+            0.892578125,
+            0.0654296875
+          ],
+          "max_abs_difference": 0.0012310072779655457
+        },
+        {
+          "tick_id": "283587",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.0162506103515625,
+            0.00562286376953125,
+            0.97802734375
+          ],
+          "max_abs_difference": 9.299279190599918e-05
+        },
+        {
+          "tick_id": "283819",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0265045166015625,
+            0.8310546875,
+            0.142333984375
+          ],
+          "max_abs_difference": 0.005725592374801636
+        },
+        {
+          "tick_id": "283821",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.161376953125,
+            0.043487548828125,
+            0.794921875
+          ],
+          "max_abs_difference": 0.0012422725558280945
+        },
+        {
+          "tick_id": "283830",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0190582275390625,
+            0.9501953125,
+            0.030731201171875
+          ],
+          "max_abs_difference": 0.0005091726779937744
+        },
+        {
+          "tick_id": "284128",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0362548828125,
+            0.935546875,
+            0.0279388427734375
+          ],
+          "max_abs_difference": 0.0005619979929178953
+        },
+        {
+          "tick_id": "284150",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.01483154296875,
+            0.278564453125,
+            0.70654296875
+          ],
+          "max_abs_difference": 0.0031472034752368927
+        },
+        {
+          "tick_id": "284282",
+          "true": "fully engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.98291015625,
+            0.01485443115234375,
+            0.001873016357421875
+          ],
+          "max_abs_difference": 0.0007562413811683655
+        },
+        {
+          "tick_id": "284421",
+          "true": "fully engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.7529296875,
+            0.160888671875,
+            0.08612060546875
+          ],
+          "max_abs_difference": 0.010365098714828491
+        },
+        {
+          "tick_id": "284425",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.0101776123046875,
+            0.0064697265625,
+            0.9833984375
+          ],
+          "max_abs_difference": 0.00024259090423583984
+        },
+        {
+          "tick_id": "284445",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.05474853515625,
+            0.91064453125,
+            0.034698486328125
+          ],
+          "max_abs_difference": 0.0013165175914764404
+        },
+        {
+          "tick_id": "284510",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.07208251953125,
+            0.890625,
+            0.0372314453125
+          ],
+          "max_abs_difference": 0.0011365637183189392
+        },
+        {
+          "tick_id": "284606",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.00901031494140625,
+            0.012481689453125,
+            0.978515625
+          ],
+          "max_abs_difference": 0.0002682879567146301
+        },
+        {
+          "tick_id": "284881",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0361328125,
+            0.9462890625,
+            0.017120361328125
+          ],
+          "max_abs_difference": 0.0005781129002571106
+        },
+        {
+          "tick_id": "284993",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.01555633544921875,
+            0.00687408447265625,
+            0.9775390625
+          ],
+          "max_abs_difference": 0.0003728047013282776
+        },
+        {
+          "tick_id": "285002",
+          "true": "semi-engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.98828125,
+            0.01001739501953125,
+            0.00148773193359375
+          ],
+          "max_abs_difference": 0.00033954030368477106
+        },
+        {
+          "tick_id": "285053",
+          "true": "semi-engorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.024444580078125,
+            0.139892578125,
+            0.8359375
+          ],
+          "max_abs_difference": 0.0012287367135286331
+        },
+        {
+          "tick_id": "285159",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0229949951171875,
+            0.955078125,
+            0.0214996337890625
+          ],
+          "max_abs_difference": 0.0005181282758712769
+        },
+        {
+          "tick_id": "285258",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0214080810546875,
+            0.5771484375,
+            0.4013671875
+          ],
+          "max_abs_difference": 0.003929184749722481
+        },
+        {
+          "tick_id": "285506",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.036956787109375,
+            0.94873046875,
+            0.0143280029296875
+          ],
+          "max_abs_difference": 0.00010728300549089909
+        },
+        {
+          "tick_id": "285514",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.014495849609375,
+            0.006801605224609375,
+            0.97900390625
+          ],
+          "max_abs_difference": 0.0004432499408721924
+        },
+        {
+          "tick_id": "285562",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0305938720703125,
+            0.66748046875,
+            0.3017578125
+          ],
+          "max_abs_difference": 0.004495849367231131
+        },
+        {
+          "tick_id": "285726",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.035888671875,
+            0.94873046875,
+            0.01544952392578125
+          ],
+          "max_abs_difference": 0.0005494654178619385
+        },
+        {
+          "tick_id": "285761",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.031494140625,
+            0.939453125,
+            0.028717041015625
+          ],
+          "max_abs_difference": 0.00034417957067489624
+        },
+        {
+          "tick_id": "285774",
+          "true": "fully engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.9912109375,
+            0.006256103515625,
+            0.002552032470703125
+          ],
+          "max_abs_difference": 0.000316716730594635
+        },
+        {
+          "tick_id": "286015",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.03155517578125,
+            0.9013671875,
+            0.06695556640625
+          ],
+          "max_abs_difference": 0.002014070749282837
+        },
+        {
+          "tick_id": "286183",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.032867431640625,
+            0.9384765625,
+            0.0289764404296875
+          ],
+          "max_abs_difference": 0.0009164810180664062
+        },
+        {
+          "tick_id": "286235",
+          "true": "semi-engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.78173828125,
+            0.2156982421875,
+            0.002330780029296875
+          ],
+          "max_abs_difference": 0.0011856555938720703
+        },
+        {
+          "tick_id": "286236",
+          "true": "fully engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.7958984375,
+            0.198486328125,
+            0.0054168701171875
+          ],
+          "max_abs_difference": 0.004059344530105591
+        },
+        {
+          "tick_id": "286398",
+          "true": "semi-engorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.05926513671875,
+            0.039276123046875,
+            0.9013671875
+          ],
+          "max_abs_difference": 0.00119888037443161
+        },
+        {
+          "tick_id": "286514",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0400390625,
+            0.6142578125,
+            0.345947265625
+          ],
+          "max_abs_difference": 0.010163132101297379
+        },
+        {
+          "tick_id": "286576",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0484619140625,
+            0.939453125,
+            0.01210784912109375
+          ],
+          "max_abs_difference": 0.00034439563751220703
+        },
+        {
+          "tick_id": "286752",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.27587890625,
+            0.71240234375,
+            0.01177215576171875
+          ],
+          "max_abs_difference": 0.00400912668555975
+        },
+        {
+          "tick_id": "286868",
+          "true": "fully engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.61328125,
+            0.3818359375,
+            0.004711151123046875
+          ],
+          "max_abs_difference": 0.006447093561291695
+        },
+        {
+          "tick_id": "286879",
+          "true": "fully engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.9794921875,
+            0.017242431640625,
+            0.003162384033203125
+          ],
+          "max_abs_difference": 0.0001400766195729375
+        },
+        {
+          "tick_id": "286999",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0625,
+            0.90966796875,
+            0.027740478515625
+          ],
+          "max_abs_difference": 0.0011344179511070251
+        },
+        {
+          "tick_id": "287067",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.055755615234375,
+            0.68212890625,
+            0.261962890625
+          ],
+          "max_abs_difference": 0.0011414512991905212
+        },
+        {
+          "tick_id": "287120",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.367919921875,
+            0.401123046875,
+            0.2310791015625
+          ],
+          "max_abs_difference": 0.0009401105344295502
+        },
+        {
+          "tick_id": "287439",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.11724853515625,
+            0.8759765625,
+            0.007080078125
+          ],
+          "max_abs_difference": 0.00035891681909561157
+        },
+        {
+          "tick_id": "287553",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.00868988037109375,
+            0.00722503662109375,
+            0.984375
+          ],
+          "max_abs_difference": 0.00032880157232284546
+        },
+        {
+          "tick_id": "287613",
+          "true": "fully engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.99609375,
+            0.0024242401123046875,
+            0.0016946792602539062
+          ],
+          "max_abs_difference": 0.00031904131174087524
+        },
+        {
+          "tick_id": "287679",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.08160400390625,
+            0.6005859375,
+            0.31787109375
+          ],
+          "max_abs_difference": 0.0036042090505361557
+        },
+        {
+          "tick_id": "287850",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.0112152099609375,
+            0.00969696044921875,
+            0.97900390625
+          ],
+          "max_abs_difference": 0.00045881420373916626
+        },
+        {
+          "tick_id": "287996",
+          "true": "fully engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.994140625,
+            0.005489349365234375,
+            0.00019824504852294922
+          ],
+          "max_abs_difference": 0.00032069304143078625
+        },
+        {
+          "tick_id": "288022",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.05206298828125,
+            0.9306640625,
+            0.016998291015625
+          ],
+          "max_abs_difference": 0.0010563284158706665
+        },
+        {
+          "tick_id": "288026",
+          "true": "fully engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.88037109375,
+            0.11431884765625,
+            0.00539398193359375
+          ],
+          "max_abs_difference": 0.0019606873393058777
+        },
+        {
+          "tick_id": "288031",
+          "true": "unengorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.204833984375,
+            0.7451171875,
+            0.050323486328125
+          ],
+          "max_abs_difference": 0.003827061504125595
+        },
+        {
+          "tick_id": "288036",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.02789306640625,
+            0.951171875,
+            0.021087646484375
+          ],
+          "max_abs_difference": 0.00042019039392471313
+        },
+        {
+          "tick_id": "288075",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.0198822021484375,
+            0.00689697265625,
+            0.97314453125
+          ],
+          "max_abs_difference": 9.305030107498169e-05
+        },
+        {
+          "tick_id": "288172",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.05438232421875,
+            0.032623291015625,
+            0.9130859375
+          ],
+          "max_abs_difference": 0.0002768603153526783
+        },
+        {
+          "tick_id": "288293",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.028472900390625,
+            0.65673828125,
+            0.314453125
+          ],
+          "max_abs_difference": 0.0019821226596832275
+        },
+        {
+          "tick_id": "288297",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.138671875,
+            0.8486328125,
+            0.01245880126953125
+          ],
+          "max_abs_difference": 0.001257510855793953
+        },
+        {
+          "tick_id": "288432",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.059112548828125,
+            0.8798828125,
+            0.061065673828125
+          ],
+          "max_abs_difference": 6.0832593590021133e-05
+        },
+        {
+          "tick_id": "288552",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.1202392578125,
+            0.86962890625,
+            0.009918212890625
+          ],
+          "max_abs_difference": 0.001014107372611761
+        },
+        {
+          "tick_id": "288614",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.03271484375,
+            0.935546875,
+            0.032073974609375
+          ],
+          "max_abs_difference": 0.0006912052631378174
+        },
+        {
+          "tick_id": "288615",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.03143310546875,
+            0.9150390625,
+            0.053192138671875
+          ],
+          "max_abs_difference": 0.0005267113447189331
+        },
+        {
+          "tick_id": "288817",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.017822265625,
+            0.92822265625,
+            0.053924560546875
+          ],
+          "max_abs_difference": 0.0002130940556526184
+        },
+        {
+          "tick_id": "288819",
+          "true": "fully engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.023590087890625,
+            0.86572265625,
+            0.1107177734375
+          ],
+          "max_abs_difference": 0.0009309966117143631
+        },
+        {
+          "tick_id": "288899",
+          "true": "semi-engorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.360595703125,
+            0.1270751953125,
+            0.5126953125
+          ],
+          "max_abs_difference": 0.002026428934186697
+        },
+        {
+          "tick_id": "288982",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.03997802734375,
+            0.91015625,
+            0.050140380859375
+          ],
+          "max_abs_difference": 0.0008279904723167419
+        },
+        {
+          "tick_id": "289043",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0198211669921875,
+            0.74072265625,
+            0.2393798828125
+          ],
+          "max_abs_difference": 0.0018326248973608017
+        },
+        {
+          "tick_id": "289171",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.032379150390625,
+            0.95703125,
+            0.01064300537109375
+          ],
+          "max_abs_difference": 0.00039830058813095093
+        },
+        {
+          "tick_id": "289203",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.029449462890625,
+            0.95849609375,
+            0.011749267578125
+          ],
+          "max_abs_difference": 0.0003198161721229553
+        },
+        {
+          "tick_id": "289267",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0552978515625,
+            0.92431640625,
+            0.0205230712890625
+          ],
+          "max_abs_difference": 0.0002795686013996601
+        },
+        {
+          "tick_id": "289314",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0592041015625,
+            0.9228515625,
+            0.0178070068359375
+          ],
+          "max_abs_difference": 0.0001936405897140503
+        },
+        {
+          "tick_id": "289422",
+          "true": "fully engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.8857421875,
+            0.10919189453125,
+            0.00499725341796875
+          ],
+          "max_abs_difference": 0.002262681722640991
+        },
+        {
+          "tick_id": "289511",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.038177490234375,
+            0.89111328125,
+            0.07080078125
+          ],
+          "max_abs_difference": 0.0034426897764205933
+        },
+        {
+          "tick_id": "289656",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.064453125,
+            0.72509765625,
+            0.21044921875
+          ],
+          "max_abs_difference": 0.0013234736397862434
+        },
+        {
+          "tick_id": "289688",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0364990234375,
+            0.70458984375,
+            0.2587890625
+          ],
+          "max_abs_difference": 0.0029453709721565247
+        },
+        {
+          "tick_id": "289789",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0233154296875,
+            0.95458984375,
+            0.0221099853515625
+          ],
+          "max_abs_difference": 0.00021549989469349384
+        },
+        {
+          "tick_id": "289797",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.10400390625,
+            0.8369140625,
+            0.059326171875
+          ],
+          "max_abs_difference": 0.0004208013415336609
+        },
+        {
+          "tick_id": "289815",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.053863525390625,
+            0.01332855224609375,
+            0.9326171875
+          ],
+          "max_abs_difference": 0.0009152144193649292
+        },
+        {
+          "tick_id": "289819",
+          "true": "fully engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.9970703125,
+            0.002162933349609375,
+            0.0008835792541503906
+          ],
+          "max_abs_difference": 0.00019361823797225952
+        },
+        {
+          "tick_id": "289862",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.00946044921875,
+            0.005260467529296875,
+            0.9853515625
+          ],
+          "max_abs_difference": 8.954107761383057e-05
+        },
+        {
+          "tick_id": "290043",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.030426025390625,
+            0.93212890625,
+            0.037567138671875
+          ],
+          "max_abs_difference": 0.0010259747505187988
+        },
+        {
+          "tick_id": "290075",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0670166015625,
+            0.5322265625,
+            0.400634765625
+          ],
+          "max_abs_difference": 0.001734372228384018
+        },
+        {
+          "tick_id": "290148",
+          "true": "semi-engorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.019195556640625,
+            0.005924224853515625,
+            0.974609375
+          ],
+          "max_abs_difference": 0.00020628422498703003
+        },
+        {
+          "tick_id": "290231",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.00904083251953125,
+            0.005161285400390625,
+            0.98583984375
+          ],
+          "max_abs_difference": 0.00031469017267227173
+        },
+        {
+          "tick_id": "290421",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.024688720703125,
+            0.032135009765625,
+            0.94287109375
+          ],
+          "max_abs_difference": 0.0004739239811897278
+        },
+        {
+          "tick_id": "290639",
+          "true": "semi-engorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.143310546875,
+            0.058563232421875,
+            0.7978515625
+          ],
+          "max_abs_difference": 0.0007188450545072556
+        },
+        {
+          "tick_id": "290714",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.0240478515625,
+            0.01523590087890625,
+            0.9609375
+          ],
+          "max_abs_difference": 0.00020200759172439575
+        },
+        {
+          "tick_id": "290727",
+          "true": "unengorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.6884765625,
+            0.0390625,
+            0.272705078125
+          ],
+          "max_abs_difference": 0.0007704379968345165
+        },
+        {
+          "tick_id": "291062",
+          "true": "fully engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.99560546875,
+            0.002201080322265625,
+            0.0021419525146484375
+          ],
+          "max_abs_difference": 4.420576442498714e-05
+        },
+        {
+          "tick_id": "291213",
+          "true": "unengorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0308837890625,
+            0.67724609375,
+            0.291748046875
+          ],
+          "max_abs_difference": 0.0004727207124233246
+        },
+        {
+          "tick_id": "291279",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.038970947265625,
+            0.935546875,
+            0.0255279541015625
+          ],
+          "max_abs_difference": 0.00041066110134124756
+        },
+        {
+          "tick_id": "291285",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.09783935546875,
+            0.87060546875,
+            0.03131103515625
+          ],
+          "max_abs_difference": 0.0014650477096438408
+        },
+        {
+          "tick_id": "291327",
+          "true": "semi-engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.99462890625,
+            0.00506591796875,
+            0.00020170211791992188
+          ],
+          "max_abs_difference": 0.00013875216245651245
+        },
+        {
+          "tick_id": "291341",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.03350830078125,
+            0.9521484375,
+            0.0147552490234375
+          ],
+          "max_abs_difference": 0.001238398253917694
+        },
+        {
+          "tick_id": "291358",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0540771484375,
+            0.92822265625,
+            0.0175628662109375
+          ],
+          "max_abs_difference": 0.00025909021496772766
+        },
+        {
+          "tick_id": "291431",
+          "true": "semi-engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.0989990234375,
+            0.8603515625,
+            0.040557861328125
+          ],
+          "max_abs_difference": 0.0006443560123443604
+        },
+        {
+          "tick_id": "291692",
+          "true": "unengorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.02325439453125,
+            0.93603515625,
+            0.040771484375
+          ],
+          "max_abs_difference": 0.0002712896093726158
+        },
+        {
+          "tick_id": "291891",
+          "true": "fully engorged",
+          "pytorch": "semi-engorged",
+          "coreml": "semi-engorged",
+          "coreml_probabilities": [
+            0.138671875,
+            0.7646484375,
+            0.09698486328125
+          ],
+          "max_abs_difference": 0.0016025379300117493
+        },
+        {
+          "tick_id": "292292",
+          "true": "unengorged",
+          "pytorch": "unengorged",
+          "coreml": "unengorged",
+          "coreml_probabilities": [
+            0.09149169921875,
+            0.03985595703125,
+            0.86865234375
+          ],
+          "max_abs_difference": 0.00027424562722444534
+        },
+        {
+          "tick_id": "293074",
+          "true": "fully engorged",
+          "pytorch": "fully engorged",
+          "coreml": "fully engorged",
+          "coreml_probabilities": [
+            0.9990234375,
+            0.0008420944213867188,
+            0.000461578369140625
+          ],
+          "max_abs_difference": 0.0003748759627342224
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "life_stage_finalist_seeds",
+  "purpose": "Replicate the first-round winner using the two seeds declared before round1.",
+  "tasks": [
+    "life_stage"
+  ],
+  "shared": {
+    "architecture": "convnext_tiny",
+    "image_size": 320,
+    "bottom_crop_fraction": 0.04,
+    "epochs": 24,
+    "patience": 6,
+    "min_epochs": 8,
+    "batch_size": 8,
+    "backbone_lr": 1e-05,
+    "head_lr": 0.0003,
+    "weight_decay": 0.001,
+    "fine_tune": "all",
+    "warmup_epochs": 2,
+    "class_weighting": "sqrt_inverse",
+    "label_smoothing": 0.05,
+    "augmentation": "moderate",
+    "selection_metric": "accuracy",
+    "scheduler": "cosine"
+  },
+  "recipes": [
+    {
+      "name": "convnext_tiny_320_seed20261020",
+      "seed": 20261020
+    },
+    {
+      "name": "convnext_tiny_320_seed20261021",
+      "seed": 20261021
+    }
+  ],
+  "original_run": "experiments/runs/20261019-101227-146487_life_stage_convnext_tiny_320",
+  "selection": "Accuracy, then balanced accuracy, then lower NLL; report all three seeds and an equal-probability ensemble."
+}

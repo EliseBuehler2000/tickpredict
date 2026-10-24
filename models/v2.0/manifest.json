@@ -1,0 +1,109 @@
+{
+  "release": "v2.0",
+  "date": "2026-10-19",
+  "status": "locked",
+  "basis_commit": "023567d",
+  "app_models": {
+    "TickPredictV2.mlpackage": "species and life stage from models/v2.0/multihead (its engorgement head is not used by the app)",
+    "EngorgementLevel.mlpackage": "engorgement from models/v1.0 (95/110 dev vs 92/110 for the v2 head)"
+  },
+  "model": {
+    "architecture": "convnext_tiny",
+    "image_size": 384,
+    "tta": "d4",
+    "heads": {
+      "species": [
+        "Ixodes scapularis",
+        "Ixodes pacificus",
+        "Dermacentor variabilis",
+        "Amblyomma americanum",
+        "Amblyomma maculatum",
+        "Rhipicephalus sanguineus",
+        "Dermacentor andersoni",
+        "Haemaphysalis longicornis"
+      ],
+      "life_stage": [
+        "adult female",
+        "adult male",
+        "nymph"
+      ],
+      "engorgement_level": [
+        "fully engorged",
+        "semi-engorged",
+        "unengorged"
+      ]
+    },
+    "checkpoint": "models/v2.0/multihead/best.pt",
+    "best_epoch": 12,
+    "development_result": {
+      "inaturalist/species": {
+        "correct": 1109,
+        "n": 1304,
+        "accuracy": 0.8504601226993865,
+        "balanced_accuracy": 0.7992248072684536,
+        "nll": 0.48479421589352856
+      },
+      "inaturalist/life_stage": {
+        "correct": 913,
+        "n": 981,
+        "accuracy": 0.9306829765545361,
+        "balanced_accuracy": 0.8584170829070631,
+        "nll": 0.26301479407610656
+      },
+      "penn/life_stage": {
+        "correct": 106,
+        "n": 110,
+        "accuracy": 0.9636363636363636,
+        "balanced_accuracy": 0.9504761904761905,
+        "nll": 0.19257962772796747
+      },
+      "penn/engorgement_level": {
+        "correct": 92,
+        "n": 110,
+        "accuracy": 0.8363636363636363,
+        "balanced_accuracy": 0.7606523378582203,
+        "nll": 1.0948866492255012
+      }
+    }
+  },
+  "files": [
+    {
+      "source": "experiments/multihead/20261019-191645-191848_v2_convnext_tiny_384/best.pt",
+      "release_path": "models/v2.0/multihead/best.pt",
+      "sha256": "383e81e74086d934023606983ec3cea24f108a2b6f3b5c2c0c39f34fcd7e525e",
+      "bytes": 111379411,
+      "tracked_in_git": false
+    },
+    {
+      "source": "experiments/multihead/20261019-191645-191848_v2_convnext_tiny_384/provenance.json",
+      "release_path": "models/v2.0/multihead/provenance.json",
+      "sha256": "9f412041240324e44d68d5b276ba82133e446831f627859e674037be7b249a9f",
+      "bytes": 4596,
+      "tracked_in_git": true
+    },
+    {
+      "source": "experiments/multihead/20261019-191645-191848_v2_convnext_tiny_384/completion.json",
+      "release_path": "models/v2.0/multihead/completion.json",
+      "sha256": "d71ff5d0433e6cdd3e29fd7eedff7d9f8a4353a1f737c1e7499b8488eff25699",
+      "bytes": 198,
+      "tracked_in_git": true
+    },
+    {
+      "source": "experiments/multihead/20261019-191645-191848_v2_convnext_tiny_384/validation.json",
+      "release_path": "models/v2.0/multihead/validation.json",
+      "sha256": "9a521b2813510d634c766000b805b33455999017911396537b4aa372bf7720e7",
+      "bytes": 7439,
+      "tracked_in_git": true
+    },
+    {
+      "source": "experiments/multihead/20261019-191645-191848_v2_convnext_tiny_384/history.json",
+      "release_path": "models/v2.0/multihead/history.json",
+      "sha256": "ed80f7f0bbada9048c1bce66ff51c9bf39a71a3c8bf9e2e11486e35a8ae561c7",
+      "bytes": 22561,
+      "tracked_in_git": true
+    }
+  ],
+  "test_images_used": 0,
+  "confidence_calibrated": false,
+  "storage": "best.pt stays local (see .gitignore); metadata and checksums are tracked in Git."
+}

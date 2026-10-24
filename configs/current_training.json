@@ -1,0 +1,58 @@
+{
+  "selection_source": "configs/current_models.json",
+  "note": "Retraining writes new runs; inspect results before explicitly changing the current predictor selection.",
+  "models": {
+    "life_stage": [
+      {
+        "seed": 20261019,
+        "name": "convnext_tiny_320",
+        "architecture": "convnext_tiny",
+        "image_size": 320,
+        "bottom_crop_fraction": 0.04,
+        "epochs": 24,
+        "patience": 6,
+        "min_epochs": 8,
+        "batch_size": 8,
+        "backbone_lr": 1e-05,
+        "head_lr": 0.0003,
+        "weight_decay": 0.001,
+        "fine_tune": "all",
+        "warmup_epochs": 2,
+        "class_weighting": "sqrt_inverse",
+        "label_smoothing": 0.05,
+        "augmentation": "moderate",
+        "selection_metric": "accuracy",
+        "scheduler": "cosine",
+        "target": "life_stage"
+      }
+    ],
+    "engorgement_level": [
+      {
+        "seed": 20261019,
+        "name": "efficientnet_v2_s_384",
+        "architecture": "efficientnet_v2_s",
+        "image_size": 384,
+        "bottom_crop_fraction": 0.04,
+        "epochs": 24,
+        "patience": 6,
+        "min_epochs": 8,
+        "batch_size": 8,
+        "backbone_lr": 2e-05,
+        "head_lr": 0.0003,
+        "weight_decay": 0.001,
+        "fine_tune": "all",
+        "warmup_epochs": 2,
+        "class_weighting": "sqrt_inverse",
+        "label_smoothing": 0.05,
+        "augmentation": "moderate",
+        "selection_metric": "accuracy",
+        "scheduler": "cosine",
+        "target": "engorgement_level"
+      }
+    ]
+  },
+  "inference_views": {
+    "life_stage": "none",
+    "engorgement_level": "d4"
+  }
+}

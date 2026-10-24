@@ -1,0 +1,6 @@
+{
+  "status": "completed",
+  "best_validation_balanced_accuracy": 0.7441553544494721,
+  "epochs": 7,
+  "smoke_only": false
+}

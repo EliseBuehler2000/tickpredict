@@ -1,0 +1,41 @@
+{
+  "source_sha256": "65f46d9589d55216224ed7d44f8326d1629cfdaa620bc1f542155ee90f91f228",
+  "manifest_sha256": "c758ff23b8c2de782d5ca03c56ecf9b49a9897dbb2258538ab3e094856c3dfd3",
+  "counts": {
+    "train": 241,
+    "dev": 110,
+    "test": 60
+  },
+  "excluded_records": 22,
+  "images_decoded": 351,
+  "test_images_decoded": 0,
+  "class_counts": {
+    "train": {
+      "life_stage": {
+        "adult female": 56,
+        "nymph": 185
+      },
+      "engorgement_level": {
+        "fully engorged": 22,
+        "unengorged": 57,
+        "semi-engorged": 162
+      }
+    },
+    "dev": {
+      "life_stage": {
+        "nymph": 75,
+        "adult female": 35
+      },
+      "engorgement_level": {
+        "semi-engorged": 68,
+        "unengorged": 26,
+        "fully engorged": 16
+      }
+    }
+  },
+  "caveats": [
+    "Provisional research split preserved; person IDs unavailable.",
+    "Engorgement labels are source labels; expert rubric not independently confirmed.",
+    "International data retained separately pending review and harmonization."
+  ]
+}

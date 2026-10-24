@@ -1,0 +1,9 @@
+{
+  "target": "engorgement_level",
+  "checkpoints": [
+    "experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384/best.pt",
+    "experiments/runs/20261019-104057-055786_engorgement_level_efficientnet_v2_s_384_seed20261020/best.pt",
+    "experiments/runs/20261019-104331-066534_engorgement_level_efficientnet_v2_s_384_seed20261021/best.pt"
+  ],
+  "tta": "none"
+}

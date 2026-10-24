@@ -1,0 +1,115 @@
+{
+  "checkpoint_integrity": {
+    "runs/20261013-125824-749104_engorgement_level/best.pt": {
+      "sha256": "18530989b5332219cc1ba9eaa875cb4b8c048cfa3cb2e9faf21d1f69571d9222",
+      "target": "engorgement_level",
+      "classes": [
+        "fully engorged",
+        "semi-engorged",
+        "unengorged"
+      ],
+      "epoch": 3
+    },
+    "runs/20261013-125510-220265_life_stage/best.pt": {
+      "sha256": "2f013ae7a9ed0ab5747e45e01f0eb6374e27abc6a45b904473c84863d1228ce4",
+      "target": "life_stage",
+      "classes": [
+        "adult female",
+        "nymph"
+      ],
+      "epoch": 7
+    }
+  },
+  "synthetic_inference": [
+    {
+      "fixture": 0,
+      "task": "life_stage",
+      "scores_equal_original": true,
+      "training_preprocessing_equal": true
+    },
+    {
+      "fixture": 0,
+      "task": "engorgement_level",
+      "scores_equal_original": true,
+      "training_preprocessing_equal": true
+    },
+    {
+      "fixture": 1,
+      "task": "life_stage",
+      "scores_equal_original": true,
+      "training_preprocessing_equal": true
+    },
+    {
+      "fixture": 1,
+      "task": "engorgement_level",
+      "scores_equal_original": true,
+      "training_preprocessing_equal": true
+    },
+    {
+      "fixture": 2,
+      "task": "life_stage",
+      "scores_equal_original": true,
+      "training_preprocessing_equal": true
+    },
+    {
+      "fixture": 2,
+      "task": "engorgement_level",
+      "scores_equal_original": true,
+      "training_preprocessing_equal": true
+    }
+  ],
+  "test_images_used": 0,
+  "training_run": false,
+  "original_images_available": false,
+  "wrong_task_checkpoint_rejected": true,
+  "tiny_image_rejected": true,
+  "image_relocation_checked": true,
+  "missing_training_inputs_reported": true,
+  "original_manifest_and_training_source_preserved": true,
+  "notebook_checks": [
+    {
+      "notebook": "testing.ipynb",
+      "schema_valid": true,
+      "default_run_all_passed": true
+    },
+    {
+      "notebook": "Training/TickPredict_Training_engorgement_level.ipynb",
+      "schema_valid": true,
+      "default_run_all_passed": true
+    },
+    {
+      "notebook": "Training/TickPredict_Training_life_stage.ipynb",
+      "schema_valid": true,
+      "default_run_all_passed": true
+    },
+    {
+      "notebook": "testing.ipynb",
+      "synthetic_image_both_models_passed": true
+    }
+  ],
+  "retained_run_json_and_checkpoints_unchanged": 10,
+  "dependency_check": "pip check: no broken requirements",
+  "launcher_shell_syntax_valid": true,
+  "review_date": "2026-10-19",
+  "launcher_runtime_check": {
+    "started_from": "/tmp",
+    "login_http_status": 200,
+    "test_server_stopped": true
+  },
+  "notebook_consolidation": {
+    "active_notebooks": [
+      {
+        "notebook": "train.ipynb",
+        "schema_valid": true,
+        "default_run_all_passed": true
+      },
+      {
+        "notebook": "testing.ipynb",
+        "schema_valid": true,
+        "default_run_all_passed": true
+      }
+    ],
+    "training_started": false,
+    "checkpoint_hashes_unchanged": true
+  }
+}

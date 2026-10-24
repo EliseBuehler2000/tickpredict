@@ -1,0 +1,1726 @@
+{
+  "n": 110,
+  "correct": 95,
+  "accuracy": 0.8636363636363636,
+  "balanced_accuracy": 0.8629336349924586,
+  "macro_f1": 0.8440945401729715,
+  "confusion_matrix": [
+    [
+      14,
+      2,
+      0
+    ],
+    [
+      3,
+      59,
+      6
+    ],
+    [
+      1,
+      3,
+      22
+    ]
+  ],
+  "classes": [
+    "fully engorged",
+    "semi-engorged",
+    "unengorged"
+  ],
+  "per_class": [
+    {
+      "class": "fully engorged",
+      "support": 16,
+      "correct": 14,
+      "recall": 0.875,
+      "precision": 0.7777777777777778,
+      "f1": 0.8235294117647058
+    },
+    {
+      "class": "semi-engorged",
+      "support": 68,
+      "correct": 59,
+      "recall": 0.8676470588235294,
+      "precision": 0.921875,
+      "f1": 0.8939393939393939
+    },
+    {
+      "class": "unengorged",
+      "support": 26,
+      "correct": 22,
+      "recall": 0.8461538461538461,
+      "precision": 0.7857142857142857,
+      "f1": 0.8148148148148148
+    }
+  ],
+  "loss": 0.5768919121135365,
+  "predictions": [
+    {
+      "tick_id": "279926",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.048027265816926956,
+        0.919207751750946,
+        0.03276496380567551
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "280444",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.0204449649900198,
+        0.0063967579044401646,
+        0.9731582999229431
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "280623",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.0344109982252121,
+        0.24354985356330872,
+        0.7220391035079956
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "281272",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.2616860866546631,
+        0.1350991278886795,
+        0.6032148003578186
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "281789",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.07566268742084503,
+        0.9000897407531738,
+        0.0242475438863039
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "281942",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.027562716975808144,
+        0.9290380477905273,
+        0.04339916259050369
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "282023",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.01738801971077919,
+        0.012548360042273998,
+        0.9700635671615601
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "282033",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9713554382324219,
+        0.024394413456320763,
+        0.0042501226998865604
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "282250",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.17049315571784973,
+        0.8261362910270691,
+        0.003370473627001047
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "282368",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.04048055782914162,
+        0.9421616792678833,
+        0.017357802018523216
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "282478",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.02990284562110901,
+        0.9477723836898804,
+        0.022324826568365097
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "282675",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03848694637417793,
+        0.8266122341156006,
+        0.1349007934331894
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "282705",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03385194018483162,
+        0.9364754557609558,
+        0.029672585427761078
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "283062",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.009656385518610477,
+        0.007759459782391787,
+        0.9825841784477234
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "283122",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.013696650043129921,
+        0.005804956890642643,
+        0.9804983735084534
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "283220",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.04215801879763603,
+        0.9482393860816956,
+        0.00960268173366785
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "283453",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.04983022063970566,
+        0.9141502380371094,
+        0.03601960837841034
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "283587",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.017246408388018608,
+        0.005816373508423567,
+        0.9769371747970581
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "283819",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.040838971734046936,
+        0.8246206045150757,
+        0.134540393948555
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "283821",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.17018479108810425,
+        0.05269789323210716,
+        0.7771172523498535
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "283830",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.023174282163381577,
+        0.939346969127655,
+        0.03747871518135071
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "284128",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03391005098819733,
+        0.9390963912010193,
+        0.02699362486600876
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "284150",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.015245289541780949,
+        0.30505990982055664,
+        0.6796947717666626
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "284282",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9800639152526855,
+        0.017972910776734352,
+        0.001963187474757433
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "284421",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.7809444069862366,
+        0.12827640771865845,
+        0.09077923744916916
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "284425",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.01109850499778986,
+        0.007859020493924618,
+        0.9810425043106079
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "284445",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.05158855393528938,
+        0.9184264540672302,
+        0.02998499572277069
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "284510",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.11403682827949524,
+        0.828580379486084,
+        0.05738281086087227
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "284606",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.008617346175014973,
+        0.009291826747357845,
+        0.9820907711982727
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "284881",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.028301013633608818,
+        0.9570778012275696,
+        0.01462121307849884
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "284993",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.017792891710996628,
+        0.007455003913491964,
+        0.9747520685195923
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "285002",
+      "true": "semi-engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9911171197891235,
+        0.00757205905392766,
+        0.0013108915882185102
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "285053",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.02998243272304535,
+        0.12913236021995544,
+        0.84088534116745
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "285159",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.02271944470703602,
+        0.9504120945930481,
+        0.026868417859077454
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "285258",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.023662129417061806,
+        0.6144629120826721,
+        0.3618750274181366
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "285506",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.035972557961940765,
+        0.950819194316864,
+        0.013208258897066116
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "285514",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.014655841514468193,
+        0.007264438085258007,
+        0.9780797958374023
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "285562",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03443692997097969,
+        0.49879342317581177,
+        0.46676966547966003
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "285726",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.036623403429985046,
+        0.9422625303268433,
+        0.021114064380526543
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "285761",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03809649124741554,
+        0.9234679937362671,
+        0.038435470312833786
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "285774",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9835954904556274,
+        0.011251658201217651,
+        0.00515288719907403
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "286015",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.027920860797166824,
+        0.9236340522766113,
+        0.04844505339860916
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "286183",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03355241194367409,
+        0.9469413757324219,
+        0.01950616016983986
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "286235",
+      "true": "semi-engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.7070987224578857,
+        0.28902527689933777,
+        0.0038759447634220123
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "286236",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.6129601001739502,
+        0.37841153144836426,
+        0.008628333918750286
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "286398",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.05225013568997383,
+        0.0356304757297039,
+        0.9121193289756775
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "286514",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03853075951337814,
+        0.6960023045539856,
+        0.2654670178890228
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "286576",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.06729111820459366,
+        0.9203874468803406,
+        0.01232141349464655
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "286752",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.3407977819442749,
+        0.650850772857666,
+        0.00835142470896244
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "286868",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.6468014717102051,
+        0.34734469652175903,
+        0.005853883922100067
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "286879",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9469338059425354,
+        0.038559943437576294,
+        0.01450625341385603
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "286999",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.05751524493098259,
+        0.9185513854026794,
+        0.023933377116918564
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "287067",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03609051927924156,
+        0.6125212907791138,
+        0.35138824582099915
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "287120",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.339092880487442,
+        0.3688294589519501,
+        0.2920776605606079
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "287439",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.16769638657569885,
+        0.8248429298400879,
+        0.007460716646164656
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "287553",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.006489597726613283,
+        0.005786476656794548,
+        0.9877239465713501
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "287613",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9973148703575134,
+        0.0013047175016254187,
+        0.0013803831534460187
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "287679",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.06565544009208679,
+        0.7127684950828552,
+        0.2215760350227356
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "287850",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.014238107018172741,
+        0.011407596059143543,
+        0.9743542075157166
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "287996",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9972359538078308,
+        0.0026805028319358826,
+        8.357015030924231e-05
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "288022",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.07563940435647964,
+        0.8988995552062988,
+        0.025461047887802124
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "288026",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.7400432825088501,
+        0.2503299415111542,
+        0.0096267219632864
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "288031",
+      "true": "unengorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.1457393318414688,
+        0.8257526159286499,
+        0.028508007526397705
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "288036",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03079233318567276,
+        0.9463274478912354,
+        0.02288024313747883
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "288075",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.021885687485337257,
+        0.005560345947742462,
+        0.9725539088249207
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "288172",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.04868176579475403,
+        0.028093451634049416,
+        0.9232248067855835
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "288293",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.026495594531297684,
+        0.8045427799224854,
+        0.16896158456802368
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "288297",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.10100486129522324,
+        0.8823953866958618,
+        0.01659977249801159
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "288432",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.06059488654136658,
+        0.8400560021400452,
+        0.09934911131858826
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "288552",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.346995085477829,
+        0.6495836973190308,
+        0.0034212246537208557
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "288614",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.04631700739264488,
+        0.9366631507873535,
+        0.017019864171743393
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "288615",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.027825133875012398,
+        0.9171106219291687,
+        0.05506422370672226
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "288817",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.02113136276602745,
+        0.9458709955215454,
+        0.03299768641591072
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "288819",
+      "true": "fully engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.020778115838766098,
+        0.9044336080551147,
+        0.07478828728199005
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "288899",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.2438734769821167,
+        0.032593242824077606,
+        0.7235333323478699
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "288982",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.052277714014053345,
+        0.9087619781494141,
+        0.038960304111242294
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "289043",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.017518265172839165,
+        0.6817886829376221,
+        0.3006930351257324
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "289171",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.033686015754938126,
+        0.9511857628822327,
+        0.015128189697861671
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "289203",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.028242455795407295,
+        0.9562941193580627,
+        0.015463454648852348
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "289267",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.05731898173689842,
+        0.9203726649284363,
+        0.02230827510356903
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "289314",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.04584266617894173,
+        0.9389105439186096,
+        0.015246802940964699
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "289422",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.915622353553772,
+        0.07895021885633469,
+        0.005427382420748472
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "289511",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03824210166931152,
+        0.8226183652877808,
+        0.13913953304290771
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "289656",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.055185336619615555,
+        0.6663659811019897,
+        0.2784487009048462
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "289688",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03327237442135811,
+        0.602432131767273,
+        0.36429545283317566
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "289789",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.024310484528541565,
+        0.9537485837936401,
+        0.02194090373814106
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "289797",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.10625901818275452,
+        0.8587213158607483,
+        0.03501969203352928
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "289815",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.04080156236886978,
+        0.0131139000877738,
+        0.9460846185684204
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "289819",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9982757568359375,
+        0.0012437902623787522,
+        0.00048044483992271125
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "289862",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.006918372120708227,
+        0.004117480479180813,
+        0.9889642000198364
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "290043",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03006865084171295,
+        0.946733832359314,
+        0.023197518661618233
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "290075",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.05160228908061981,
+        0.5409805178642273,
+        0.40741726756095886
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "290148",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.019921651110053062,
+        0.0059305885806679726,
+        0.9741476774215698
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "290231",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.006812384817749262,
+        0.004487589467316866,
+        0.9886999726295471
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "290421",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.01772022619843483,
+        0.02045004442334175,
+        0.9618297815322876
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "290639",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.16710932552814484,
+        0.07373335212469101,
+        0.7591572403907776
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "290714",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.01950030028820038,
+        0.00997246615588665,
+        0.970527172088623
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "290727",
+      "true": "unengorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.7583892345428467,
+        0.03586907684803009,
+        0.20574161410331726
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "291062",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9963012933731079,
+        0.0019464753568172455,
+        0.0017522105481475592
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "291213",
+      "true": "unengorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.039228904992341995,
+        0.8026512265205383,
+        0.15811994671821594
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "291279",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03743404895067215,
+        0.9382197856903076,
+        0.024346143007278442
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "291285",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.0809914618730545,
+        0.8903067111968994,
+        0.028701845556497574
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "291327",
+      "true": "semi-engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9975602626800537,
+        0.0023022594396024942,
+        0.00013752748782280833
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "291341",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.02501109056174755,
+        0.9650008082389832,
+        0.009988177567720413
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "291358",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.06956493109464645,
+        0.9169031977653503,
+        0.013531914912164211
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "291431",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.10896824300289154,
+        0.8387355804443359,
+        0.052296191453933716
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "tick_id": "291692",
+      "true": "unengorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.023650184273719788,
+        0.9457554817199707,
+        0.03059437684714794
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "291891",
+      "true": "fully engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.3362363576889038,
+        0.600255012512207,
+        0.06350864470005035
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "tick_id": "292292",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.1047566756606102,
+        0.04036565497517586,
+        0.8548775911331177
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "tick_id": "293074",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9994105100631714,
+        0.00036263224319554865,
+        0.0002268842508783564
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "fully engorged"
+    }
+  ],
+  "stage_engorgement_subgroups": [
+    {
+      "n": 9,
+      "correct": 9,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 0.3333333333333333,
+      "confusion_matrix": [
+        [
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "fully engorged",
+        "semi-engorged",
+        "unengorged"
+      ],
+      "per_class": [
+        {
+          "class": "fully engorged",
+          "support": 9,
+          "correct": 9,
+          "recall": 1.0,
+          "precision": 1.0,
+          "f1": 1.0
+        },
+        {
+          "class": "semi-engorged",
+          "support": 0,
+          "correct": 0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "f1": 0.0
+        },
+        {
+          "class": "unengorged",
+          "support": 0,
+          "correct": 0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "f1": 0.0
+        }
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "n": 5,
+      "correct": 1,
+      "accuracy": 0.2,
+      "balanced_accuracy": 0.2,
+      "macro_f1": 0.1111111111111111,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "fully engorged",
+        "semi-engorged",
+        "unengorged"
+      ],
+      "per_class": [
+        {
+          "class": "fully engorged",
+          "support": 0,
+          "correct": 0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "f1": 0.0
+        },
+        {
+          "class": "semi-engorged",
+          "support": 5,
+          "correct": 1,
+          "recall": 0.2,
+          "precision": 1.0,
+          "f1": 0.3333333333333333
+        },
+        {
+          "class": "unengorged",
+          "support": 0,
+          "correct": 0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "f1": 0.0
+        }
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "n": 21,
+      "correct": 20,
+      "accuracy": 0.9523809523809523,
+      "balanced_accuracy": 0.9523809523809523,
+      "macro_f1": 0.3252032520325203,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          20
+        ]
+      ],
+      "classes": [
+        "fully engorged",
+        "semi-engorged",
+        "unengorged"
+      ],
+      "per_class": [
+        {
+          "class": "fully engorged",
+          "support": 0,
+          "correct": 0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "f1": 0.0
+        },
+        {
+          "class": "semi-engorged",
+          "support": 0,
+          "correct": 0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "f1": 0.0
+        },
+        {
+          "class": "unengorged",
+          "support": 21,
+          "correct": 20,
+          "recall": 0.9523809523809523,
+          "precision": 1.0,
+          "f1": 0.975609756097561
+        }
+      ],
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged"
+    },
+    {
+      "n": 7,
+      "correct": 5,
+      "accuracy": 0.7142857142857143,
+      "balanced_accuracy": 0.7142857142857143,
+      "macro_f1": 0.2777777777777778,
+      "confusion_matrix": [
+        [
+          5,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "fully engorged",
+        "semi-engorged",
+        "unengorged"
+      ],
+      "per_class": [
+        {
+          "class": "fully engorged",
+          "support": 7,
+          "correct": 5,
+          "recall": 0.7142857142857143,
+          "precision": 1.0,
+          "f1": 0.8333333333333334
+        },
+        {
+          "class": "semi-engorged",
+          "support": 0,
+          "correct": 0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "f1": 0.0
+        },
+        {
+          "class": "unengorged",
+          "support": 0,
+          "correct": 0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "f1": 0.0
+        }
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "fully engorged"
+    },
+    {
+      "n": 63,
+      "correct": 58,
+      "accuracy": 0.9206349206349206,
+      "balanced_accuracy": 0.9206349206349206,
+      "macro_f1": 0.31955922865013775,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          58,
+          3
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "fully engorged",
+        "semi-engorged",
+        "unengorged"
+      ],
+      "per_class": [
+        {
+          "class": "fully engorged",
+          "support": 0,
+          "correct": 0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "f1": 0.0
+        },
+        {
+          "class": "semi-engorged",
+          "support": 63,
+          "correct": 58,
+          "recall": 0.9206349206349206,
+          "precision": 1.0,
+          "f1": 0.9586776859504132
+        },
+        {
+          "class": "unengorged",
+          "support": 0,
+          "correct": 0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "f1": 0.0
+        }
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged"
+    },
+    {
+      "n": 5,
+      "correct": 2,
+      "accuracy": 0.4,
+      "balanced_accuracy": 0.4,
+      "macro_f1": 0.19047619047619047,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          2
+        ]
+      ],
+      "classes": [
+        "fully engorged",
+        "semi-engorged",
+        "unengorged"
+      ],
+      "per_class": [
+        {
+          "class": "fully engorged",
+          "support": 0,
+          "correct": 0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "f1": 0.0
+        },
+        {
+          "class": "semi-engorged",
+          "support": 0,
+          "correct": 0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "f1": 0.0
+        },
+        {
+          "class": "unengorged",
+          "support": 5,
+          "correct": 2,
+          "recall": 0.4,
+          "precision": 1.0,
+          "f1": 0.5714285714285714
+        }
+      ],
+      "life_stage": "nymph",
+      "engorgement_level": "unengorged"
+    }
+  ],
+  "epoch": 13,
+  "selection_metric": "accuracy",
+  "selection_score": 0.8636363636363636,
+  "smoke_only": false
+}

@@ -1,0 +1,7 @@
+{
+  "status": "completed",
+  "smoke_only": false,
+  "validation_accuracy": 0.8636363636363636,
+  "elapsed_seconds": 9.542768001556396,
+  "test_images_used": 0
+}

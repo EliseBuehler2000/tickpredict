@@ -1,0 +1,25 @@
+{
+  "validation_images": 110,
+  "test_images_used": 0,
+  "device": "cpu",
+  "runs": [
+    {
+      "run": "20261013-125510-220265_life_stage",
+      "target": "life_stage",
+      "accuracy": 0.9090909090909091,
+      "balanced_accuracy": 0.8876190476190476,
+      "label_mismatches_to_saved": 0,
+      "max_probability_difference": 2.6226043701171875e-06,
+      "seconds": 5.222179624950513
+    },
+    {
+      "run": "20261013-125824-749104_engorgement_level",
+      "target": "engorgement_level",
+      "accuracy": 0.6727272727272727,
+      "balanced_accuracy": 0.7441553544494721,
+      "label_mismatches_to_saved": 0,
+      "max_probability_difference": 2.3543834686279297e-06,
+      "seconds": 5.1966361668892205
+    }
+  ]
+}

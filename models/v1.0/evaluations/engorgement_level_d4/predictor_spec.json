@@ -1,0 +1,7 @@
+{
+  "target": "engorgement_level",
+  "checkpoints": [
+    "/Users/ericbuehler/Dropbox/cac_elise_2026/experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384/best.pt"
+  ],
+  "tta": "d4"
+}

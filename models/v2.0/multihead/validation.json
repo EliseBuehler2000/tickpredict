@@ -1,0 +1,349 @@
+{
+  "epoch": 12,
+  "selection_score": 0.8664082690894844,
+  "smoke_only": false,
+  "results": {
+    "inaturalist/species": {
+      "labeled": 1304,
+      "set_accuracy": 0.8504601226993865,
+      "n": 1304,
+      "correct": 1109,
+      "accuracy": 0.8504601226993865,
+      "balanced_accuracy": 0.7992248072684536,
+      "macro_f1": 0.787665605086622,
+      "confusion_matrix": [
+        [
+          251,
+          22,
+          5,
+          4,
+          2,
+          3,
+          1,
+          3
+        ],
+        [
+          34,
+          88,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          1,
+          232,
+          3,
+          12,
+          7,
+          24,
+          1
+        ],
+        [
+          4,
+          0,
+          6,
+          227,
+          2,
+          2,
+          0,
+          5
+        ],
+        [
+          1,
+          0,
+          6,
+          2,
+          223,
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          0,
+          5,
+          7,
+          0,
+          39,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          11,
+          0,
+          2,
+          0,
+          29,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          2,
+          1,
+          1,
+          20
+        ]
+      ],
+      "classes": [
+        "Ixodes scapularis",
+        "Ixodes pacificus",
+        "Dermacentor variabilis",
+        "Amblyomma americanum",
+        "Amblyomma maculatum",
+        "Rhipicephalus sanguineus",
+        "Dermacentor andersoni",
+        "Haemaphysalis longicornis"
+      ],
+      "per_class": [
+        {
+          "class": "Ixodes scapularis",
+          "support": 291,
+          "correct": 251,
+          "recall": 0.8625429553264605,
+          "precision": 0.8338870431893688,
+          "f1": 0.847972972972973
+        },
+        {
+          "class": "Ixodes pacificus",
+          "support": 122,
+          "correct": 88,
+          "recall": 0.7213114754098361,
+          "precision": 0.7927927927927928,
+          "f1": 0.7553648068669528
+        },
+        {
+          "class": "Dermacentor variabilis",
+          "support": 285,
+          "correct": 232,
+          "recall": 0.8140350877192982,
+          "precision": 0.8754716981132076,
+          "f1": 0.8436363636363636
+        },
+        {
+          "class": "Amblyomma americanum",
+          "support": 246,
+          "correct": 227,
+          "recall": 0.9227642276422764,
+          "precision": 0.930327868852459,
+          "f1": 0.926530612244898
+        },
+        {
+          "class": "Amblyomma maculatum",
+          "support": 233,
+          "correct": 223,
+          "recall": 0.9570815450643777,
+          "precision": 0.9176954732510288,
+          "f1": 0.9369747899159664
+        },
+        {
+          "class": "Rhipicephalus sanguineus",
+          "support": 58,
+          "correct": 39,
+          "recall": 0.6724137931034483,
+          "precision": 0.75,
+          "f1": 0.7090909090909091
+        },
+        {
+          "class": "Dermacentor andersoni",
+          "support": 43,
+          "correct": 29,
+          "recall": 0.6744186046511628,
+          "precision": 0.5087719298245614,
+          "f1": 0.58
+        },
+        {
+          "class": "Haemaphysalis longicornis",
+          "support": 26,
+          "correct": 20,
+          "recall": 0.7692307692307693,
+          "precision": 0.6451612903225806,
+          "f1": 0.7017543859649122
+        }
+      ],
+      "nll": 0.48479421589352856
+    },
+    "inaturalist/life_stage": {
+      "labeled": 1041,
+      "set_accuracy": 0.9298751200768491,
+      "n": 981,
+      "correct": 913,
+      "accuracy": 0.9306829765545361,
+      "balanced_accuracy": 0.8584170829070631,
+      "macro_f1": 0.8650978860553593,
+      "confusion_matrix": [
+        [
+          544,
+          20,
+          9
+        ],
+        [
+          15,
+          328,
+          5
+        ],
+        [
+          8,
+          11,
+          41
+        ]
+      ],
+      "classes": [
+        "adult female",
+        "adult male",
+        "nymph"
+      ],
+      "per_class": [
+        {
+          "class": "adult female",
+          "support": 573,
+          "correct": 544,
+          "recall": 0.9493891797556719,
+          "precision": 0.9594356261022927,
+          "f1": 0.9543859649122807
+        },
+        {
+          "class": "adult male",
+          "support": 348,
+          "correct": 328,
+          "recall": 0.9425287356321839,
+          "precision": 0.9136490250696379,
+          "f1": 0.9278642149929278
+        },
+        {
+          "class": "nymph",
+          "support": 60,
+          "correct": 41,
+          "recall": 0.6833333333333333,
+          "precision": 0.7454545454545455,
+          "f1": 0.7130434782608696
+        }
+      ],
+      "nll": 0.26301479407610656
+    },
+    "penn/life_stage": {
+      "labeled": 110,
+      "set_accuracy": 0.9636363636363636,
+      "n": 110,
+      "correct": 106,
+      "accuracy": 0.9636363636363636,
+      "balanced_accuracy": 0.9504761904761905,
+      "macro_f1": 0.6382868937048504,
+      "confusion_matrix": [
+        [
+          32,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          74
+        ]
+      ],
+      "classes": [
+        "adult female",
+        "adult male",
+        "nymph"
+      ],
+      "per_class": [
+        {
+          "class": "adult female",
+          "support": 35,
+          "correct": 32,
+          "recall": 0.9142857142857143,
+          "precision": 0.9696969696969697,
+          "f1": 0.9411764705882353
+        },
+        {
+          "class": "adult male",
+          "support": 0,
+          "correct": 0,
+          "recall": 0.0,
+          "precision": 0.0,
+          "f1": 0.0
+        },
+        {
+          "class": "nymph",
+          "support": 75,
+          "correct": 74,
+          "recall": 0.9866666666666667,
+          "precision": 0.961038961038961,
+          "f1": 0.9736842105263158
+        }
+      ],
+      "nll": 0.19257962772796747
+    },
+    "penn/engorgement_level": {
+      "labeled": 110,
+      "set_accuracy": 0.8363636363636363,
+      "n": 110,
+      "correct": 92,
+      "accuracy": 0.8363636363636363,
+      "balanced_accuracy": 0.7606523378582203,
+      "macro_f1": 0.7845971994908165,
+      "confusion_matrix": [
+        [
+          9,
+          6,
+          1
+        ],
+        [
+          2,
+          62,
+          4
+        ],
+        [
+          0,
+          5,
+          21
+        ]
+      ],
+      "classes": [
+        "fully engorged",
+        "semi-engorged",
+        "unengorged"
+      ],
+      "per_class": [
+        {
+          "class": "fully engorged",
+          "support": 16,
+          "correct": 9,
+          "recall": 0.5625,
+          "precision": 0.8181818181818182,
+          "f1": 0.6666666666666666
+        },
+        {
+          "class": "semi-engorged",
+          "support": 68,
+          "correct": 62,
+          "recall": 0.9117647058823529,
+          "precision": 0.8493150684931506,
+          "f1": 0.8794326241134752
+        },
+        {
+          "class": "unengorged",
+          "support": 26,
+          "correct": 21,
+          "recall": 0.8076923076923077,
+          "precision": 0.8076923076923077,
+          "f1": 0.8076923076923077
+        }
+      ],
+      "nll": 1.0948866492255012
+    }
+  }
+}

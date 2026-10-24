@@ -1,0 +1,42 @@
+{
+  "probability_transfer_fix": "Separate CPU transfer from float64 conversion; validate distributions at each aggregation boundary.",
+  "test_images_used": 0,
+  "evaluations": {
+    "life_stage": {
+      "output": "/Users/ericbuehler/Dropbox/cac_elise_2026/experiments/evaluations/20261019-104725-480690_life_stage_d4",
+      "evaluation_split": "dev",
+      "correct": 107,
+      "n": 110,
+      "accuracy": 0.9727272727272728,
+      "balanced_accuracy": 0.9647619047619047,
+      "nll": 0.11654603518866519,
+      "ece10": 0.04828849732875824,
+      "test_images_used": 0
+    },
+    "engorgement_level": {
+      "output": "/Users/ericbuehler/Dropbox/cac_elise_2026/experiments/evaluations/20261019-104736-240106_engorgement_level_d4",
+      "evaluation_split": "dev",
+      "correct": 95,
+      "n": 110,
+      "accuracy": 0.8636363636363636,
+      "balanced_accuracy": 0.8629336349924586,
+      "nll": 0.5391458702395799,
+      "ece10": 0.05995941254394976,
+      "test_images_used": 0
+    }
+  },
+  "cpu_mps_check": {
+    "life_stage": {
+      "tick_id": "261406",
+      "split": "train",
+      "maximum_probability_difference": 4.423782229423523e-09,
+      "same_prediction": true
+    },
+    "engorgement_level": {
+      "tick_id": "261406",
+      "split": "train",
+      "maximum_probability_difference": 1.4901161193847656e-08,
+      "same_prediction": true
+    }
+  }
+}

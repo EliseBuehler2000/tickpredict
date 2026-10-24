@@ -1,0 +1,1009 @@
+{
+  "balanced_accuracy": 0.8876190476190476,
+  "confusion_matrix": [
+    [
+      29,
+      6
+    ],
+    [
+      4,
+      71
+    ]
+  ],
+  "classes": [
+    "adult female",
+    "nymph"
+  ],
+  "predictions": [
+    {
+      "tick_id": "279926",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.005711964797228575,
+        0.9942880272865295
+      ]
+    },
+    {
+      "tick_id": "280444",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9999945163726807,
+        5.451763627206674e-06
+      ]
+    },
+    {
+      "tick_id": "280623",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.00021083018509671092,
+        0.9997891783714294
+      ]
+    },
+    {
+      "tick_id": "281272",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9819789528846741,
+        0.01802106574177742
+      ]
+    },
+    {
+      "tick_id": "281789",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0023525324650108814,
+        0.9976474642753601
+      ]
+    },
+    {
+      "tick_id": "281942",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0013958665076643229,
+        0.9986041188240051
+      ]
+    },
+    {
+      "tick_id": "282023",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9999701976776123,
+        2.9757642550976016e-05
+      ]
+    },
+    {
+      "tick_id": "282033",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.013744893483817577,
+        0.9862551689147949
+      ]
+    },
+    {
+      "tick_id": "282250",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        6.243321695365012e-05,
+        0.9999375343322754
+      ]
+    },
+    {
+      "tick_id": "282368",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        8.237185829784721e-05,
+        0.9999176263809204
+      ]
+    },
+    {
+      "tick_id": "282478",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        8.97338250069879e-05,
+        0.9999102354049683
+      ]
+    },
+    {
+      "tick_id": "282675",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.004354525823146105,
+        0.9956455230712891
+      ]
+    },
+    {
+      "tick_id": "282705",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        1.044141663442133e-05,
+        0.9999895095825195
+      ]
+    },
+    {
+      "tick_id": "283062",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.999972939491272,
+        2.7075189791503362e-05
+      ]
+    },
+    {
+      "tick_id": "283122",
+      "true": "adult female",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.047009795904159546,
+        0.9529902338981628
+      ]
+    },
+    {
+      "tick_id": "283220",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        3.527872104314156e-05,
+        0.999964714050293
+      ]
+    },
+    {
+      "tick_id": "283453",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.00013209262397140265,
+        0.9998679161071777
+      ]
+    },
+    {
+      "tick_id": "283587",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.5022648572921753,
+        0.49773508310317993
+      ]
+    },
+    {
+      "tick_id": "283819",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        1.3530969226849265e-05,
+        0.9999864101409912
+      ]
+    },
+    {
+      "tick_id": "283821",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9999983310699463,
+        1.6666804185661022e-06
+      ]
+    },
+    {
+      "tick_id": "283830",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        5.789240458398126e-05,
+        0.9999420642852783
+      ]
+    },
+    {
+      "tick_id": "284128",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        1.1471590369183104e-05,
+        0.9999885559082031
+      ]
+    },
+    {
+      "tick_id": "284150",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        1.3740130270889495e-05,
+        0.9999862909317017
+      ]
+    },
+    {
+      "tick_id": "284282",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9992920160293579,
+        0.0007079816423356533
+      ]
+    },
+    {
+      "tick_id": "284421",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.6939815878868103,
+        0.3060184419155121
+      ]
+    },
+    {
+      "tick_id": "284425",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9993957281112671,
+        0.0006042596651241183
+      ]
+    },
+    {
+      "tick_id": "284445",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        5.14427010784857e-05,
+        0.9999485015869141
+      ]
+    },
+    {
+      "tick_id": "284510",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        5.912848064326681e-05,
+        0.9999408721923828
+      ]
+    },
+    {
+      "tick_id": "284606",
+      "true": "adult female",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.00265771197155118,
+        0.9973422884941101
+      ]
+    },
+    {
+      "tick_id": "284881",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0003128427197225392,
+        0.9996871948242188
+      ]
+    },
+    {
+      "tick_id": "284993",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9999687671661377,
+        3.121387635474093e-05
+      ]
+    },
+    {
+      "tick_id": "285002",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9951654672622681,
+        0.00483458349481225
+      ]
+    },
+    {
+      "tick_id": "285053",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        2.945646883745212e-05,
+        0.999970555305481
+      ]
+    },
+    {
+      "tick_id": "285159",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        5.768706614617258e-06,
+        0.9999942779541016
+      ]
+    },
+    {
+      "tick_id": "285258",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.00018230122805107385,
+        0.9998176693916321
+      ]
+    },
+    {
+      "tick_id": "285506",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        5.744682766817277e-06,
+        0.9999942779541016
+      ]
+    },
+    {
+      "tick_id": "285514",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        1.0,
+        1.4257063973843742e-08
+      ]
+    },
+    {
+      "tick_id": "285562",
+      "true": "adult female",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0002547000185586512,
+        0.9997453093528748
+      ]
+    },
+    {
+      "tick_id": "285726",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        3.6660862861026544e-06,
+        0.9999963045120239
+      ]
+    },
+    {
+      "tick_id": "285761",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.012802103534340858,
+        0.9871979355812073
+      ]
+    },
+    {
+      "tick_id": "285774",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0007592400070279837,
+        0.9992407560348511
+      ]
+    },
+    {
+      "tick_id": "286015",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0009037028648890555,
+        0.9990962743759155
+      ]
+    },
+    {
+      "tick_id": "286183",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        2.7515397960087284e-05,
+        0.9999724626541138
+      ]
+    },
+    {
+      "tick_id": "286235",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.13763141632080078,
+        0.862368643283844
+      ]
+    },
+    {
+      "tick_id": "286236",
+      "true": "adult female",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.3176696300506592,
+        0.6823303699493408
+      ]
+    },
+    {
+      "tick_id": "286398",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.20411819219589233,
+        0.7958818078041077
+      ]
+    },
+    {
+      "tick_id": "286514",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.052513811737298965,
+        0.9474862217903137
+      ]
+    },
+    {
+      "tick_id": "286576",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.015191731974482536,
+        0.9848083257675171
+      ]
+    },
+    {
+      "tick_id": "286752",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.00040758500108495355,
+        0.9995924830436707
+      ]
+    },
+    {
+      "tick_id": "286868",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.31247347593307495,
+        0.6875265836715698
+      ]
+    },
+    {
+      "tick_id": "286879",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9897918701171875,
+        0.010208128951489925
+      ]
+    },
+    {
+      "tick_id": "286999",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.00011373238521628082,
+        0.9998862743377686
+      ]
+    },
+    {
+      "tick_id": "287067",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        5.811965820612386e-06,
+        0.999994158744812
+      ]
+    },
+    {
+      "tick_id": "287120",
+      "true": "nymph",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9726685881614685,
+        0.027331428602337837
+      ]
+    },
+    {
+      "tick_id": "287439",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.010010909289121628,
+        0.9899890422821045
+      ]
+    },
+    {
+      "tick_id": "287553",
+      "true": "adult female",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.4137434661388397,
+        0.5862565636634827
+      ]
+    },
+    {
+      "tick_id": "287613",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9949381351470947,
+        0.005061883479356766
+      ]
+    },
+    {
+      "tick_id": "287679",
+      "true": "nymph",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9771925806999207,
+        0.02280748263001442
+      ]
+    },
+    {
+      "tick_id": "287850",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        1.0,
+        2.9673141721531238e-09
+      ]
+    },
+    {
+      "tick_id": "287996",
+      "true": "adult female",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.013812008313834667,
+        0.9861879944801331
+      ]
+    },
+    {
+      "tick_id": "288022",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0005312146386131644,
+        0.9994687438011169
+      ]
+    },
+    {
+      "tick_id": "288026",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0017971514025703073,
+        0.9982028007507324
+      ]
+    },
+    {
+      "tick_id": "288031",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.00017848391144070774,
+        0.9998216032981873
+      ]
+    },
+    {
+      "tick_id": "288036",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.00016835103451739997,
+        0.9998316764831543
+      ]
+    },
+    {
+      "tick_id": "288075",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9999998807907104,
+        7.964656134618053e-08
+      ]
+    },
+    {
+      "tick_id": "288172",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9980089068412781,
+        0.001991136232391
+      ]
+    },
+    {
+      "tick_id": "288293",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0012854340020567179,
+        0.9987145662307739
+      ]
+    },
+    {
+      "tick_id": "288297",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0019908605609089136,
+        0.9980091452598572
+      ]
+    },
+    {
+      "tick_id": "288432",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        7.961680967127904e-05,
+        0.9999203681945801
+      ]
+    },
+    {
+      "tick_id": "288552",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        5.1703267672564834e-05,
+        0.999948263168335
+      ]
+    },
+    {
+      "tick_id": "288614",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0005270994151942432,
+        0.9994729161262512
+      ]
+    },
+    {
+      "tick_id": "288615",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0001874934387160465,
+        0.9998125433921814
+      ]
+    },
+    {
+      "tick_id": "288817",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        7.31952823116444e-05,
+        0.9999268054962158
+      ]
+    },
+    {
+      "tick_id": "288819",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.000529922021087259,
+        0.999470055103302
+      ]
+    },
+    {
+      "tick_id": "288899",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0013765055919066072,
+        0.9986234903335571
+      ]
+    },
+    {
+      "tick_id": "288982",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0011740910122171044,
+        0.9988258481025696
+      ]
+    },
+    {
+      "tick_id": "289043",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        1.2155720696682693e-06,
+        0.9999988079071045
+      ]
+    },
+    {
+      "tick_id": "289171",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        2.52867971539672e-06,
+        0.9999974966049194
+      ]
+    },
+    {
+      "tick_id": "289203",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        4.53063648819807e-06,
+        0.9999954700469971
+      ]
+    },
+    {
+      "tick_id": "289267",
+      "true": "nymph",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.5737432837486267,
+        0.4262566566467285
+      ]
+    },
+    {
+      "tick_id": "289314",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        4.622991036740132e-05,
+        0.9999537467956543
+      ]
+    },
+    {
+      "tick_id": "289422",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.013533562421798706,
+        0.9864664673805237
+      ]
+    },
+    {
+      "tick_id": "289511",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.00039215749711729586,
+        0.9996078610420227
+      ]
+    },
+    {
+      "tick_id": "289656",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.1701209396123886,
+        0.829879105091095
+      ]
+    },
+    {
+      "tick_id": "289688",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        3.69220033462625e-05,
+        0.9999630451202393
+      ]
+    },
+    {
+      "tick_id": "289789",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        4.032606739201583e-05,
+        0.9999597072601318
+      ]
+    },
+    {
+      "tick_id": "289797",
+      "true": "nymph",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9999340772628784,
+        6.596490129595622e-05
+      ]
+    },
+    {
+      "tick_id": "289815",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        1.0,
+        4.753381244171351e-09
+      ]
+    },
+    {
+      "tick_id": "289819",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9999825954437256,
+        1.737758793751709e-05
+      ]
+    },
+    {
+      "tick_id": "289862",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.6528781652450562,
+        0.34712180495262146
+      ]
+    },
+    {
+      "tick_id": "290043",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0010333149693906307,
+        0.9989666938781738
+      ]
+    },
+    {
+      "tick_id": "290075",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.008874349296092987,
+        0.9911256432533264
+      ]
+    },
+    {
+      "tick_id": "290148",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9999926090240479,
+        7.419087069138186e-06
+      ]
+    },
+    {
+      "tick_id": "290231",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9999768733978271,
+        2.314819721505046e-05
+      ]
+    },
+    {
+      "tick_id": "290421",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9994106292724609,
+        0.0005893658380955458
+      ]
+    },
+    {
+      "tick_id": "290639",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9999977350234985,
+        2.2156800696393475e-06
+      ]
+    },
+    {
+      "tick_id": "290714",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9999994039535522,
+        6.334402655738813e-07
+      ]
+    },
+    {
+      "tick_id": "290727",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.999993085861206,
+        6.879962711536791e-06
+      ]
+    },
+    {
+      "tick_id": "291062",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.8993000388145447,
+        0.10069992393255234
+      ]
+    },
+    {
+      "tick_id": "291213",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.000562342640478164,
+        0.9994376301765442
+      ]
+    },
+    {
+      "tick_id": "291279",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.00020549519103951752,
+        0.9997945427894592
+      ]
+    },
+    {
+      "tick_id": "291285",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0001421888155164197,
+        0.9998577833175659
+      ]
+    },
+    {
+      "tick_id": "291327",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.016375528648495674,
+        0.9836244583129883
+      ]
+    },
+    {
+      "tick_id": "291341",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.00033622459159232676,
+        0.9996638298034668
+      ]
+    },
+    {
+      "tick_id": "291358",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        9.562724153511226e-05,
+        0.9999043941497803
+      ]
+    },
+    {
+      "tick_id": "291431",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.004984027240425348,
+        0.9950160384178162
+      ]
+    },
+    {
+      "tick_id": "291692",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0004707725893240422,
+        0.999529242515564
+      ]
+    },
+    {
+      "tick_id": "291891",
+      "true": "nymph",
+      "predicted": "nymph",
+      "uncalibrated_probabilities": [
+        0.0012398982653394341,
+        0.9987601041793823
+      ]
+    },
+    {
+      "tick_id": "292292",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.9999979734420776,
+        1.9866233742504846e-06
+      ]
+    },
+    {
+      "tick_id": "293074",
+      "true": "adult female",
+      "predicted": "adult female",
+      "uncalibrated_probabilities": [
+        0.7789075970649719,
+        0.22109238803386688
+      ]
+    }
+  ]
+}

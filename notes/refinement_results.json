@@ -1,0 +1,415 @@
+{
+  "date": "2026-10-19",
+  "evaluation_split": "dev",
+  "validation_n": 110,
+  "test_images_used": 0,
+  "labels_changed": 0,
+  "development_cases_excluded": 0,
+  "target_status": "Life stage exceeds95% on development; engorgement does not. No independent test claim.",
+  "selected_predictors": {
+    "life_stage": {
+      "selected": "single_identity",
+      "variants": [
+        {
+          "variant": "single_identity",
+          "validation_file": "experiments/runs/20261019-101227-146487_life_stage_convnext_tiny_320/validation.json",
+          "correct": 107,
+          "n": 110,
+          "accuracy": 0.9727272727272728,
+          "balanced_accuracy": 0.9647619047619047,
+          "nll": 0.11509789917399622,
+          "promotion_eligible": true,
+          "per_class": [
+            {
+              "class": "adult female",
+              "support": 35,
+              "correct": 33,
+              "recall": 0.9428571428571428,
+              "precision": 0.9705882352941176,
+              "f1": 0.9565217391304348
+            },
+            {
+              "class": "nymph",
+              "support": 75,
+              "correct": 74,
+              "recall": 0.9866666666666667,
+              "precision": 0.9736842105263158,
+              "f1": 0.9801324503311258
+            }
+          ]
+        },
+        {
+          "variant": "single_d4",
+          "validation_file": "experiments/evaluations/20261019-104725-480690_life_stage_d4/validation.json",
+          "correct": 107,
+          "n": 110,
+          "accuracy": 0.9727272727272728,
+          "balanced_accuracy": 0.9647619047619047,
+          "nll": 0.11654603518866519,
+          "promotion_eligible": true,
+          "per_class": [
+            {
+              "class": "adult female",
+              "support": 35,
+              "correct": 33,
+              "recall": 0.9428571428571428,
+              "precision": 0.9705882352941176,
+              "f1": 0.9565217391304348
+            },
+            {
+              "class": "nymph",
+              "support": 75,
+              "correct": 74,
+              "recall": 0.9866666666666667,
+              "precision": 0.9736842105263158,
+              "f1": 0.9801324503311258
+            }
+          ]
+        },
+        {
+          "variant": "three_seed_ensemble",
+          "validation_file": "experiments/evaluations/20261019-103509-056913_life_stage_none/validation.json",
+          "correct": 105,
+          "n": 110,
+          "accuracy": 0.9545454545454546,
+          "balanced_accuracy": 0.9361904761904762,
+          "nll": 0.14881084288173974,
+          "promotion_eligible": true,
+          "per_class": [
+            {
+              "class": "adult female",
+              "support": 35,
+              "correct": 31,
+              "recall": 0.8857142857142857,
+              "precision": 0.96875,
+              "f1": 0.9253731343283582
+            },
+            {
+              "class": "nymph",
+              "support": 75,
+              "correct": 74,
+              "recall": 0.9866666666666667,
+              "precision": 0.9487179487179487,
+              "f1": 0.9673202614379085
+            }
+          ]
+        }
+      ],
+      "class_correct_floors": {
+        "adult female": 28,
+        "nymph": 70
+      }
+    },
+    "engorgement_level": {
+      "selected": "single_d4",
+      "variants": [
+        {
+          "variant": "single_identity",
+          "validation_file": "experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384/validation.json",
+          "correct": 95,
+          "n": 110,
+          "accuracy": 0.8636363636363636,
+          "balanced_accuracy": 0.8629336349924586,
+          "nll": 0.576891897530164,
+          "promotion_eligible": true,
+          "per_class": [
+            {
+              "class": "fully engorged",
+              "support": 16,
+              "correct": 14,
+              "recall": 0.875,
+              "precision": 0.7777777777777778,
+              "f1": 0.8235294117647058
+            },
+            {
+              "class": "semi-engorged",
+              "support": 68,
+              "correct": 59,
+              "recall": 0.8676470588235294,
+              "precision": 0.921875,
+              "f1": 0.8939393939393939
+            },
+            {
+              "class": "unengorged",
+              "support": 26,
+              "correct": 22,
+              "recall": 0.8461538461538461,
+              "precision": 0.7857142857142857,
+              "f1": 0.8148148148148148
+            }
+          ]
+        },
+        {
+          "variant": "single_d4",
+          "validation_file": "experiments/evaluations/20261019-104736-240106_engorgement_level_d4/validation.json",
+          "correct": 95,
+          "n": 110,
+          "accuracy": 0.8636363636363636,
+          "balanced_accuracy": 0.8629336349924586,
+          "nll": 0.5391458702395799,
+          "promotion_eligible": true,
+          "per_class": [
+            {
+              "class": "fully engorged",
+              "support": 16,
+              "correct": 14,
+              "recall": 0.875,
+              "precision": 0.7777777777777778,
+              "f1": 0.8235294117647058
+            },
+            {
+              "class": "semi-engorged",
+              "support": 68,
+              "correct": 59,
+              "recall": 0.8676470588235294,
+              "precision": 0.921875,
+              "f1": 0.8939393939393939
+            },
+            {
+              "class": "unengorged",
+              "support": 26,
+              "correct": 22,
+              "recall": 0.8461538461538461,
+              "precision": 0.7857142857142857,
+              "f1": 0.8148148148148148
+            }
+          ]
+        },
+        {
+          "variant": "three_seed_ensemble",
+          "validation_file": "experiments/evaluations/20261019-104649-762300_engorgement_level_none/validation.json",
+          "correct": 95,
+          "n": 110,
+          "accuracy": 0.8636363636363636,
+          "balanced_accuracy": 0.8310708898944194,
+          "nll": 0.4597899291029202,
+          "promotion_eligible": false,
+          "per_class": [
+            {
+              "class": "fully engorged",
+              "support": 16,
+              "correct": 12,
+              "recall": 0.75,
+              "precision": 0.8,
+              "f1": 0.7741935483870968
+            },
+            {
+              "class": "semi-engorged",
+              "support": 68,
+              "correct": 61,
+              "recall": 0.8970588235294118,
+              "precision": 0.8970588235294118,
+              "f1": 0.8970588235294118
+            },
+            {
+              "class": "unengorged",
+              "support": 26,
+              "correct": 22,
+              "recall": 0.8461538461538461,
+              "precision": 0.8148148148148148,
+              "f1": 0.8301886792452831
+            }
+          ]
+        }
+      ],
+      "class_correct_floors": {
+        "fully engorged": 13,
+        "semi-engorged": 39,
+        "unengorged": 19
+      }
+    }
+  },
+  "seed_repeats": {
+    "life_stage": {
+      "seeds": [
+        20261019,
+        20261020,
+        20261021
+      ],
+      "correct": [
+        107,
+        105,
+        105
+      ]
+    },
+    "engorgement_level": {
+      "seeds": [
+        20261019,
+        20261020,
+        20261021
+      ],
+      "correct": [
+        95,
+        93,
+        94
+      ]
+    }
+  },
+  "engorgement_alternatives_correct": {
+    "original_pinned": 74,
+    "first_round_effnet": 95,
+    "foreground_crop": 93,
+    "auxiliary_life_stage": 94,
+    "frozen_dino": 89,
+    "joint_sampling": 93
+  },
+  "training_only_cv": {
+    "artifact": "experiments/dino/train_only_cv.json",
+    "sha256": "6aa0b7357455129306022028f2bc1e312e010d97ae7b3ec8583ed000b5d6500e",
+    "config_sha256": "f578a1f0ef20888b989b8500d9ca269374fa52102e9650b0efd30be40f2eeb64",
+    "metrics": {
+      "three_class_multinomial": {
+        "n": 241,
+        "correct": 198,
+        "accuracy": 0.8215767634854771,
+        "balanced_accuracy": 0.6503337468249749,
+        "macro_f1": 0.6984620642515379,
+        "unweighted_nll": 0.4637330756665984,
+        "confusion_matrix": [
+          [
+            9,
+            12,
+            1
+          ],
+          [
+            2,
+            156,
+            4
+          ],
+          [
+            2,
+            22,
+            33
+          ]
+        ],
+        "classes": [
+          "fully engorged",
+          "semi-engorged",
+          "unengorged"
+        ],
+        "per_class": [
+          {
+            "class": "fully engorged",
+            "support": 22,
+            "precision": 0.6923076923076923,
+            "recall": 0.4090909090909091,
+            "f1": 0.5142857142857142
+          },
+          {
+            "class": "semi-engorged",
+            "support": 162,
+            "precision": 0.8210526315789474,
+            "recall": 0.9629629629629629,
+            "f1": 0.8863636363636364
+          },
+          {
+            "class": "unengorged",
+            "support": 57,
+            "precision": 0.868421052631579,
+            "recall": 0.5789473684210527,
+            "f1": 0.6947368421052632
+          }
+        ]
+      },
+      "six_joint_multinomial_marginalized": {
+        "n": 241,
+        "correct": 197,
+        "accuracy": 0.8174273858921162,
+        "balanced_accuracy": 0.6444857936086006,
+        "macro_f1": 0.6972062535796865,
+        "unweighted_nll": 0.47786760408635903,
+        "confusion_matrix": [
+          [
+            9,
+            12,
+            1
+          ],
+          [
+            2,
+            156,
+            4
+          ],
+          [
+            1,
+            24,
+            32
+          ]
+        ],
+        "classes": [
+          "fully engorged",
+          "semi-engorged",
+          "unengorged"
+        ],
+        "per_class": [
+          {
+            "class": "fully engorged",
+            "support": 22,
+            "precision": 0.75,
+            "recall": 0.4090909090909091,
+            "f1": 0.5294117647058824
+          },
+          {
+            "class": "semi-engorged",
+            "support": 162,
+            "precision": 0.8125,
+            "recall": 0.9629629629629629,
+            "f1": 0.8813559322033898
+          },
+          {
+            "class": "unengorged",
+            "support": 57,
+            "precision": 0.8648648648648649,
+            "recall": 0.5614035087719298,
+            "f1": 0.6808510638297872
+          }
+        ]
+      }
+    },
+    "comparison": {
+      "winner_by_oof_accuracy": "three_class_multinomial",
+      "six_minus_three_correct": -1,
+      "six_minus_three_accuracy": -0.004149377593360981,
+      "six_fixes_three_errors": 2,
+      "six_breaks_three_correct": 3,
+      "both_correct": 195,
+      "both_wrong": 41
+    },
+    "limitations": "Exploratory OOF comparison on the original training set with the previously chosen frozen representation and two fixed heads. All eight views remain together and identity alone is scored. No independent-test claim, development evaluation, calibration, hyperparameter search, or uncertainty claim follows; subgroup counts remain small."
+  },
+  "visual_review": "notes/visual_review.json",
+  "evaluation_bug": {
+    "invalid_run": "experiments/evaluations/20261019-103653-911699_life_stage_d4",
+    "status": "Quarantined and excluded; corrected re-evaluation completed.",
+    "reproduction": "MPS softmax[[1,2],[3,4]] -> combined CPU float64 transfer produced zeros; separate CPU transfer then float64 cast yielded [.2689414322,.7310585976].",
+    "fix": "CPU transfer precedes dtype conversion. Shapes, finiteness, bounds, and row sums are checked before predictions/metrics.",
+    "saved_training_metrics_affected": false
+  },
+  "verification": {
+    "cpu_unit_tests": 44,
+    "passed": 44,
+    "seconds": 9.194,
+    "cpu_mps_d4_parity": {
+      "life_stage": {
+        "tick_id": "261406",
+        "split": "train",
+        "maximum_probability_difference": 4.423782229423523e-09,
+        "same_prediction": true
+      },
+      "engorgement_level": {
+        "tick_id": "261406",
+        "split": "train",
+        "maximum_probability_difference": 1.4901161193847656e-08,
+        "same_prediction": true
+      }
+    },
+    "dataset_manifest_sha256": "c758ff23b8c2de782d5ca03c56ecf9b49a9897dbb2258538ab3e094856c3dfd3",
+    "notebook_inference_cpu_matches_single_checkpoint_api": true,
+    "notebooks": {
+      "default_cells_execute": true,
+      "training_actions_enabled": false,
+      "image_path": null,
+      "saved_outputs_empty": true
+    }
+  },
+  "limits": "Repeated development selection and small subgroup supports; scores remain uncalibrated. Trials do not establish an accuracy ceiling or verify annotation correctness."
+}

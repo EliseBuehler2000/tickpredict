@@ -1,0 +1,9 @@
+{
+  "target": "life_stage",
+  "checkpoints": [
+    "experiments/runs/20261019-101227-146487_life_stage_convnext_tiny_320/best.pt",
+    "experiments/runs/20261019-102943-867150_life_stage_convnext_tiny_320_seed20261020/best.pt",
+    "experiments/runs/20261019-103142-681253_life_stage_convnext_tiny_320_seed20261021/best.pt"
+  ],
+  "tta": "none"
+}

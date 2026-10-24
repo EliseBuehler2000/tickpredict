@@ -1,0 +1,1394 @@
+{
+  "title": "Blinded development-image review, followed by label/prediction comparison",
+  "review_date": "2026-10-19",
+  "scope": {
+    "reviewed_cases": 30,
+    "first_round_errors_reviewed": 15,
+    "correct_controls_reviewed": 15,
+    "all_dev_n": 110,
+    "all_dev_correct": 95,
+    "all_dev_errors": 15,
+    "test_images_used": 0,
+    "labels_changed": 0,
+    "model_training_preprocessing_code_changed": false,
+    "gpu_used_for_review": false,
+    "development_cases_excluded_by_review": 0,
+    "train_dev_manifest_changed": false
+  },
+  "provenance": {
+    "sources": {
+      "protocol": {
+        "path": "experiments/visual_review/protocol.json",
+        "sha256": "2a9ad555933c484071e04bf520015c160560f66ea6e9eb4225bc670aef930e3b"
+      },
+      "mapping": {
+        "path": "experiments/visual_review/mapping_after_review.json",
+        "sha256": "854e4607540a81763bc46cf683178889a3c8318d90737763e572d3992f6622fd"
+      },
+      "reviewer_a": {
+        "path": "experiments/visual_review/reviewer_a.json",
+        "sha256": "1de442629b05b559c62de3a69e28ea634d0bc4eadcf4379b34d13c40d2a9843c"
+      },
+      "reviewer_b": {
+        "path": "experiments/visual_review/reviewer_b.json",
+        "sha256": "37dea8c26a6f6e57f58189f0db4b18578da92f9050d78ee4b9d68852669f9159"
+      },
+      "train_dev_manifest": {
+        "path": "data/penn_train_dev.csv",
+        "sha256": "c758ff23b8c2de782d5ca03c56ecf9b49a9897dbb2258538ab3e094856c3dfd3"
+      },
+      "validation": {
+        "path": "experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384/validation.json",
+        "sha256": "623ff3338dda15580bfdd9b3239dd8d6827e3fbd973dfe34f4cf926e8f88ff70"
+      },
+      "model_provenance": {
+        "path": "experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384/provenance.json",
+        "sha256": "fd7996d0d3a83e84fb84a468233f272e584c67d2ab7a3d731f01c0e3cc798995"
+      }
+    },
+    "model": {
+      "run": "experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384",
+      "checkpoint": "experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384/best.pt",
+      "architecture": "efficientnet_v2_s",
+      "target": "engorgement_level",
+      "seed": 20261019,
+      "checkpoint_epoch": 13,
+      "selection_metric": "accuracy",
+      "development_correct": 95,
+      "development_n": 110,
+      "development_accuracy": 0.8636363636363636,
+      "class_order": [
+        "fully engorged",
+        "semi-engorged",
+        "unengorged"
+      ],
+      "preprocessing": {
+        "exif_transpose": true,
+        "image_size": 384,
+        "bottom_crop_fraction": 0.04,
+        "resize": "letterbox",
+        "resampling": "lanczos",
+        "pad_color": [
+          240,
+          240,
+          240
+        ],
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "initial_weights": {
+        "pretrained": true,
+        "enum": "EfficientNet_V2_S_Weights.IMAGENET1K_V1",
+        "source": "https://download.pytorch.org/models/efficientnet_v2_s-dd5fe13b.pth",
+        "sha256": "dd5fe13b1d60ec15317ccc8ca158186e134d3366c3dde9cb9a4e301f2dc66c74"
+      },
+      "manifest_sha256_recorded_by_run": "c758ff23b8c2de782d5ca03c56ecf9b49a9897dbb2258538ab3e094856c3dfd3",
+      "modeling_sha256_recorded_by_run": "4c37644b5b48837ef5382f95e9c671653a9ba3d68926a34c7c9640b342557cf9",
+      "script_sha256_recorded_by_run": "411b9d57d7d00a827431480d263df85fec38ebb2f1e8fab459ace61d43267516",
+      "scores_are_uncalibrated": true,
+      "checkpoint_sha256": "e906b784d7854f606280776683725cc217ce6daefff94d60a927851ffe1aa2d5"
+    },
+    "images": "Only approved development copies case_01.jpg through case_30.jpg and blind_sheet_01.jpg through blind_sheet_05.jpg were viewed. Tick IDs resolve original source paths and source hashes through the hashed train/dev manifest.",
+    "review_method": "Two parallel reviewers recorded morphology before accessing mapping, labels, predictions, or error status. Reviewer A inspected all contact sheets and selected original details; reviewer B inspected all 30 originals. This report joins their frozen reports after completion.",
+    "reviewer_a_original_detail_count": 19,
+    "reviewer_b_original_detail_count": 30,
+    "verification": "Independent read-only verification confirmed all mapping labels, predictions, stages, and probability vectors; exactly all 15 first-round errors plus 15 correct development controls; all 110 validation IDs match the manifest development IDs; manifest hash matches model provenance."
+  },
+  "interpretation": {
+    "observations_are_not_replacement_labels": "Limited/intermediate/marked describe apparent projected morphology. They do not equal Penn unengorged/semi-engorged/fully engorged classes and are not verified replacement labels. No labels changed.",
+    "clarity": "Reviewer A clear/ambiguous refers to visibility of the stated structural observation, not certainty of a biological grade. Reviewer B broad confidence is distinct from exact grade confidence.",
+    "resize": "Reviewer A resize risk is a qualitative expectation for full-frame resizing to 320 or 384 pixels; no actual resized-image experiment was performed. The evaluated model uses 384-pixel letterbox with 4% bottom crop, so these flags are hypotheses rather than measured preprocessing failures.",
+    "exact_grading": "Reviewer B certified no exact flat/slight/intermediate/full grade from these single photographs. This conservative statement is not evidence that every image is unusable.",
+    "disagreements": "Both observations remain recorded; no retrospective consensus class or relabeling was imposed after unblinding."
+  },
+  "descriptive_flags_in_selected_set": {
+    "errors": {
+      "n": 15,
+      "reviewer_a": {
+        "view": {
+          "dorsal": 10,
+          "oblique": 3,
+          "ventral": 2
+        },
+        "evidence_clarity": {
+          "clear": 6,
+          "ambiguous": 9
+        },
+        "resize_risk": {
+          "high": 5,
+          "moderate": 9,
+          "low": 1
+        }
+      },
+      "reviewer_b": {
+        "expansion_confidence": {
+          "moderate": 6,
+          "high": 3,
+          "low": 6
+        },
+        "broad_morphology_confident": 7,
+        "exact_grade_confident": 0
+      },
+      "expansion_disagreement_cases": [
+        "case_03",
+        "case_07",
+        "case_11",
+        "case_22",
+        "case_27",
+        "case_30"
+      ]
+    },
+    "controls": {
+      "n": 15,
+      "reviewer_a": {
+        "view": {
+          "dorsal": 11,
+          "oblique": 4
+        },
+        "evidence_clarity": {
+          "clear": 7,
+          "ambiguous": 8
+        },
+        "resize_risk": {
+          "low": 2,
+          "moderate": 3,
+          "high": 10
+        }
+      },
+      "reviewer_b": {
+        "expansion_confidence": {
+          "high": 4,
+          "moderate": 8,
+          "low": 3
+        },
+        "broad_morphology_confident": 10,
+        "exact_grade_confident": 0
+      },
+      "expansion_disagreement_cases": [
+        "case_04",
+        "case_05",
+        "case_13",
+        "case_25",
+        "case_26"
+      ]
+    }
+  },
+  "reviewer_agreement": {
+    "expansion_agreement_n": 19,
+    "n": 30,
+    "disagreement_n": 11,
+    "disagreement_groups": [
+      {
+        "a": "intermediate",
+        "b": "limited",
+        "cases": [
+          "case_03",
+          "case_04",
+          "case_05",
+          "case_13",
+          "case_22",
+          "case_26",
+          "case_27",
+          "case_30"
+        ]
+      },
+      {
+        "a": "marked",
+        "b": "not_assessable",
+        "cases": [
+          "case_07",
+          "case_11"
+        ]
+      },
+      {
+        "a": "limited",
+        "b": "intermediate",
+        "cases": [
+          "case_25"
+        ]
+      }
+    ],
+    "meaning": "The 11 disagreements include visibly folded bodies with readable proportions as well as damaged specimens. They show rubric/boundary uncertainty, not evidence that original labels are wrong."
+  },
+  "stage_by_engorgement_first_round": [
+    {
+      "life_stage": "adult female",
+      "engorgement_level": "fully engorged",
+      "train_n": 13,
+      "dev_n": 9,
+      "dev_errors": 0,
+      "dev_error_predictions": {},
+      "error_tick_ids": []
+    },
+    {
+      "life_stage": "adult female",
+      "engorgement_level": "semi-engorged",
+      "train_n": 7,
+      "dev_n": 5,
+      "dev_errors": 4,
+      "dev_error_predictions": {
+        "unengorged": 3,
+        "fully engorged": 1
+      },
+      "error_tick_ids": [
+        "283062",
+        "285002",
+        "290148",
+        "290639"
+      ]
+    },
+    {
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged",
+      "train_n": 36,
+      "dev_n": 21,
+      "dev_errors": 1,
+      "dev_error_predictions": {
+        "fully engorged": 1
+      },
+      "error_tick_ids": [
+        "290727"
+      ]
+    },
+    {
+      "life_stage": "nymph",
+      "engorgement_level": "fully engorged",
+      "train_n": 9,
+      "dev_n": 7,
+      "dev_errors": 2,
+      "dev_error_predictions": {
+        "semi-engorged": 2
+      },
+      "error_tick_ids": [
+        "288819",
+        "291891"
+      ]
+    },
+    {
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged",
+      "train_n": 155,
+      "dev_n": 63,
+      "dev_errors": 5,
+      "dev_error_predictions": {
+        "unengorged": 3,
+        "fully engorged": 2
+      },
+      "error_tick_ids": [
+        "285053",
+        "286235",
+        "286398",
+        "288899",
+        "291327"
+      ]
+    },
+    {
+      "life_stage": "nymph",
+      "engorgement_level": "unengorged",
+      "train_n": 21,
+      "dev_n": 5,
+      "dev_errors": 3,
+      "dev_error_predictions": {
+        "semi-engorged": 3
+      },
+      "error_tick_ids": [
+        "288031",
+        "291213",
+        "291692"
+      ]
+    }
+  ],
+  "findings": [
+    "Ambiguous evidence was common in both selected groups (A: 9/15 errors, 8/15 controls). Oblique views also occurred in both (3/15 errors, 4/15 controls). Both ventral cases (23 and 28) were errors, but two selected observations do not establish an association or causal explanation.",
+    "High qualitative resize risk was more common among controls (10/15) than errors (5/15). Small occupancy and potential detail loss therefore do not explain the observed errors by themselves.",
+    "Bodies with damage, folds, or irregular margins occur among errors (07, 11, 12, 20) and correct controls (06). Large projected area does not reliably reveal intact volume. Ventral cases 23 and 28 lack an exposed dorsal shield in both reviews.",
+    "Some model-label disagreements remain despite readable anatomy: cases 03 and 22 have clear structural evidence under reviewer A, while reviewers disagree on limited versus intermediate morphology. Cases 18 and 20 both appear markedly expanded to both reviewers but carry semi-engorged labels; case 20 is damaged. These are unresolved boundaries, not confirmed annotation errors.",
+    "The smallest training joint groups are adult female semi-engorged (7 train, 5 dev; 4/5 first-round errors) and nymph fully engorged (9 train, 7 dev; 2/7 errors). Nymph unengorged has only 5 dev cases (21 train; 3/5 errors). These sparse supports warrant retaining subgroup counts beside aggregate metrics.",
+    "The dominant nymph semi-engorged group has 155 train and 63 dev cases, with 5/63 errors. Adult female fully engorged has 13 train and 9 dev, with 0/9 errors. Small-group success or failure is unstable, and the chosen model was selected using this development set."
+  ],
+  "decisions_and_testable_implications": [
+    "Retain all original labels and all development cases in evaluation. Preserve disagreement and damaged-view uncertainty explicitly.",
+    "Assess the queued crop and auxiliary-stage experiments against unchanged development predictions and the rare joint subgroups; this review alone does not justify adopting a new preprocessing rule or model.",
+    "A future anatomy-focused crop should retain the entire shield and abdominal outline, preserve aspect ratio, and be audited on damaged, ventral, low-occupancy, and glare-heavy images. Higher resolution cannot recover hidden anatomy or saturated detail.",
+    "Keep view, shield visibility, quality, and specimen-integrity flags separate from the biological target. If abstention is later evaluated, report coverage and performance over the full development set without silently excluding cases.",
+    "Use uncertainty-aware outputs for adjacent-class boundaries and investigate stage-conditioned errors without turning stage or background into a deterministic class shortcut. No code or label changes are made by this review."
+  ],
+  "limitations": [
+    "This is a deliberately error-enriched audit: all 15 errors from 110 development cases plus 15 of 95 correct cases. Its 50% error fraction and visual flag proportions are not prevalence estimates.",
+    "Protocol describes controls as matched_or_random_correct_controls but does not provide matching rules or sampling probabilities. No matched analysis, significance claim, or causal association is justified.",
+    "Reviewers share the supplied photographs and broad instructions; their agreement is not an independent biological reference. Reviewer A inspected selected originals while reviewer B inspected all originals.",
+    "Single views, deformation, unknown intact thickness, glare, and unclear boundaries limit interpretation. Color, apparent size, and damage cannot verify engorgement, feeding time, or disease risk.",
+    "The model and audit were chosen on development data; repeated development analysis can overfit decisions. No test images were viewed or used.",
+    "Rare joint subgroup denominators are small. The descriptive first-round errors are not new held-out performance estimates, and no reviewed case was removed from development metrics."
+  ],
+  "cases": [
+    {
+      "case_id": "case_01",
+      "tick_id": "286398",
+      "development_label": "semi-engorged",
+      "life_stage": "nymph",
+      "prediction": "unengorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.9121193289756775,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "limited",
+        "clarity": "clear",
+        "blur": "mild",
+        "glare": "small highlights",
+        "resize_risk": "high",
+        "observation": "Large, sharply bounded anterior scutum with a relatively short, narrow posterior extension; posterior surface is folded rather than smoothly rounded."
+      },
+      "reviewer_b": {
+        "view": "Predominantly dorsal; anterior toward lower right.",
+        "expansion": "limited",
+        "confidence": "moderate",
+        "shield": "Distinct dark oval shield is well separated from the posterior body.",
+        "abdomen": "Full projected outline visible; narrow translucent posterior region with folds and longitudinal markings.",
+        "impediments": [
+          "Green cast",
+          "Mild softness",
+          "Surrounding scratches and debris"
+        ],
+        "integrity": "Most legs absent or reduced to short stumps; possible handling-related distortion.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_02",
+      "tick_id": "291692",
+      "development_label": "unengorged",
+      "life_stage": "nymph",
+      "prediction": "semi-engorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.9457554817199707,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "intermediate",
+        "clarity": "clear",
+        "blur": "mild",
+        "glare": "localized along shield and body margins",
+        "resize_risk": "moderate",
+        "observation": "Prominent elongated scutum with a visible posterior and lateral abdominal band; abdomen outline remains narrow and oval."
+      },
+      "reviewer_b": {
+        "view": "Dorsal with mild tilt; anterior upward.",
+        "expansion": "intermediate",
+        "confidence": "moderate",
+        "shield": "Large dark shield with a visible posterior boundary; small reflective spots.",
+        "abdomen": "Complete oval abdomen; smooth pale side margins and posterior region extend beyond the shield.",
+        "impediments": [
+          "Green cast",
+          "Local glare",
+          "Mild edge softness"
+        ],
+        "integrity": "Main body outline appears continuous; legs folded around the margins.",
+        "broad_morphology_confident": false,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_03",
+      "tick_id": "283062",
+      "development_label": "semi-engorged",
+      "life_stage": "adult female",
+      "prediction": "unengorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.9825841784477234,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "intermediate",
+        "clarity": "clear",
+        "blur": "mild",
+        "glare": "mild",
+        "resize_risk": "moderate",
+        "observation": "Posterior abdomen extends substantially beyond a prominent scutum but stays near its width; posterior folds and flattened-looking surface visible."
+      },
+      "reviewer_b": {
+        "view": "Dorsal, mildly oblique; anterior toward lower right.",
+        "expansion": "limited",
+        "confidence": "high",
+        "shield": "Clear dark shield and posterior boundary.",
+        "abdomen": "Complete reddish posterior body with prominent wrinkles and grooves; no conspicuous bulbous silhouette.",
+        "impediments": [
+          "Some legs cropped",
+          "Minor debris",
+          "Mild uneven lighting"
+        ],
+        "integrity": "Body outline appears intact.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": false
+    },
+    {
+      "case_id": "case_04",
+      "tick_id": "285514",
+      "development_label": "unengorged",
+      "life_stage": "adult female",
+      "prediction": "unengorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.9780797958374023,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "intermediate",
+        "clarity": "clear",
+        "blur": "low",
+        "glare": "localized shield highlights",
+        "resize_risk": "low",
+        "observation": "Broad posterior extension behind well-bounded scutum, with visible creasing and a relatively flat-looking perimeter."
+      },
+      "reviewer_b": {
+        "view": "Dorsal with modest tilt; anterior toward upper right/right.",
+        "expansion": "limited",
+        "confidence": "high",
+        "shield": "Shield clearly visible and contrasts with the reddish abdomen.",
+        "abdomen": "Broad, wrinkled posterior region and body margin are visible.",
+        "impediments": [
+          "Peripheral legs cropped",
+          "Glare on legs and shield",
+          "Anterior partly obscured by appendages"
+        ],
+        "integrity": "Body outline appears intact; front structures partly obscured.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": false
+    },
+    {
+      "case_id": "case_05",
+      "tick_id": "289815",
+      "development_label": "unengorged",
+      "life_stage": "adult female",
+      "prediction": "unengorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.9460846185684204,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "intermediate",
+        "clarity": "clear",
+        "blur": "low",
+        "glare": "moderate on scutum",
+        "resize_risk": "low",
+        "observation": "Rounded posterior outline extends beyond a large anterior scutum; pronounced posterior creases are visible."
+      },
+      "reviewer_b": {
+        "view": "Dorsal; anterior toward lower left.",
+        "expansion": "limited",
+        "confidence": "high",
+        "shield": "Large dark shield clearly visible, with specular highlights.",
+        "abdomen": "Complete reddish posterior outline; abundant folds and surface texture.",
+        "impediments": [
+          "Shield glare",
+          "Mild softness"
+        ],
+        "integrity": "Most appendages and some anterior structures appear absent or truncated.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": false
+    },
+    {
+      "case_id": "case_06",
+      "tick_id": "289422",
+      "development_label": "fully engorged",
+      "life_stage": "nymph",
+      "prediction": "fully engorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.915622353553772,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "marked",
+        "clarity": "ambiguous",
+        "blur": "mild",
+        "glare": "bright scutum patch",
+        "resize_risk": "moderate",
+        "observation": "Very large posterior body relative to small anterior scutum. Deep discontinuities/tears and missing edge material make intact-body shape uncertain."
+      },
+      "reviewer_b": {
+        "view": "Dorsal; anterior toward lower left.",
+        "expansion": "marked",
+        "confidence": "high",
+        "shield": "Small anterior shield clearly distinct from a much larger abdomen.",
+        "abdomen": "Large elongated abdominal region dominates the image; multiple deep splits interrupt the posterior and right margins.",
+        "impediments": [
+          "Green cast",
+          "Mild blur",
+          "Bright linear background reflection"
+        ],
+        "integrity": "Obvious large splits/tears in the body envelope; substantial damage.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_07",
+      "tick_id": "286235",
+      "development_label": "semi-engorged",
+      "life_stage": "nymph",
+      "prediction": "fully engorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.7070987224578857,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "marked",
+        "clarity": "ambiguous",
+        "blur": "mild",
+        "glare": "moderate streaks along body",
+        "resize_risk": "high",
+        "observation": "Elongated posterior body greatly exceeds small anterior scutum, but body looks collapsed or irregular and a dark mass obscures the right side."
+      },
+      "reviewer_b": {
+        "view": "Likely dorsal but deformed/tilted; anterior downward.",
+        "expansion": "not_assessable",
+        "confidence": "low",
+        "shield": "Dark anterior oval plate visible; local focus is soft.",
+        "abdomen": "Elongated translucent body with creases and an irregular dark protruding mass on the right; natural contour is uncertain.",
+        "impediments": [
+          "Local glare",
+          "Soft focus",
+          "Fibers crossing or adjacent to specimen"
+        ],
+        "integrity": "Strong deformation, apparent disruption of the body surface, and irregular protruding material.",
+        "broad_morphology_confident": false,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": false
+    },
+    {
+      "case_id": "case_08",
+      "tick_id": "285562",
+      "development_label": "semi-engorged",
+      "life_stage": "adult female",
+      "prediction": "semi-engorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.49879342317581177,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "limited",
+        "clarity": "clear",
+        "blur": "mild",
+        "glare": "small shield highlight",
+        "resize_risk": "high",
+        "observation": "Scutum remains a large portion of the narrow body; posterior extension is modest with prominent longitudinal folds."
+      },
+      "reviewer_b": {
+        "view": "Dorsal; anterior downward.",
+        "expansion": "limited",
+        "confidence": "moderate",
+        "shield": "Dark shield has a clear boundary and occupies a substantial part of the body.",
+        "abdomen": "Entire posterior outline visible; narrow-to-moderate extension with pronounced longitudinal folds.",
+        "impediments": [
+          "Green cast",
+          "Mild peripheral softness"
+        ],
+        "integrity": "Several appendages appear truncated; body outline is mostly continuous.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_09",
+      "tick_id": "291213",
+      "development_label": "unengorged",
+      "life_stage": "nymph",
+      "prediction": "semi-engorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.8026512265205383,
+      "reviewer_a": {
+        "view": "oblique",
+        "expansion": "intermediate",
+        "clarity": "ambiguous",
+        "blur": "mild",
+        "glare": "strong shield hotspot and bright background",
+        "resize_risk": "moderate",
+        "observation": "Dorsal scutum appears visible with moderate posterior extension, but tilt and bright backlighting alter the projected outline."
+      },
+      "reviewer_b": {
+        "view": "Dorsal with mild tilt; anterior toward upper left.",
+        "expansion": "intermediate",
+        "confidence": "moderate",
+        "shield": "Dark shield visible; a bright spot obscures part of its lower boundary.",
+        "abdomen": "Pale posterior and lateral abdominal regions are visible with a smooth rounded outline.",
+        "impediments": [
+          "Strong background overexposure",
+          "Shield glare",
+          "Low contrast/translucency",
+          "Fibers and a nearby slide edge"
+        ],
+        "integrity": "Body outline appears continuous; legs curled around it.",
+        "broad_morphology_confident": false,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_10",
+      "tick_id": "285053",
+      "development_label": "semi-engorged",
+      "life_stage": "nymph",
+      "prediction": "unengorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.84088534116745,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "intermediate",
+        "clarity": "clear",
+        "blur": "mild",
+        "glare": "strong on posterior/lateral body",
+        "resize_risk": "moderate",
+        "observation": "Large anterior scutum and a modest rounded posterior band; scutum-body outline is visible despite highlights."
+      },
+      "reviewer_b": {
+        "view": "Dorsal with mild tilt; anterior toward upper left.",
+        "expansion": "intermediate",
+        "confidence": "low",
+        "shield": "Shield texture and outline visible except for glare near its posterior edge.",
+        "abdomen": "Complete pale abdominal crescent and posterior region, but a strong highlight obscures surface detail.",
+        "impediments": [
+          "Strong local abdominal glare",
+          "Dark uneven background",
+          "Soft body edge",
+          "Bright fiber and scratches"
+        ],
+        "integrity": "Main body outline appears continuous.",
+        "broad_morphology_confident": false,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_11",
+      "tick_id": "288899",
+      "development_label": "semi-engorged",
+      "life_stage": "nymph",
+      "prediction": "unengorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.7235333323478699,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "marked",
+        "clarity": "ambiguous",
+        "blur": "mild",
+        "glare": "strong edge reflections; purple illumination",
+        "resize_risk": "high",
+        "observation": "Long posterior body relative to a small anterior scutum, with irregular collapsed-looking folds and uneven lateral margins."
+      },
+      "reviewer_b": {
+        "view": "Likely dorsal; anterior downward; body distorted.",
+        "expansion": "not_assessable",
+        "confidence": "low",
+        "shield": "Small dark anterior shield-like plate visible.",
+        "abdomen": "Long membrane-like abdomen with central recessed/open-looking region, folds, and a disrupted posterior end.",
+        "impediments": [
+          "Strong purple cast",
+          "Reflective surface",
+          "Scratches and fibers",
+          "Mild blur"
+        ],
+        "integrity": "Severe apparent crushing/tearing or collapse of abdominal envelope.",
+        "broad_morphology_confident": false,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": false
+    },
+    {
+      "case_id": "case_12",
+      "tick_id": "291891",
+      "development_label": "fully engorged",
+      "life_stage": "nymph",
+      "prediction": "semi-engorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.600255012512207,
+      "reviewer_a": {
+        "view": "oblique",
+        "expansion": "marked",
+        "clarity": "ambiguous",
+        "blur": "mild",
+        "glare": "strong specular patches",
+        "resize_risk": "moderate",
+        "observation": "Broad domed-looking abdomen exceeds the small visible anterior scutum; irregular depressions and uneven outline complicate intact-shape interpretation."
+      },
+      "reviewer_b": {
+        "view": "Dorsal, somewhat oblique; anterior toward lower right.",
+        "expansion": "marked",
+        "confidence": "moderate",
+        "shield": "Small dark anterior shield clearly visible.",
+        "abdomen": "Broad rounded gray abdominal region much larger than the shield; contour and surface have irregular folds and dark patches.",
+        "impediments": [
+          "Specular highlights",
+          "Highly textured bubble-like background",
+          "Mild blur",
+          "Nearby fragments/debris"
+        ],
+        "integrity": "Irregular surface and nearby fragments raise concern for damage or distortion.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_13",
+      "tick_id": "292292",
+      "development_label": "unengorged",
+      "life_stage": "adult female",
+      "prediction": "unengorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.8548775911331177,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "intermediate",
+        "clarity": "clear",
+        "blur": "mild",
+        "glare": "localized highlights; purple cast",
+        "resize_risk": "moderate",
+        "observation": "Oval posterior extension beyond a well-defined anterior scutum; body width exceeds scutum but scutum remains prominent."
+      },
+      "reviewer_b": {
+        "view": "Dorsal; anterior upward.",
+        "expansion": "limited",
+        "confidence": "moderate",
+        "shield": "Dark anterior shield clearly separated from the red posterior region.",
+        "abdomen": "Full elongate reddish outline with an indented/creased posterior region; no large globular extension.",
+        "impediments": [
+          "Purple cast",
+          "Busy scratched/fibrous background",
+          "Moderate tick occupancy",
+          "Reflective spots"
+        ],
+        "integrity": "Body outline appears mostly intact.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": false
+    },
+    {
+      "case_id": "case_14",
+      "tick_id": "287120",
+      "development_label": "semi-engorged",
+      "life_stage": "nymph",
+      "prediction": "semi-engorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.3688294589519501,
+      "reviewer_a": {
+        "view": "oblique",
+        "expansion": "intermediate",
+        "clarity": "ambiguous",
+        "blur": "mild",
+        "glare": "severe nearby saturated reflection and body highlights",
+        "resize_risk": "high",
+        "observation": "Dorsal shield-like plate visible; rounded posterior/lateral band appreciable, but tilt and reflected light obscure part of the boundary."
+      },
+      "reviewer_b": {
+        "view": "Oblique dorsal/lateral view; anterior toward upper left.",
+        "expansion": "intermediate",
+        "confidence": "low",
+        "shield": "Dark shield visible but foreshortened, with a partly indistinct anterior boundary.",
+        "abdomen": "Pale rounded posterior body is visible; one side appears raised and partly translucent.",
+        "impediments": [
+          "Severe background glare/overexposure",
+          "Purple cast",
+          "Foreshortening",
+          "Some legs overlap the body",
+          "Mild blur"
+        ],
+        "integrity": "Main abdominal outline appears continuous.",
+        "broad_morphology_confident": false,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_15",
+      "tick_id": "283220",
+      "development_label": "semi-engorged",
+      "life_stage": "nymph",
+      "prediction": "semi-engorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.9482393860816956,
+      "reviewer_a": {
+        "view": "oblique",
+        "expansion": "intermediate",
+        "clarity": "ambiguous",
+        "blur": "mild",
+        "glare": "moderate shield glare",
+        "resize_risk": "high",
+        "observation": "Round pale abdomen extends beyond a distinct dark dorsal scutum, but specimen is tilted and foreshortened with a crowded anterior region."
+      },
+      "reviewer_b": {
+        "view": "Strongly oblique dorsal view; anterior toward upper right.",
+        "expansion": "intermediate",
+        "confidence": "low",
+        "shield": "Dark shield visible but tilted and partly overlapped near the anterior.",
+        "abdomen": "Rounded pale abdomen visible mainly to the left/below the shield; foreshortening limits dimensions.",
+        "impediments": [
+          "Small specimen within frame",
+          "Oblique angle",
+          "Soft focus",
+          "Fibers crossing appendages",
+          "Glare"
+        ],
+        "integrity": "Some appendages appear shortened; body is tilted.",
+        "broad_morphology_confident": false,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_16",
+      "tick_id": "288022",
+      "development_label": "semi-engorged",
+      "life_stage": "nymph",
+      "prediction": "semi-engorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.8988995552062988,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "intermediate",
+        "clarity": "ambiguous",
+        "blur": "moderate",
+        "glare": "diffuse haze",
+        "resize_risk": "high",
+        "observation": "Scutum is visible with posterior body extension of comparable width; surface and exact outline are softened by textured translucent material."
+      },
+      "reviewer_b": {
+        "view": "Predominantly dorsal; anterior toward lower right.",
+        "expansion": "intermediate",
+        "confidence": "low",
+        "shield": "Dark anterior shield visible, but the boundary is soft.",
+        "abdomen": "Broad pale posterior region; part of the perimeter blends with background and nearby legs.",
+        "impediments": [
+          "Low contrast",
+          "Soft focus",
+          "Textured substrate",
+          "Debris attached near anterior",
+          "Green cast"
+        ],
+        "integrity": "Debris obscures anterior structures; some appendages appear missing/truncated.",
+        "broad_morphology_confident": false,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_17",
+      "tick_id": "280623",
+      "development_label": "unengorged",
+      "life_stage": "nymph",
+      "prediction": "unengorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.7220391035079956,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "limited",
+        "clarity": "clear",
+        "blur": "mild",
+        "glare": "minor",
+        "resize_risk": "high",
+        "observation": "Large anterior scutum relative to a short narrow posterior extension, with conspicuous longitudinal folds."
+      },
+      "reviewer_b": {
+        "view": "Dorsal, slightly oblique; anterior toward lower left.",
+        "expansion": "limited",
+        "confidence": "moderate",
+        "shield": "Dark shield visible with a fairly distinct posterior boundary.",
+        "abdomen": "Narrow elongate posterior body with prominent dark longitudinal folds; complete outline.",
+        "impediments": [
+          "Small specimen occupancy",
+          "Mild blur",
+          "White textured background",
+          "Unrelated hair in background"
+        ],
+        "integrity": "Main body outline appears intact; legs are curled.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_18",
+      "tick_id": "285002",
+      "development_label": "semi-engorged",
+      "life_stage": "adult female",
+      "prediction": "fully engorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.9911171197891235,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "marked",
+        "clarity": "clear",
+        "blur": "low",
+        "glare": "strong shield and nearby substrate highlights",
+        "resize_risk": "moderate",
+        "observation": "Large elongated abdomen relative to a small anterior scutum, with both lateral and posterior extension clearly visible."
+      },
+      "reviewer_b": {
+        "view": "Dorsal; anterior toward lower right.",
+        "expansion": "marked",
+        "confidence": "high",
+        "shield": "Small dark shield clearly distinct from a large posterior body.",
+        "abdomen": "Large oval abdomen with a complete outline; broad transparent/yellow margins and internal dark patterns.",
+        "impediments": [
+          "Numerous scratches/fibers across body",
+          "Strong glare",
+          "Green/yellow cast",
+          "Reflective substrate"
+        ],
+        "integrity": "No obvious large tear; surface may be pressed against a transparent material.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_19",
+      "tick_id": "285726",
+      "development_label": "semi-engorged",
+      "life_stage": "nymph",
+      "prediction": "semi-engorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.9422625303268433,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "intermediate",
+        "clarity": "ambiguous",
+        "blur": "moderate",
+        "glare": "minor",
+        "resize_risk": "high",
+        "observation": "Rounded abdomen visibly wider and longer than the scutum, but weak illumination and soft outline limit confidence about finer relief."
+      },
+      "reviewer_b": {
+        "view": "Dorsal with modest tilt; anterior toward lower right.",
+        "expansion": "intermediate",
+        "confidence": "moderate",
+        "shield": "Dark anterior shield visible; boundary is moderately soft.",
+        "abdomen": "Broad rounded pale abdomen extends well beyond the shield, with a smooth outer contour.",
+        "impediments": [
+          "Underexposure",
+          "Low contrast",
+          "Soft focus",
+          "Green cast",
+          "Small-to-moderate specimen occupancy"
+        ],
+        "integrity": "Several appendages appear shortened; body margin mostly intact.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_20",
+      "tick_id": "291327",
+      "development_label": "semi-engorged",
+      "life_stage": "nymph",
+      "prediction": "fully engorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.9975602626800537,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "marked",
+        "clarity": "ambiguous",
+        "blur": "mild",
+        "glare": "localized scutum reflection; bright background",
+        "resize_risk": "moderate",
+        "observation": "Large folded posterior body relative to a small apparent anterior scutum; missing appendages and notched anterior/side margins indicate incomplete visible anatomy."
+      },
+      "reviewer_b": {
+        "view": "Dorsal; anterior toward lower right.",
+        "expansion": "marked",
+        "confidence": "moderate",
+        "shield": "Small dark anterior shield-like region visible, partly obscured by glare and missing front structures.",
+        "abdomen": "Large elongated abdominal region with a broad outline, deep longitudinal grooves, and irregular anterior/right margin.",
+        "impediments": [
+          "Uneven overexposure",
+          "Soft focus",
+          "Local glare",
+          "Green cast"
+        ],
+        "integrity": "Appendages and anterior structures largely absent; damaged or collapsed appearance.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_21",
+      "tick_id": "284150",
+      "development_label": "unengorged",
+      "life_stage": "nymph",
+      "prediction": "unengorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.6796947717666626,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "limited",
+        "clarity": "clear",
+        "blur": "mild",
+        "glare": "minor",
+        "resize_risk": "high",
+        "observation": "Narrow elongated body with prominent anterior scutum and short posterior extension; no strong lateral expansion apparent."
+      },
+      "reviewer_b": {
+        "view": "Likely dorsal; anterior toward upper right.",
+        "expansion": "limited",
+        "confidence": "moderate",
+        "shield": "An elongated dark dorsal region is visible, but a separate shield-versus-abdomen boundary is not secure.",
+        "abdomen": "Slender oval body with narrow pale margins; no pronounced bulbous extension.",
+        "impediments": [
+          "Small specimen occupancy",
+          "Mild blur",
+          "Low anatomical contrast",
+          "White textured background"
+        ],
+        "integrity": "Outline appears intact; appendages are folded.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_22",
+      "tick_id": "290148",
+      "development_label": "semi-engorged",
+      "life_stage": "adult female",
+      "prediction": "unengorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.9741476774215698,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "intermediate",
+        "clarity": "clear",
+        "blur": "low",
+        "glare": "localized bright scutum and limb highlights; purple cast",
+        "resize_risk": "low",
+        "observation": "Elongated posterior body extends beyond a large scutum while remaining relatively narrow; longitudinal wrinkles visible."
+      },
+      "reviewer_b": {
+        "view": "Dorsal; anterior downward.",
+        "expansion": "limited",
+        "confidence": "high",
+        "shield": "Distinct dark anterior shield with visible texture and boundary.",
+        "abdomen": "Elongated red posterior region, longitudinal wrinkles, and a relatively narrow complete contour.",
+        "impediments": [
+          "Strong purple/red cast",
+          "Small specular highlights",
+          "Minor substrate debris"
+        ],
+        "integrity": "Body outline appears intact.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": false
+    },
+    {
+      "case_id": "case_23",
+      "tick_id": "288819",
+      "development_label": "fully engorged",
+      "life_stage": "nymph",
+      "prediction": "semi-engorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.9044336080551147,
+      "reviewer_a": {
+        "view": "ventral",
+        "expansion": "not_assessable",
+        "clarity": "ambiguous",
+        "blur": "mild",
+        "glare": "moderate diffuse and localized body reflections",
+        "resize_risk": "high",
+        "observation": "Paired leg-base structures are visible on underside; dorsal scutum is not exposed, so requested relative expansion cannot be assessed."
+      },
+      "reviewer_b": {
+        "view": "Ventral/underside, mildly oblique; anterior toward lower left.",
+        "expansion": "not_assessable",
+        "confidence": "low",
+        "shield": "Dorsal shield is not visible; leg bases/ventral structures occupy the front.",
+        "abdomen": "Posterior outline visible, with pale underside and longitudinal folds; curled legs obscure part of margins.",
+        "impediments": [
+          "Wrong surface for dorsal shield comparison",
+          "Leg overlap",
+          "Glare",
+          "Moderate blur",
+          "Green cast"
+        ],
+        "integrity": "Body envelope appears mostly continuous.",
+        "broad_morphology_confident": false,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_24",
+      "tick_id": "284881",
+      "development_label": "semi-engorged",
+      "life_stage": "nymph",
+      "prediction": "semi-engorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.9570778012275696,
+      "reviewer_a": {
+        "view": "oblique",
+        "expansion": "intermediate",
+        "clarity": "ambiguous",
+        "blur": "mild",
+        "glare": "moderate scutum and anterior highlights; bright background",
+        "resize_risk": "high",
+        "observation": "Rounded abdomen extends beyond a visible dark dorsal scutum; slight tilt, foreshortening and crowded limbs complicate proportions."
+      },
+      "reviewer_b": {
+        "view": "Oblique dorsal view; anterior toward lower left.",
+        "expansion": "intermediate",
+        "confidence": "moderate",
+        "shield": "Dark rounded shield visible, with its anterior region partly crowded by legs.",
+        "abdomen": "Pale round abdomen clearly extends behind the shield; surface detail is washed out.",
+        "impediments": [
+          "Small specimen occupancy",
+          "Bright/washed-out background",
+          "Soft focus",
+          "Oblique angle",
+          "Fibers"
+        ],
+        "integrity": "Body outline appears continuous; legs cluster around the front.",
+        "broad_morphology_confident": false,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_25",
+      "tick_id": "281942",
+      "development_label": "semi-engorged",
+      "life_stage": "nymph",
+      "prediction": "semi-engorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.9290380477905273,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "limited",
+        "clarity": "ambiguous",
+        "blur": "mild",
+        "glare": "localized posterior highlight",
+        "resize_risk": "moderate",
+        "observation": "Large dark anterior scutum occupies most body length, with a narrow posterior/lateral margin; boundary partly softened by dark uneven illumination."
+      },
+      "reviewer_b": {
+        "view": "Dorsal with slight tilt; anterior toward upper right.",
+        "expansion": "intermediate",
+        "confidence": "moderate",
+        "shield": "Large dark shield visible, but its posterior boundary is somewhat blurred.",
+        "abdomen": "Complete oval abdomen with a pale posterior crescent and side margins; modest rounded fullness.",
+        "impediments": [
+          "Out-of-focus central body",
+          "Local glare",
+          "Some leg cropping",
+          "Green cast"
+        ],
+        "integrity": "Main body appears intact; legs folded at sides.",
+        "broad_morphology_confident": false,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": false
+    },
+    {
+      "case_id": "case_26",
+      "tick_id": "287553",
+      "development_label": "unengorged",
+      "life_stage": "adult female",
+      "prediction": "unengorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.9877239465713501,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "intermediate",
+        "clarity": "clear",
+        "blur": "low",
+        "glare": "bright shield patch",
+        "resize_risk": "high",
+        "observation": "Well-bounded prominent scutum with moderate posterior extension, abdomen remaining narrow and oval."
+      },
+      "reviewer_b": {
+        "view": "Dorsal; anterior upward.",
+        "expansion": "limited",
+        "confidence": "high",
+        "shield": "Clearly bounded dark shield.",
+        "abdomen": "Narrow reddish posterior abdomen with wrinkles; full body silhouette visible.",
+        "impediments": [
+          "Small specimen occupancy",
+          "Shield glare",
+          "Minor background debris"
+        ],
+        "integrity": "Some appendages absent/truncated; main body contour continuous.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": false
+    },
+    {
+      "case_id": "case_27",
+      "tick_id": "290639",
+      "development_label": "semi-engorged",
+      "life_stage": "adult female",
+      "prediction": "unengorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.7591572403907776,
+      "reviewer_a": {
+        "view": "dorsal",
+        "expansion": "intermediate",
+        "clarity": "ambiguous",
+        "blur": "severe",
+        "glare": "diffuse haze",
+        "resize_risk": "moderate",
+        "observation": "Broad posterior extension behind a prominent dark scutum; gross outline visible but fine relief and thickness are obscured."
+      },
+      "reviewer_b": {
+        "view": "Dorsal with slight tilt; anterior toward upper right.",
+        "expansion": "limited",
+        "confidence": "low",
+        "shield": "Dark shield and approximate edge visible through blur.",
+        "abdomen": "Broad reddish posterior outline visible, but texture and relief are poorly resolved.",
+        "impediments": [
+          "Severe defocus/haze",
+          "Low contrast",
+          "Possible material overlay",
+          "Peripheral appendage cropping"
+        ],
+        "integrity": "Integrity cannot be fully checked because of blur.",
+        "broad_morphology_confident": false,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": false
+    },
+    {
+      "case_id": "case_28",
+      "tick_id": "288031",
+      "development_label": "unengorged",
+      "life_stage": "nymph",
+      "prediction": "semi-engorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.8257526159286499,
+      "reviewer_a": {
+        "view": "ventral",
+        "expansion": "not_assessable",
+        "clarity": "ambiguous",
+        "blur": "moderate across body",
+        "glare": "many small reflections; purple illumination",
+        "resize_risk": "high",
+        "observation": "Strongly tilted underside with folded leg-base structures and pale posterior area; no dependable exposed dorsal scutum for comparison."
+      },
+      "reviewer_b": {
+        "view": "Ventral or steep ventrolateral view; anterior toward lower right.",
+        "expansion": "not_assessable",
+        "confidence": "low",
+        "shield": "Dorsal shield is not identifiable; ventral structures and leg bases dominate.",
+        "abdomen": "A pale rounded posterior region is partly visible behind a dark foreground body region, with uncertain contour/depth.",
+        "impediments": [
+          "Oblique underside view",
+          "Large fiber crossing body",
+          "Bubble-like artifacts",
+          "Purple cast",
+          "Local blur",
+          "Leg overlap"
+        ],
+        "integrity": "Body partly obscured and strongly tilted; damage cannot be reliably assessed.",
+        "broad_morphology_confident": false,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_29",
+      "tick_id": "282033",
+      "development_label": "fully engorged",
+      "life_stage": "nymph",
+      "prediction": "fully engorged",
+      "model_error": false,
+      "prediction_score_uncalibrated": 0.9713554382324219,
+      "reviewer_a": {
+        "view": "oblique",
+        "expansion": "marked",
+        "clarity": "ambiguous",
+        "blur": "moderate",
+        "glare": "multiple body highlights",
+        "resize_risk": "high",
+        "observation": "Very large rounded body compared with apparent small anterior dorsal plate; plate boundary is weak and body shows folds/dents, so ratio is tentative."
+      },
+      "reviewer_b": {
+        "view": "Probably oblique dorsal; anterior toward left. Surface identification is not fully secure.",
+        "expansion": "marked",
+        "confidence": "moderate",
+        "shield": "Small dark anterior region may be shield, but its border is poorly resolved.",
+        "abdomen": "Very large rounded dark abdomen dominates the body, with a full outer outline and folded/shiny surface.",
+        "impediments": [
+          "Low anatomical contrast",
+          "Soft focus",
+          "Strong specular highlights",
+          "Oblique angle",
+          "Green cast"
+        ],
+        "integrity": "No obvious large tear; substantial surface folds/indentations visible.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": true
+    },
+    {
+      "case_id": "case_30",
+      "tick_id": "290727",
+      "development_label": "unengorged",
+      "life_stage": "adult female",
+      "prediction": "fully engorged",
+      "model_error": true,
+      "prediction_score_uncalibrated": 0.7583892345428467,
+      "reviewer_a": {
+        "view": "oblique",
+        "expansion": "intermediate",
+        "clarity": "ambiguous",
+        "blur": "mild",
+        "glare": "strong along scutum/abdomen junction and lower margin",
+        "resize_risk": "moderate",
+        "observation": "Prominent anterior scutum with rounded posterior extension; tilt, irregular surface and a bright boundary streak complicate projected proportions."
+      },
+      "reviewer_b": {
+        "view": "Dorsal, slightly tilted; anterior toward left.",
+        "expansion": "limited",
+        "confidence": "moderate",
+        "shield": "Distinct dark shield, with extensive glare around its lower boundary.",
+        "abdomen": "Broad reddish posterior body with wrinkles and a complete rounded outline; no pronounced globular shape.",
+        "impediments": [
+          "Strong glare over shield/body boundary",
+          "Scratches/fibers across specimen",
+          "Peripheral anterior cropping",
+          "Green cast"
+        ],
+        "integrity": "Many appendages are absent or hidden; body outline mostly continuous.",
+        "broad_morphology_confident": true,
+        "exact_grade_confident": false
+      },
+      "expansion_agreement": false
+    }
+  ],
+  "followup_training_review": {
+    "artifact": "experiments/visual_review/train_rare_group_review.json",
+    "sha256": "fa6c634e56b831e3b22181891b1e52c41a8d92e1a1c00c7e075610f231669bef",
+    "n": 14,
+    "rare_group_n": 7,
+    "controls_n": 7,
+    "selection": "All seven training adult female semi-engorged images plus seven unengorged adult female training controls, seed20261019. Label-aware, exploratory.",
+    "findings": "All seven rare examples expose dorsal anatomy with a readable scutum/body relation. Some show distinguishable posterior/lateral extent; 286815 overlaps control289909 in gross shape; irregular outlines/glare occur in others. Repetition can increase useful exposure and also repeat ambiguity/artifacts.",
+    "root_confirmation": "Inspected original training photos286815 and289909; broad elongated shape and prominent scutum overlap. No replacement grade assigned.",
+    "labels_changed": 0,
+    "dev_images_used_in_followup": 0,
+    "test_images_used": 0
+  }
+}

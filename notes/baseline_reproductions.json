@@ -1,0 +1,22 @@
+[
+  {
+    "target": "life_stage",
+    "run": "experiments/reproductions/20261019-095114-452402_life_stage",
+    "completion": {
+      "status": "completed",
+      "best_validation_balanced_accuracy": 0.8809523809523809,
+      "epochs": 12,
+      "smoke_only": false
+    }
+  },
+  {
+    "target": "engorgement_level",
+    "run": "experiments/reproductions/20261019-095328-282309_engorgement_level",
+    "completion": {
+      "status": "completed",
+      "best_validation_balanced_accuracy": 0.7392533936651584,
+      "epochs": 7,
+      "smoke_only": false
+    }
+  }
+]

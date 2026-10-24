@@ -1,0 +1,1127 @@
+{
+  "balanced_accuracy": 0.7441553544494721,
+  "confusion_matrix": [
+    [
+      14,
+      0,
+      2
+    ],
+    [
+      10,
+      40,
+      18
+    ],
+    [
+      2,
+      4,
+      20
+    ]
+  ],
+  "classes": [
+    "fully engorged",
+    "semi-engorged",
+    "unengorged"
+  ],
+  "predictions": [
+    {
+      "tick_id": "279926",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.05770569667220116,
+        0.8513416647911072,
+        0.09095264971256256
+      ]
+    },
+    {
+      "tick_id": "280444",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.014011425897479057,
+        0.09166412055492401,
+        0.8943244814872742
+      ]
+    },
+    {
+      "tick_id": "280623",
+      "true": "unengorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.013645847328007221,
+        0.5317921042442322,
+        0.45456206798553467
+      ]
+    },
+    {
+      "tick_id": "281272",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.16350464522838593,
+        0.3871118426322937,
+        0.44938355684280396
+      ]
+    },
+    {
+      "tick_id": "281789",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.11475816369056702,
+        0.74537593126297,
+        0.1398659199476242
+      ]
+    },
+    {
+      "tick_id": "281942",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.0882110521197319,
+        0.3946009874343872,
+        0.5171878933906555
+      ]
+    },
+    {
+      "tick_id": "282023",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.07167863100767136,
+        0.09576079994440079,
+        0.832560658454895
+      ]
+    },
+    {
+      "tick_id": "282033",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9850989580154419,
+        0.013818944804370403,
+        0.001082168659195304
+      ]
+    },
+    {
+      "tick_id": "282250",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.28031885623931885,
+        0.6193698048591614,
+        0.10031130909919739
+      ]
+    },
+    {
+      "tick_id": "282368",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.04365003854036331,
+        0.790962278842926,
+        0.16538767516613007
+      ]
+    },
+    {
+      "tick_id": "282478",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.2939181327819824,
+        0.5842008590698242,
+        0.12188100814819336
+      ]
+    },
+    {
+      "tick_id": "282675",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.05222976580262184,
+        0.6022884249687195,
+        0.345481812953949
+      ]
+    },
+    {
+      "tick_id": "282705",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.09286687523126602,
+        0.7113402485847473,
+        0.1957927942276001
+      ]
+    },
+    {
+      "tick_id": "283062",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.014998617582023144,
+        0.08192139863967896,
+        0.9030801057815552
+      ]
+    },
+    {
+      "tick_id": "283122",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.07527250796556473,
+        0.26531681418418884,
+        0.6594106554985046
+      ]
+    },
+    {
+      "tick_id": "283220",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.013864889740943909,
+        0.8547623753547668,
+        0.13137277960777283
+      ]
+    },
+    {
+      "tick_id": "283453",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03398599848151207,
+        0.8198404908180237,
+        0.14617344737052917
+      ]
+    },
+    {
+      "tick_id": "283587",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.1789599508047104,
+        0.3106190860271454,
+        0.5104209780693054
+      ]
+    },
+    {
+      "tick_id": "283819",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.09865181148052216,
+        0.7988187074661255,
+        0.10252943634986877
+      ]
+    },
+    {
+      "tick_id": "283821",
+      "true": "unengorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.4325786828994751,
+        0.17076054215431213,
+        0.3966607451438904
+      ]
+    },
+    {
+      "tick_id": "283830",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.008862555027008057,
+        0.5976690649986267,
+        0.3934684097766876
+      ]
+    },
+    {
+      "tick_id": "284128",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.051305267959833145,
+        0.7805870175361633,
+        0.16810770332813263
+      ]
+    },
+    {
+      "tick_id": "284150",
+      "true": "unengorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.0048564826138317585,
+        0.5662910342216492,
+        0.42885246872901917
+      ]
+    },
+    {
+      "tick_id": "284282",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9940422177314758,
+        0.004737676586955786,
+        0.0012200992787256837
+      ]
+    },
+    {
+      "tick_id": "284421",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9936275482177734,
+        0.0062098815105855465,
+        0.00016267252794932574
+      ]
+    },
+    {
+      "tick_id": "284425",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.013182501308619976,
+        0.14479370415210724,
+        0.8420237898826599
+      ]
+    },
+    {
+      "tick_id": "284445",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.034110747277736664,
+        0.8668451905250549,
+        0.0990440621972084
+      ]
+    },
+    {
+      "tick_id": "284510",
+      "true": "semi-engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.5179660320281982,
+        0.37551653385162354,
+        0.10651747137308121
+      ]
+    },
+    {
+      "tick_id": "284606",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.023622501641511917,
+        0.27121925354003906,
+        0.7051582932472229
+      ]
+    },
+    {
+      "tick_id": "284881",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.04608164727687836,
+        0.8410050272941589,
+        0.11291328072547913
+      ]
+    },
+    {
+      "tick_id": "284993",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.050455693155527115,
+        0.0861927717924118,
+        0.863351583480835
+      ]
+    },
+    {
+      "tick_id": "285002",
+      "true": "semi-engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9472940564155579,
+        0.035634446889162064,
+        0.017071565613150597
+      ]
+    },
+    {
+      "tick_id": "285053",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.09911992400884628,
+        0.477512389421463,
+        0.4233676791191101
+      ]
+    },
+    {
+      "tick_id": "285159",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.011522035114467144,
+        0.8316020965576172,
+        0.1568758487701416
+      ]
+    },
+    {
+      "tick_id": "285258",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.034035664051771164,
+        0.5989614129066467,
+        0.3670029044151306
+      ]
+    },
+    {
+      "tick_id": "285506",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.008047775365412235,
+        0.720312774181366,
+        0.2716394066810608
+      ]
+    },
+    {
+      "tick_id": "285514",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.02090003341436386,
+        0.03394412621855736,
+        0.9451557397842407
+      ]
+    },
+    {
+      "tick_id": "285562",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.013087996281683445,
+        0.4847317636013031,
+        0.5021802186965942
+      ]
+    },
+    {
+      "tick_id": "285726",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03282872214913368,
+        0.7370591759681702,
+        0.23011216521263123
+      ]
+    },
+    {
+      "tick_id": "285761",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.04238608479499817,
+        0.2478756159543991,
+        0.7097382545471191
+      ]
+    },
+    {
+      "tick_id": "285774",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9200931787490845,
+        0.07340092211961746,
+        0.006505902856588364
+      ]
+    },
+    {
+      "tick_id": "286015",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.04103480279445648,
+        0.37752097845077515,
+        0.5814442038536072
+      ]
+    },
+    {
+      "tick_id": "286183",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.145242378115654,
+        0.6512615084648132,
+        0.20349617302417755
+      ]
+    },
+    {
+      "tick_id": "286235",
+      "true": "semi-engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.7216729521751404,
+        0.20319192111492157,
+        0.07513505965471268
+      ]
+    },
+    {
+      "tick_id": "286236",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.444876492023468,
+        0.36900708079338074,
+        0.18611641228199005
+      ]
+    },
+    {
+      "tick_id": "286398",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.05165527015924454,
+        0.3669348955154419,
+        0.5814098119735718
+      ]
+    },
+    {
+      "tick_id": "286514",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.02146872505545616,
+        0.27999165654182434,
+        0.6985396146774292
+      ]
+    },
+    {
+      "tick_id": "286576",
+      "true": "semi-engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.6089729070663452,
+        0.32274550199508667,
+        0.06828156858682632
+      ]
+    },
+    {
+      "tick_id": "286752",
+      "true": "semi-engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.8489559292793274,
+        0.13431388139724731,
+        0.01673019863665104
+      ]
+    },
+    {
+      "tick_id": "286868",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9826238751411438,
+        0.01303304173052311,
+        0.0043431478552520275
+      ]
+    },
+    {
+      "tick_id": "286879",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9981669187545776,
+        0.0016911355778574944,
+        0.0001419038453605026
+      ]
+    },
+    {
+      "tick_id": "286999",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.2320229560136795,
+        0.5788196325302124,
+        0.1891574114561081
+      ]
+    },
+    {
+      "tick_id": "287067",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.33926621079444885,
+        0.48941919207572937,
+        0.17131464183330536
+      ]
+    },
+    {
+      "tick_id": "287120",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.06338828057050705,
+        0.1310267299413681,
+        0.8055849671363831
+      ]
+    },
+    {
+      "tick_id": "287439",
+      "true": "semi-engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9929534792900085,
+        0.006797324866056442,
+        0.0002491637133061886
+      ]
+    },
+    {
+      "tick_id": "287553",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.010535286739468575,
+        0.4937356114387512,
+        0.4957290589809418
+      ]
+    },
+    {
+      "tick_id": "287613",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9987371563911438,
+        0.0011809122515842319,
+        8.194439578801394e-05
+      ]
+    },
+    {
+      "tick_id": "287679",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.2466120719909668,
+        0.18475152552127838,
+        0.5686363577842712
+      ]
+    },
+    {
+      "tick_id": "287850",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.025220168754458427,
+        0.03488747403025627,
+        0.9398923516273499
+      ]
+    },
+    {
+      "tick_id": "287996",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9995056390762329,
+        0.000489650119561702,
+        4.659847490984248e-06
+      ]
+    },
+    {
+      "tick_id": "288022",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.0270184725522995,
+        0.3494754135608673,
+        0.6235060691833496
+      ]
+    },
+    {
+      "tick_id": "288026",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.8558492064476013,
+        0.13834790885448456,
+        0.00580291822552681
+      ]
+    },
+    {
+      "tick_id": "288031",
+      "true": "unengorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.322317510843277,
+        0.48142924904823303,
+        0.19625325500965118
+      ]
+    },
+    {
+      "tick_id": "288036",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.023451143875718117,
+        0.5388553738594055,
+        0.4376935660839081
+      ]
+    },
+    {
+      "tick_id": "288075",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.0400959737598896,
+        0.034220218658447266,
+        0.925683856010437
+      ]
+    },
+    {
+      "tick_id": "288172",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.12384705990552902,
+        0.353758841753006,
+        0.522394061088562
+      ]
+    },
+    {
+      "tick_id": "288293",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.01030351035296917,
+        0.45721954107284546,
+        0.5324769616127014
+      ]
+    },
+    {
+      "tick_id": "288297",
+      "true": "semi-engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.8933576941490173,
+        0.09498078376054764,
+        0.011661596596240997
+      ]
+    },
+    {
+      "tick_id": "288432",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.3633759021759033,
+        0.3767136335372925,
+        0.2599104642868042
+      ]
+    },
+    {
+      "tick_id": "288552",
+      "true": "semi-engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.8497775793075562,
+        0.13559894263744354,
+        0.014623600989580154
+      ]
+    },
+    {
+      "tick_id": "288614",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.23462635278701782,
+        0.501783013343811,
+        0.26359066367149353
+      ]
+    },
+    {
+      "tick_id": "288615",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.01069791428744793,
+        0.5600937604904175,
+        0.42920830845832825
+      ]
+    },
+    {
+      "tick_id": "288817",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.006740300450474024,
+        0.46799376606941223,
+        0.5252659320831299
+      ]
+    },
+    {
+      "tick_id": "288819",
+      "true": "fully engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.061861466616392136,
+        0.25908032059669495,
+        0.6790581941604614
+      ]
+    },
+    {
+      "tick_id": "288899",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.2177521288394928,
+        0.5361391305923462,
+        0.2461087554693222
+      ]
+    },
+    {
+      "tick_id": "288982",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.07700931280851364,
+        0.4635121822357178,
+        0.4594785273075104
+      ]
+    },
+    {
+      "tick_id": "289043",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.003718823892995715,
+        0.764741837978363,
+        0.2315393090248108
+      ]
+    },
+    {
+      "tick_id": "289171",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.06939256936311722,
+        0.4593535363674164,
+        0.471253901720047
+      ]
+    },
+    {
+      "tick_id": "289203",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.018777430057525635,
+        0.8162142634391785,
+        0.1650083363056183
+      ]
+    },
+    {
+      "tick_id": "289267",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.07304218411445618,
+        0.33949318528175354,
+        0.5874646306037903
+      ]
+    },
+    {
+      "tick_id": "289314",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.2551773190498352,
+        0.703396737575531,
+        0.04142598807811737
+      ]
+    },
+    {
+      "tick_id": "289422",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.7516527771949768,
+        0.19839146733283997,
+        0.04995573312044144
+      ]
+    },
+    {
+      "tick_id": "289511",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.1908971518278122,
+        0.550491452217102,
+        0.25861141085624695
+      ]
+    },
+    {
+      "tick_id": "289656",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.04575081914663315,
+        0.16142573952674866,
+        0.7928233742713928
+      ]
+    },
+    {
+      "tick_id": "289688",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.07195164263248444,
+        0.6176216006278992,
+        0.3104267716407776
+      ]
+    },
+    {
+      "tick_id": "289789",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.023556139320135117,
+        0.7309415340423584,
+        0.24550236761569977
+      ]
+    },
+    {
+      "tick_id": "289797",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.36271294951438904,
+        0.2054835855960846,
+        0.431803435087204
+      ]
+    },
+    {
+      "tick_id": "289815",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.3841136693954468,
+        0.06237202510237694,
+        0.553514301776886
+      ]
+    },
+    {
+      "tick_id": "289819",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9968464970588684,
+        0.0029073574114590883,
+        0.00024613479035906494
+      ]
+    },
+    {
+      "tick_id": "289862",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.027969900518655777,
+        0.2708814740180969,
+        0.7011486887931824
+      ]
+    },
+    {
+      "tick_id": "290043",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.04023480787873268,
+        0.5423814654350281,
+        0.4173837900161743
+      ]
+    },
+    {
+      "tick_id": "290075",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.04486192390322685,
+        0.2854694128036499,
+        0.6696686744689941
+      ]
+    },
+    {
+      "tick_id": "290148",
+      "true": "semi-engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.01393528375774622,
+        0.04164959117770195,
+        0.9444150328636169
+      ]
+    },
+    {
+      "tick_id": "290231",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.03764301538467407,
+        0.08396553993225098,
+        0.8783913850784302
+      ]
+    },
+    {
+      "tick_id": "290421",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.2562665045261383,
+        0.11793854087591171,
+        0.6257948875427246
+      ]
+    },
+    {
+      "tick_id": "290639",
+      "true": "semi-engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.8765226006507874,
+        0.056180689483881,
+        0.06729664653539658
+      ]
+    },
+    {
+      "tick_id": "290714",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.09246017783880234,
+        0.06660475581884384,
+        0.8409350514411926
+      ]
+    },
+    {
+      "tick_id": "290727",
+      "true": "unengorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.987316370010376,
+        0.0071970452554523945,
+        0.00548653956502676
+      ]
+    },
+    {
+      "tick_id": "291062",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9904264807701111,
+        0.00841294601559639,
+        0.0011606604093685746
+      ]
+    },
+    {
+      "tick_id": "291213",
+      "true": "unengorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.20924317836761475,
+        0.6111955642700195,
+        0.1795613020658493
+      ]
+    },
+    {
+      "tick_id": "291279",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.08496922254562378,
+        0.47975823283195496,
+        0.43527257442474365
+      ]
+    },
+    {
+      "tick_id": "291285",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.09880432486534119,
+        0.5140377283096313,
+        0.3871579170227051
+      ]
+    },
+    {
+      "tick_id": "291327",
+      "true": "semi-engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9993979930877686,
+        0.0005892229382880032,
+        1.2775712093571201e-05
+      ]
+    },
+    {
+      "tick_id": "291341",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.03468018025159836,
+        0.6253834366798401,
+        0.33993643522262573
+      ]
+    },
+    {
+      "tick_id": "291358",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.04780707508325577,
+        0.8310144543647766,
+        0.12117847055196762
+      ]
+    },
+    {
+      "tick_id": "291431",
+      "true": "semi-engorged",
+      "predicted": "semi-engorged",
+      "uncalibrated_probabilities": [
+        0.2262861430644989,
+        0.6574057936668396,
+        0.11630804091691971
+      ]
+    },
+    {
+      "tick_id": "291692",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.07236570119857788,
+        0.4405081570148468,
+        0.4871261715888977
+      ]
+    },
+    {
+      "tick_id": "291891",
+      "true": "fully engorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.23018543422222137,
+        0.37502315640449524,
+        0.3947913646697998
+      ]
+    },
+    {
+      "tick_id": "292292",
+      "true": "unengorged",
+      "predicted": "unengorged",
+      "uncalibrated_probabilities": [
+        0.007896487601101398,
+        0.03956068679690361,
+        0.952542781829834
+      ]
+    },
+    {
+      "tick_id": "293074",
+      "true": "fully engorged",
+      "predicted": "fully engorged",
+      "uncalibrated_probabilities": [
+        0.9858947992324829,
+        0.01213658694177866,
+        0.001968572847545147
+      ]
+    }
+  ]
+}

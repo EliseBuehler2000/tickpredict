@@ -1,0 +1,66 @@
+{
+  "name": "round1_20261019",
+  "purpose": "First predefined development comparison; no protected-test evaluation.",
+  "tasks": [
+    "engorgement_level",
+    "life_stage"
+  ],
+  "shared": {
+    "seed": 20261019,
+    "epochs": 24,
+    "patience": 6,
+    "min_epochs": 8,
+    "batch_size": 16,
+    "head_lr": 0.0003,
+    "backbone_lr": 2e-05,
+    "weight_decay": 0.001,
+    "fine_tune": "all",
+    "warmup_epochs": 2,
+    "class_weighting": "sqrt_inverse",
+    "label_smoothing": 0.05,
+    "augmentation": "moderate",
+    "selection_metric": "accuracy",
+    "scheduler": "cosine",
+    "bottom_crop_fraction": 0.04
+  },
+  "recipes": [
+    {
+      "name": "resnet18_320",
+      "architecture": "resnet18",
+      "image_size": 320,
+      "class_weighting": "none"
+    },
+    {
+      "name": "resnet50_320",
+      "architecture": "resnet50",
+      "image_size": 320
+    },
+    {
+      "name": "efficientnet_v2_s_384",
+      "architecture": "efficientnet_v2_s",
+      "image_size": 384,
+      "batch_size": 8
+    },
+    {
+      "name": "convnext_tiny_320",
+      "architecture": "convnext_tiny",
+      "image_size": 320,
+      "backbone_lr": 1e-05,
+      "batch_size": 8
+    }
+  ],
+  "selection": {
+    "primary": "validation_accuracy",
+    "tie_breaks": [
+      "validation_balanced_accuracy",
+      "lower_validation_nll"
+    ],
+    "promotion_rule": "At least baseline accuracy and no class loses more than one correct development prediction relative to the pinned model.",
+    "target": ">0.95 ordinary accuracy per task, on all images; independent test only after final selection.",
+    "additional_finalist_seeds": [
+      20261020,
+      20261021
+    ]
+  },
+  "rationale": "Image review found small ticks lose anatomy at224px; retain bottom4percent masking and full-frame letterboxing. Four recipes compare architecture/resolution/regularization, not an isolated architecture effect."
+}

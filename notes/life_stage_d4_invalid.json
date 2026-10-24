@@ -1,0 +1,9 @@
+{
+  "run": "experiments/evaluations/20261019-103653-911699_life_stage_d4",
+  "status": "invalid",
+  "reason": "Every predicted probability row was zero and did not sum to one. Not a valid model-performance result; evaluator validation bug under investigation.",
+  "included_in_selection": false,
+  "test_images_used": 0,
+  "corrected_evaluation": "experiments/evaluations/20261019-104725-480690_life_stage_d4",
+  "resolved": "CPU transfer before float64 conversion plus distribution validation; corrected107/110."
+}

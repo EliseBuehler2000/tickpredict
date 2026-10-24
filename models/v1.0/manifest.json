@@ -1,0 +1,164 @@
+{
+  "release": "v1.0",
+  "git_tag": "tickpredict-v1.0",
+  "date": "2026-10-19",
+  "status": "locked",
+  "basis_commit": "28363da686c7afeb9c26d7424bee768f64734858",
+  "user_decision": "Accept current performance and stop iterative tuning for this release.",
+  "models": {
+    "life_stage": {
+      "predictor": {
+        "target": "life_stage",
+        "checkpoints": [
+          "models/v1.0/life_stage/best.pt"
+        ],
+        "tta": "none"
+      },
+      "checkpoint_sha256": {
+        "models/v1.0/life_stage/best.pt": "eda382670dd9a590a5eaabce33d9d4434320ba2e1dea0b89a850dc686eda519d"
+      },
+      "development_result": {
+        "validation_file": "models/v1.0/life_stage/validation.json",
+        "correct": 107,
+        "n": 110,
+        "accuracy": 0.9727272727272728,
+        "balanced_accuracy": 0.9647619047619047,
+        "nll": 0.11509789917399622
+      },
+      "description": "ConvNeXt Tiny, 320 pixels"
+    },
+    "engorgement_level": {
+      "predictor": {
+        "target": "engorgement_level",
+        "checkpoints": [
+          "models/v1.0/engorgement_level/best.pt"
+        ],
+        "tta": "d4"
+      },
+      "checkpoint_sha256": {
+        "models/v1.0/engorgement_level/best.pt": "e906b784d7854f606280776683725cc217ce6daefff94d60a927851ffe1aa2d5"
+      },
+      "development_result": {
+        "validation_file": "models/v1.0/evaluations/engorgement_level_d4/validation.json",
+        "correct": 95,
+        "n": 110,
+        "accuracy": 0.8636363636363636,
+        "balanced_accuracy": 0.8629336349924586,
+        "nll": 0.5391458702395799
+      },
+      "description": "EfficientNet V2 S, 384 pixels, eight-view averaging"
+    }
+  },
+  "files": [
+    {
+      "source": "experiments/runs/20261019-101227-146487_life_stage_convnext_tiny_320/best.pt",
+      "release_path": "models/v1.0/life_stage/best.pt",
+      "sha256": "eda382670dd9a590a5eaabce33d9d4434320ba2e1dea0b89a850dc686eda519d",
+      "bytes": 111342099,
+      "tracked_in_git": false
+    },
+    {
+      "source": "experiments/runs/20261019-101227-146487_life_stage_convnext_tiny_320/provenance.json",
+      "release_path": "models/v1.0/life_stage/provenance.json",
+      "sha256": "155606ef0fa6c07211fe78da6509b1335e6c90eb9b2bf6b165f36bfe1716f98f",
+      "bytes": 2376,
+      "tracked_in_git": true
+    },
+    {
+      "source": "experiments/runs/20261019-101227-146487_life_stage_convnext_tiny_320/completion.json",
+      "release_path": "models/v1.0/life_stage/completion.json",
+      "sha256": "f5d5fbdeefbe9dc92c3fcbb83bdd65739c03be4aad698af82b3e21c2c0a440a9",
+      "bytes": 392,
+      "tracked_in_git": true
+    },
+    {
+      "source": "experiments/runs/20261019-101227-146487_life_stage_convnext_tiny_320/validation.json",
+      "release_path": "models/v1.0/life_stage/validation.json",
+      "sha256": "77a6f806dca3954f511269757ef8aa612ef40e77cf840e73dda6485d781974c8",
+      "bytes": 35622,
+      "tracked_in_git": true
+    },
+    {
+      "source": "experiments/runs/20261019-101227-146487_life_stage_convnext_tiny_320/history.json",
+      "release_path": "models/v1.0/life_stage/history.json",
+      "sha256": "0ff8eeb2195b142e50835d465ddaf67ef2f59ad256c4f38345eb3122749fc919",
+      "bytes": 10038,
+      "tracked_in_git": true
+    },
+    {
+      "source": "experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384/best.pt",
+      "release_path": "models/v1.0/engorgement_level/best.pt",
+      "sha256": "e906b784d7854f606280776683725cc217ce6daefff94d60a927851ffe1aa2d5",
+      "bytes": 81581155,
+      "tracked_in_git": false
+    },
+    {
+      "source": "experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384/provenance.json",
+      "release_path": "models/v1.0/engorgement_level/provenance.json",
+      "sha256": "fd7996d0d3a83e84fb84a468233f272e584c67d2ab7a3d731f01c0e3cc798995",
+      "bytes": 2456,
+      "tracked_in_git": true
+    },
+    {
+      "source": "experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384/completion.json",
+      "release_path": "models/v1.0/engorgement_level/completion.json",
+      "sha256": "f1f0f81aea52383afd479968f309c4a4d63875ea8811318680fff8b5718ffce6",
+      "bytes": 392,
+      "tracked_in_git": true
+    },
+    {
+      "source": "experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384/validation.json",
+      "release_path": "models/v1.0/engorgement_level/validation.json",
+      "sha256": "623ff3338dda15580bfdd9b3239dd8d6827e3fbd973dfe34f4cf926e8f88ff70",
+      "bytes": 42249,
+      "tracked_in_git": true
+    },
+    {
+      "source": "experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384/history.json",
+      "release_path": "models/v1.0/engorgement_level/history.json",
+      "sha256": "ae92813058d1f9e6c5d0a5bbf879c4219c3a2eefc6c5f53422ae58816b59dca1",
+      "bytes": 8761,
+      "tracked_in_git": true
+    },
+    {
+      "source": "experiments/evaluations/20261019-104736-240106_engorgement_level_d4/validation.json",
+      "release_path": "models/v1.0/evaluations/engorgement_level_d4/validation.json",
+      "sha256": "24320e3fc9228b802214bdc4565ca3725b6f818ff7011e270190288cb46fbd10",
+      "bytes": 42469,
+      "tracked_in_git": true
+    },
+    {
+      "source": "experiments/evaluations/20261019-104736-240106_engorgement_level_d4/provenance.json",
+      "release_path": "models/v1.0/evaluations/engorgement_level_d4/provenance.json",
+      "sha256": "3636acd4072a00a9da751a8ebc2e63e7701c0ad114c33c0167c80844272d30a3",
+      "bytes": 2306,
+      "tracked_in_git": true
+    },
+    {
+      "source": "experiments/evaluations/20261019-104736-240106_engorgement_level_d4/completion.json",
+      "release_path": "models/v1.0/evaluations/engorgement_level_d4/completion.json",
+      "sha256": "d10b7ff91dc215c48dbe3547e6edfde922f2d852fbd033af073c6f3179e771ee",
+      "bytes": 161,
+      "tracked_in_git": true
+    },
+    {
+      "source": "experiments/evaluations/20261019-104736-240106_engorgement_level_d4/predictor_spec.json",
+      "release_path": "models/v1.0/evaluations/engorgement_level_d4/predictor_spec.json",
+      "sha256": "dec42723b1ff897c93f3d20aac4938329376a6e6d837a74937870ef55d1c3250",
+      "bytes": 211,
+      "tracked_in_git": true
+    }
+  ],
+  "test_images_used": 0,
+  "confidence_calibrated": false,
+  "storage": "Code, metadata, and checksums are tracked in Git. Large best.pt files are preserved locally under models/v1.0 and excluded from Git; copy the full model folder when restoring elsewhere.",
+  "immutability": "Versioned copies; original experiment files retained. Selected weight hashes are checked by testing.ipynb and weight files are read-only. Future training writes experiment runs without updating this release.",
+  "verification": {
+    "release_files_sha256_verified": true,
+    "cpu_single_image_inference_both_tasks": true,
+    "inference_check_image_split": "train",
+    "inference_check_tick_id": "261406",
+    "notebook_default_execution": "passed; all training actions false, IMAGE_PATH None, saved outputs empty",
+    "test_images_used": 0
+  }
+}

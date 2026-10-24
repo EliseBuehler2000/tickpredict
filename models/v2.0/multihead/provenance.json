@@ -1,0 +1,178 @@
+{
+  "config": {
+    "name": "v2_convnext_tiny_384",
+    "seed": 20261019,
+    "architecture": "convnext_tiny",
+    "image_size": 384,
+    "bottom_crop_fraction": 0.04,
+    "epochs": 20,
+    "patience": 5,
+    "min_epochs": 6,
+    "warmup_epochs": 1,
+    "batch_size": 32,
+    "backbone_lr": 3e-05,
+    "head_lr": 0.0003,
+    "weight_decay": 0.01,
+    "fine_tune": "all",
+    "scheduler": "cosine",
+    "augmentation": "moderate",
+    "class_weighting": "sqrt_inverse",
+    "penn_repeat": 8,
+    "penn_species": false,
+    "head_weights": {
+      "species": 1.0,
+      "life_stage": 1.0,
+      "engorgement_level": 1.0
+    },
+    "num_workers": 8,
+    "mixed_precision": true
+  },
+  "smoke_only": false,
+  "device": "cuda",
+  "heads": {
+    "species": [
+      "Ixodes scapularis",
+      "Ixodes pacificus",
+      "Dermacentor variabilis",
+      "Amblyomma americanum",
+      "Amblyomma maculatum",
+      "Rhipicephalus sanguineus",
+      "Dermacentor andersoni",
+      "Haemaphysalis longicornis"
+    ],
+    "life_stage": [
+      "adult female",
+      "adult male",
+      "nymph"
+    ],
+    "engorgement_level": [
+      "fully engorged",
+      "semi-engorged",
+      "unengorged"
+    ]
+  },
+  "logit_rows": {
+    "species": [
+      0,
+      8
+    ],
+    "life_stage": [
+      8,
+      11
+    ],
+    "engorgement_level": [
+      11,
+      14
+    ]
+  },
+  "preprocessing": {
+    "exif_transpose": true,
+    "image_size": 384,
+    "bottom_crop_fraction": 0.04,
+    "resize": "letterbox",
+    "resampling": "lanczos",
+    "pad_color": [
+      240,
+      240,
+      240
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "label_counts": {
+    "train/species": {
+      "Amblyomma americanum": 2420,
+      "Amblyomma maculatum": 2198,
+      "Dermacentor andersoni": 296,
+      "Dermacentor variabilis": 2418,
+      "Haemaphysalis longicornis": 185,
+      "Ixodes pacificus": 1537,
+      "Ixodes scapularis": 2375,
+      "Rhipicephalus sanguineus": 412
+    },
+    "train/life_stage": {
+      "adult female": 5396,
+      "adult female or adult male": 562,
+      "adult male": 2937,
+      "nymph": 764
+    },
+    "train/engorgement_level": {
+      "fully engorged": 22,
+      "semi-engorged": 162,
+      "unengorged": 57
+    },
+    "dev/species": {
+      "Amblyomma americanum": 246,
+      "Amblyomma maculatum": 233,
+      "Dermacentor andersoni": 43,
+      "Dermacentor variabilis": 285,
+      "Haemaphysalis longicornis": 26,
+      "Ixodes pacificus": 122,
+      "Ixodes scapularis": 291,
+      "Rhipicephalus sanguineus": 58
+    },
+    "dev/life_stage": {
+      "adult female": 608,
+      "adult female or adult male": 60,
+      "adult male": 348,
+      "nymph": 135
+    },
+    "dev/engorgement_level": {
+      "fully engorged": 16,
+      "semi-engorged": 68,
+      "unengorged": 26
+    }
+  },
+  "class_weights": {
+    "species": [
+      0.7894368171691895,
+      0.9813236594200134,
+      0.7823859453201294,
+      0.7820625901222229,
+      0.8206072449684143,
+      1.895398736000061,
+      2.2361624240875244,
+      2.8285465240478516
+    ],
+    "life_stage": [
+      0.7496395707130432,
+      1.0161000490188599,
+      1.9922406673431396
+    ],
+    "engorgement_level": [
+      1.9108937978744507,
+      0.7041908502578735,
+      1.1871633529663086
+    ]
+  },
+  "train_n": 12082,
+  "dev_n": 1414,
+  "epoch_n": 13769,
+  "test_images_used": 0,
+  "penn_source_sha256": "65f46d9589d55216224ed7d44f8326d1629cfdaa620bc1f542155ee90f91f228",
+  "penn_manifest_sha256": "c758ff23b8c2de782d5ca03c56ecf9b49a9897dbb2258538ab3e094856c3dfd3",
+  "inaturalist_manifest_sha256": "90aa268359ee982137035e96de823096b934b2b4239a4368ec876faaad62f9ba",
+  "inaturalist_missing_photos": 0,
+  "torch": "2.14.1+cu130",
+  "torchvision": "0.29.1+cu130",
+  "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+  "initial_weights": {
+    "pretrained": true,
+    "enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+    "source": "https://download.pytorch.org/models/convnext_tiny-983f1562.pth",
+    "sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d"
+  },
+  "script_sha256": "318074aaa37a2d18af96807af6506522b3c79025c58e1d73216f020222c50bcb",
+  "selection": "mean of iNaturalist species balanced accuracy, Penn life-stage accuracy, Penn engorgement accuracy (dev)",
+  "objective": "sum over heads of head_weight * class-weighted -log P(label set); unlabeled heads skipped",
+  "batch_norm": "Running statistics frozen during training, as in v1.",
+  "uncertainty": "Softmax scores are uncalibrated."
+}

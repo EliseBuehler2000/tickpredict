@@ -1,0 +1,11 @@
+{
+  "output": "/Users/ericbuehler/Dropbox/cac_elise_2026/experiments/evaluations/20261019-103509-056913_life_stage_none",
+  "evaluation_split": "dev",
+  "correct": 105,
+  "n": 110,
+  "accuracy": 0.9545454545454546,
+  "balanced_accuracy": 0.9361904761904762,
+  "nll": 0.14881084288173974,
+  "ece10": 0.06676932744907614,
+  "test_images_used": 0
+}

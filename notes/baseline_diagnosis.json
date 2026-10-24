@@ -1,0 +1,136 @@
+{
+  "evaluation_split": "dev",
+  "source_sha256": "65f46d9589d55216224ed7d44f8326d1629cfdaa620bc1f542155ee90f91f228",
+  "manifest_sha256": "c758ff23b8c2de782d5ca03c56ecf9b49a9897dbb2258538ab3e094856c3dfd3",
+  "test_images_used": 0,
+  "confidence_calibrated": false,
+  "metric_conventions": {
+    "rates": "Fractions from 0 to 1.",
+    "ece10": "Ten equal-width confidence bins; include confidence 1.0 in last bin; weighted absolute accuracy-confidence gap.",
+    "brier": "Sum of squared errors across all classes, averaged over images.",
+    "nll": "Mean negative log probability of the recorded class; probability clipped below at 1e-12.",
+    "joint_subgroups": "Groups use recorded life-stage and engorgement labels; both_correct requires both models correct on an image."
+  },
+  "baselines": {
+    "engorgement_level": {
+      "run": "runs/20261013-125824-749104_engorgement_level",
+      "correct": 74,
+      "validation_n": 110,
+      "validation_accuracy": 0.6727272727272727,
+      "validation_balanced_accuracy": 0.7441553544494721,
+      "validation_macro_f1": 0.6623376623376623,
+      "validation_nll": 0.8609296012184279,
+      "validation_brier": 0.4825331903815125,
+      "validation_ece10": 0.1125730647282167,
+      "mean_confidence": 0.7115457109429619,
+      "mean_confidence_when_wrong": 0.6774389785197046,
+      "per_class": {
+        "fully engorged": {
+          "n": 16,
+          "correct": 14,
+          "recall": 0.875
+        },
+        "semi-engorged": {
+          "n": 68,
+          "correct": 40,
+          "recall": 0.5882352941176471
+        },
+        "unengorged": {
+          "n": 26,
+          "correct": 20,
+          "recall": 0.7692307692307693
+        }
+      }
+    },
+    "life_stage": {
+      "run": "runs/20261013-125510-220265_life_stage",
+      "correct": 100,
+      "validation_n": 110,
+      "validation_accuracy": 0.9090909090909091,
+      "validation_balanced_accuracy": 0.8876190476190476,
+      "validation_macro_f1": 0.8935758513931888,
+      "validation_nll": 0.40393076221012325,
+      "validation_brier": 0.15685268490452553,
+      "validation_ece10": 0.07675549279559743,
+      "mean_confidence": 0.9655382909558036,
+      "mean_confidence_when_wrong": 0.8728391289710998,
+      "per_class": {
+        "adult female": {
+          "n": 35,
+          "correct": 29,
+          "recall": 0.8285714285714286
+        },
+        "nymph": {
+          "n": 75,
+          "correct": 71,
+          "recall": 0.9466666666666667
+        }
+      }
+    }
+  },
+  "joint_correct": 69,
+  "joint_n": 110,
+  "subgroups": [
+    {
+      "life_stage": "adult female",
+      "engorgement_level": "fully engorged",
+      "train_n": 13,
+      "dev_n": 9,
+      "life_stage_correct": 7,
+      "engorgement_correct": 9,
+      "both_correct": 7
+    },
+    {
+      "life_stage": "adult female",
+      "engorgement_level": "semi-engorged",
+      "train_n": 7,
+      "dev_n": 5,
+      "life_stage_correct": 4,
+      "engorgement_correct": 0,
+      "both_correct": 0
+    },
+    {
+      "life_stage": "adult female",
+      "engorgement_level": "unengorged",
+      "train_n": 36,
+      "dev_n": 21,
+      "life_stage_correct": 18,
+      "engorgement_correct": 19,
+      "both_correct": 16
+    },
+    {
+      "life_stage": "nymph",
+      "engorgement_level": "fully engorged",
+      "train_n": 9,
+      "dev_n": 7,
+      "life_stage_correct": 7,
+      "engorgement_correct": 5,
+      "both_correct": 5
+    },
+    {
+      "life_stage": "nymph",
+      "engorgement_level": "semi-engorged",
+      "train_n": 155,
+      "dev_n": 63,
+      "life_stage_correct": 59,
+      "engorgement_correct": 40,
+      "both_correct": 40
+    },
+    {
+      "life_stage": "nymph",
+      "engorgement_level": "unengorged",
+      "train_n": 21,
+      "dev_n": 5,
+      "life_stage_correct": 5,
+      "engorgement_correct": 1,
+      "both_correct": 1
+    }
+  ],
+  "observations": [
+    "Engorgement recognizes 0/5 adult-female semi-engorged and 1/5 nymph unengorged development images.",
+    "Training labels are associated: 155/185 nymphs are semi-engorged; 36/56 adult females are unengorged. These associations can hide subgroup failures.",
+    "Of 36 engorgement development errors, 28 are recorded semi-engorged images (10 predicted fully engorged, 18 unengorged).",
+    "Mean confidence exceeds observed accuracy for both models. ECE is descriptive and noisy at this sample size.",
+    "Development predictions were reused for checkpoint selection; they are not an independent test estimate."
+  ]
+}

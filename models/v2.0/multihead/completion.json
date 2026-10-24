@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "epochs": 17,
+  "best_epoch": 12,
+  "best_selection_score": 0.8664082690894844,
+  "smoke_only": false,
+  "test_images_used": 0,
+  "elapsed_seconds": 2285.189677476883
+}

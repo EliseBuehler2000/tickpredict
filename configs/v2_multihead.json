@@ -1,0 +1,9 @@
+{
+  "name": "v2_convnext_tiny_384",
+  "architecture": "convnext_tiny",
+  "image_size": 384,
+  "epochs": 20,
+  "batch_size": 32,
+  "penn_repeat": 8,
+  "penn_species": false
+}

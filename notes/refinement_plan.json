@@ -1,0 +1,111 @@
+{
+  "created": "2026-10-19",
+  "evaluation": "Fixed development split only; protected test remains unused.",
+  "round1_winners": {
+    "life_stage": {
+      "run": "experiments/runs/20261019-101227-146487_life_stage_convnext_tiny_320",
+      "correct": 107,
+      "validation_n": 110,
+      "validation_accuracy": 0.9727272727272728,
+      "validation_balanced_accuracy": 0.9647619047619047,
+      "validation_nll": 0.11509789917399625
+    },
+    "engorgement_level": {
+      "run": "experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384",
+      "correct": 95,
+      "validation_n": 110,
+      "validation_accuracy": 0.8636363636363636,
+      "validation_balanced_accuracy": 0.8629336349924586,
+      "validation_nll": 0.576891897530164
+    }
+  },
+  "engorgement_ablations": [
+    {
+      "config": "configs/engorgement_crop.json",
+      "changes": "Frozen training-only foreground crop; other settings match EfficientNet winner."
+    },
+    {
+      "config": "configs/engorgement_multitask.json",
+      "changes": "Full-frame shared encoder with fixed auxiliary life-stage loss coefficient0.25; primary engorgement selection."
+    },
+    {
+      "recipe": "dinov2_vits14_392_frozen_d4_linear",
+      "changes": "One frozen representation probe; eight D4 train views, identity dev view; fixed linear classifier parameters."
+    }
+  ],
+  "crop_qa": {
+    "version": "penn_trainonly_foreground_v2",
+    "train_images": 241,
+    "dev_images_opened": 0,
+    "test_images_opened": 0,
+    "reasons": {
+      "little_crop_benefit": 58,
+      "foreground_spans_frame": 40,
+      "crop": 138,
+      "multiple_competing_components": 3,
+      "off_center_uncertain": 2
+    },
+    "median_accepted_area": 0.5926223651304037,
+    "accepted_crops": 138,
+    "full_frame_fallbacks": 103,
+    "at_least_10percent_enlargement": 138,
+    "at_least_25percent_enlargement": 115,
+    "median_accepted_linear_gain": 1.4917987983304262,
+    "max_linear_gain": 2.1973550356052898,
+    "crop_candidate_sha256": "f3e8079dc7f23d992e5380a8f221711d6bf7013dcca4da5732e7cb52da1f37e2",
+    "manifest_sha256": "c758ff23b8c2de782d5ca03c56ecf9b49a9897dbb2258538ab3e094856c3dfd3",
+    "source_sha256": "65f46d9589d55216224ed7d44f8326d1629cfdaa620bc1f542155ee90f91f228",
+    "qa": {
+      "contact_sheet_images_screened": 241,
+      "final_enlarged_examples_reviewed": 12,
+      "initial_clear_crop_failures": [
+        "285589/train",
+        "290512/train"
+      ],
+      "initial_tight_pale_outline_examples": [
+        "281578/train",
+        "288685/train"
+      ],
+      "final_known_failure_resolution": "Both clear failures now full-frame fallback. Wider padding retains pale outlines in enlarged QA. All final boxes contain prior box or full frame.",
+      "limits": "Visual screening, not independent box annotations or a guarantee on unseen images; no development/test outcomes were used."
+    }
+  },
+  "life_stage_replications": "configs/life_stage_replications.json",
+  "finalist_seeds": [
+    20261020,
+    20261021
+  ],
+  "ensemble": "Equal probabilities across all three finalist seeds, with no fitted weights or subset search.",
+  "tta": "Fixed eight D4 views; evaluate selected first-round winners, no transform search.",
+  "promotion": "At least pinned accuracy, and no class loses more than one correct dev prediction.",
+  "post_review_imbalance_trial": {
+    "config": "configs/engorgement_joint_sampling.json",
+    "reference": "experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384",
+    "policy": "Replace sqrt-inverse class-weighted loss with n(stage,engorgement)^(-1/2) sampling and unweighted loss; all other settings unchanged.",
+    "draws_per_epoch": 241,
+    "replacement": true,
+    "counts_source": "241 training records only",
+    "train_similarity_groups": 241,
+    "expected_adult_semi_draws": 19.750657,
+    "expected_unique_images_per_epoch_approx": 139,
+    "motivation": "Post-development-review hypothesis; exploratory selection, not a preregistered independent test."
+  },
+  "engorgement_replications": {
+    "seeds": [
+      20261020,
+      20261021
+    ],
+    "winner_rule": "Choose eligible joint-sampling trial or original EfficientNet by accuracy, balanced accuracy, lower NLL. Crop and auxiliary-stage trials and DINO probe did not beat the original. Repeat winning recipe; equal-probability average all three seeds; no subset or fitted weight search."
+  },
+  "life_stage_replications_result": {
+    "correct_by_seed": {
+      "20261019": 107,
+      "20261020": 105,
+      "20261021": 105
+    },
+    "n": 110,
+    "equal_ensemble_correct": 105,
+    "selection": "Original single checkpoint remains preferred. Fixed D4 matched107/110 but had slightly higher NLL; equal-seed ensemble reached105/110."
+  },
+  "completed_results": "notes/refinement_results.json"
+}

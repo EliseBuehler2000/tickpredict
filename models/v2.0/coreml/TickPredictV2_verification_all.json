@@ -1,0 +1,16 @@
+{
+  "n": 110,
+  "agreement": {
+    "species": 110,
+    "life_stage": 110,
+    "engorgement_level": 110
+  },
+  "max_abs_probability_difference": {
+    "species": 0.002775907516479492,
+    "life_stage": 0.0012992024421691895,
+    "engorgement_level": 0.003096461296081543
+  },
+  "compute_units": "all",
+  "tta": "d4",
+  "test_images_used": 0
+}

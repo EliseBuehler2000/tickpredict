@@ -1,0 +1,767 @@
+[
+  {
+    "epoch": 1,
+    "phase": "head_warmup",
+    "training_loss": {
+      "species": 1.8991138189791787,
+      "life_stage": 0.8212397422059018,
+      "engorgement_level": 0.8360808465724543
+    },
+    "selection_score": 0.5263008747843723,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.3581288343558282,
+        "balanced_accuracy": 0.2516298970803896,
+        "set_accuracy": 0.3581288343558282,
+        "nll": 1.815687983376338,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.5657492354740061,
+        "balanced_accuracy": 0.3800385147740266,
+        "set_accuracy": 0.5811719500480308,
+        "nll": 0.9168172898577563,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.6818181818181818,
+        "balanced_accuracy": 0.5,
+        "set_accuracy": 0.6818181818181818,
+        "nll": 0.7172044345080693,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.6454545454545455,
+        "balanced_accuracy": 0.49104449472096534,
+        "set_accuracy": 0.6454545454545455,
+        "nll": 0.7733761276251004,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 3e-05,
+      "head": 0.0003
+    },
+    "seconds": 64.19130039215088
+  },
+  {
+    "epoch": 2,
+    "phase": "all",
+    "training_loss": {
+      "species": 1.1801333702911159,
+      "life_stage": 0.4751099385531386,
+      "engorgement_level": 0.2888291314932734
+    },
+    "selection_score": 0.793861450733964,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.7308282208588958,
+        "balanced_accuracy": 0.6543116249291644,
+        "set_accuracy": 0.7308282208588958,
+        "nll": 0.7480399839764605,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.8786952089704383,
+        "balanced_accuracy": 0.7665984634209946,
+        "set_accuracy": 0.8789625360230547,
+        "nll": 0.33943974466591015,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9363636363636364,
+        "balanced_accuracy": 0.9,
+        "set_accuracy": 0.9363636363636364,
+        "nll": 0.18323620232209845,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.7909090909090909,
+        "balanced_accuracy": 0.6725113122171945,
+        "set_accuracy": 0.7909090909090909,
+        "nll": 0.6240956874871793,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 3e-05,
+      "head": 0.0003
+    },
+    "seconds": 142.37299847602844
+  },
+  {
+    "epoch": 3,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.7271679084677207,
+      "life_stage": 0.2709342798577716,
+      "engorgement_level": 0.05207372244211615
+    },
+    "selection_score": 0.8158003888066406,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.8052147239263804,
+        "balanced_accuracy": 0.6837648027835583,
+        "set_accuracy": 0.8052147239263804,
+        "nll": 0.5447656813894596,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.8766564729867482,
+        "balanced_accuracy": 0.8153808348879661,
+        "set_accuracy": 0.8760806916426513,
+        "nll": 0.3385757073989036,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9545454545454546,
+        "balanced_accuracy": 0.9285714285714286,
+        "set_accuracy": 0.9545454545454546,
+        "nll": 0.18979910918702392,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8090909090909091,
+        "balanced_accuracy": 0.7302036199095022,
+        "set_accuracy": 0.8090909090909091,
+        "nll": 0.7505382184376834,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 2.9795419551040836e-05,
+      "head": 0.00029795419551040833
+    },
+    "seconds": 137.30035519599915
+  },
+  {
+    "epoch": 4,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.5780474568291306,
+      "life_stage": 0.20406409772930348,
+      "engorgement_level": 0.018028129867792182
+    },
+    "selection_score": 0.8500476244896794,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.7914110429447853,
+        "balanced_accuracy": 0.7501428734690381,
+        "set_accuracy": 0.7914110429447853,
+        "nll": 0.5399462229643914,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.90927624872579,
+        "balanced_accuracy": 0.7961705883532928,
+        "set_accuracy": 0.909702209414025,
+        "nll": 0.2627209228521316,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9727272727272728,
+        "balanced_accuracy": 0.9571428571428571,
+        "set_accuracy": 0.9727272727272728,
+        "nll": 0.14385652873326799,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8272727272727273,
+        "balanced_accuracy": 0.7718702865761689,
+        "set_accuracy": 0.8272727272727273,
+        "nll": 0.7598123476409611,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 2.9187258625509518e-05,
+      "head": 0.00029187258625509513
+    },
+    "seconds": 137.24055075645447
+  },
+  {
+    "epoch": 5,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.48635945484628945,
+      "life_stage": 0.16360058759394933,
+      "engorgement_level": 0.009799564735429795
+    },
+    "selection_score": 0.855712591524156,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.8266871165644172,
+        "balanced_accuracy": 0.7671377745724683,
+        "set_accuracy": 0.8266871165644172,
+        "nll": 0.4880770042684609,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.9011213047910296,
+        "balanced_accuracy": 0.8508264628593207,
+        "set_accuracy": 0.9000960614793467,
+        "nll": 0.2818324934065893,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9636363636363636,
+        "balanced_accuracy": 0.9428571428571428,
+        "set_accuracy": 0.9636363636363636,
+        "nll": 0.20799042364162007,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8363636363636363,
+        "balanced_accuracy": 0.7846907993966816,
+        "set_accuracy": 0.8363636363636363,
+        "nll": 0.8526634559799845,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 2.8192106268097333e-05,
+      "head": 0.0002819210626809733
+    },
+    "seconds": 137.37880945205688
+  },
+  {
+    "epoch": 6,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.4147301658375933,
+      "life_stage": 0.14549317722306457,
+      "engorgement_level": 0.006749446155713656
+    },
+    "selection_score": 0.8504948131856448,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.8351226993865031,
+        "balanced_accuracy": 0.7696662577387523,
+        "set_accuracy": 0.8351226993865031,
+        "nll": 0.47388594518138133,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.9133537206931702,
+        "balanced_accuracy": 0.8324777837957112,
+        "set_accuracy": 0.9106628242074928,
+        "nll": 0.2501960167963368,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9636363636363636,
+        "balanced_accuracy": 0.9428571428571428,
+        "set_accuracy": 0.9636363636363636,
+        "nll": 0.18189569546176995,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8181818181818182,
+        "balanced_accuracy": 0.7590497737556561,
+        "set_accuracy": 0.8181818181818182,
+        "nll": 0.9279553161671854,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 2.6837107640945904e-05,
+      "head": 0.000268371076409459
+    },
+    "seconds": 137.52081060409546
+  },
+  {
+    "epoch": 7,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.3537649739523588,
+      "life_stage": 0.12247205997943224,
+      "engorgement_level": 0.005726823286043826
+    },
+    "selection_score": 0.847004175078149,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.8366564417177914,
+        "balanced_accuracy": 0.759194343416265,
+        "set_accuracy": 0.8366564417177914,
+        "nll": 0.4657482702951344,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.9204892966360856,
+        "balanced_accuracy": 0.866853222603358,
+        "set_accuracy": 0.920268972142171,
+        "nll": 0.24642640590725448,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9545454545454546,
+        "balanced_accuracy": 0.9361904761904762,
+        "set_accuracy": 0.9545454545454546,
+        "nll": 0.18665262889920967,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8272727272727273,
+        "balanced_accuracy": 0.7398190045248869,
+        "set_accuracy": 0.8272727272727273,
+        "nll": 0.9216282458895686,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 2.5159223574386117e-05,
+      "head": 0.00025159223574386114
+    },
+    "seconds": 137.32633519172668
+  },
+  {
+    "epoch": 8,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.30924678661529253,
+      "life_stage": 0.1004605294388901,
+      "engorgement_level": 0.002842451315701308
+    },
+    "selection_score": 0.8475445092447934,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.8335889570552147,
+        "balanced_accuracy": 0.7880880731889255,
+        "set_accuracy": 0.8335889570552147,
+        "nll": 0.4649246001461672,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.9184505606523955,
+        "balanced_accuracy": 0.8522727728631322,
+        "set_accuracy": 0.9173871277617676,
+        "nll": 0.24752891293765258,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9363636363636364,
+        "balanced_accuracy": 0.9076190476190477,
+        "set_accuracy": 0.9363636363636364,
+        "nll": 0.22418478665350133,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8181818181818182,
+        "balanced_accuracy": 0.743024132730015,
+        "set_accuracy": 0.8181818181818182,
+        "nll": 1.005259196208827,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 2.3204222371836402e-05,
+      "head": 0.000232042223718364
+    },
+    "seconds": 137.358647108078
+  },
+  {
+    "epoch": 9,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.2602833380613677,
+      "life_stage": 0.09115400429254404,
+      "engorgement_level": 0.004093144641559354
+    },
+    "selection_score": 0.8484041935801288,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.8228527607361963,
+        "balanced_accuracy": 0.7815762171040226,
+        "set_accuracy": 0.8228527607361963,
+        "nll": 0.5243111362343197,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.9194699286442406,
+        "balanced_accuracy": 0.828737638161722,
+        "set_accuracy": 0.9212295869356388,
+        "nll": 0.2545803421651842,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9636363636363636,
+        "balanced_accuracy": 0.9504761904761905,
+        "set_accuracy": 0.9636363636363636,
+        "nll": 0.1881616798493988,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8,
+        "balanced_accuracy": 0.7172888386123679,
+        "set_accuracy": 0.8,
+        "nll": 0.9674658663349499,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 2.1025431369794542e-05,
+      "head": 0.00021025431369794538
+    },
+    "seconds": 137.3186628818512
+  },
+  {
+    "epoch": 10,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.23115690691431856,
+      "life_stage": 0.07904503263641871,
+      "engorgement_level": 0.004921933528267758
+    },
+    "selection_score": 0.862464293359802,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.8305214723926381,
+        "balanced_accuracy": 0.7783019709884967,
+        "set_accuracy": 0.8305214723926381,
+        "nll": 0.5111872712639904,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.9235474006116208,
+        "balanced_accuracy": 0.8241258951675995,
+        "set_accuracy": 0.9250720461095101,
+        "nll": 0.26232481723046314,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9636363636363636,
+        "balanced_accuracy": 0.9504761904761905,
+        "set_accuracy": 0.9636363636363636,
+        "nll": 0.18246865621955138,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8454545454545455,
+        "balanced_accuracy": 0.8054298642533936,
+        "set_accuracy": 0.8454545454545455,
+        "nll": 0.9986286003136127,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 1.8682282307111985e-05,
+      "head": 0.0001868228230711198
+    },
+    "seconds": 137.2522451877594
+  },
+  {
+    "epoch": 11,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.20829594576790983,
+      "life_stage": 0.06882096182384187,
+      "engorgement_level": 0.002014025987512535
+    },
+    "selection_score": 0.8509032344102229,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.8466257668711656,
+        "balanced_accuracy": 0.7890733395943048,
+        "set_accuracy": 0.8466257668711656,
+        "nll": 0.4751397575706745,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.926605504587156,
+        "balanced_accuracy": 0.8503640849732202,
+        "set_accuracy": 0.9250720461095101,
+        "nll": 0.2593809919182249,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9454545454545454,
+        "balanced_accuracy": 0.9219047619047619,
+        "set_accuracy": 0.9454545454545454,
+        "nll": 0.22858334220025706,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8181818181818182,
+        "balanced_accuracy": 0.7350113122171945,
+        "set_accuracy": 0.8181818181818182,
+        "nll": 1.0971088385169703,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 1.6238690182084986e-05,
+      "head": 0.0001623869018208498
+    },
+    "seconds": 137.29053688049316
+  },
+  {
+    "epoch": 12,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.18544583871339182,
+      "life_stage": 0.06041039716010684,
+      "engorgement_level": 0.0015313329219362056
+    },
+    "selection_score": 0.8664082690894844,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.8504601226993865,
+        "balanced_accuracy": 0.7992248072684536,
+        "set_accuracy": 0.8504601226993865,
+        "nll": 0.48479421589352856,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.9306829765545361,
+        "balanced_accuracy": 0.8584170829070631,
+        "set_accuracy": 0.9298751200768491,
+        "nll": 0.26301479407610656,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9636363636363636,
+        "balanced_accuracy": 0.9504761904761905,
+        "set_accuracy": 0.9636363636363636,
+        "nll": 0.19257962772796747,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8363636363636363,
+        "balanced_accuracy": 0.7606523378582203,
+        "set_accuracy": 0.8363636363636363,
+        "nll": 1.0948866492255012,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 1.3761309817915015e-05,
+      "head": 0.0001376130981791501
+    },
+    "seconds": 137.39194512367249
+  },
+  {
+    "epoch": 13,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.16463038831142346,
+      "life_stage": 0.05217400247408429,
+      "engorgement_level": 0.001833249100137446
+    },
+    "selection_score": 0.8533856537582835,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.8335889570552147,
+        "balanced_accuracy": 0.7692478703657595,
+        "set_accuracy": 0.8335889570552147,
+        "nll": 0.5242096106563803,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.9215086646279307,
+        "balanced_accuracy": 0.8118864215361778,
+        "set_accuracy": 0.9231508165225745,
+        "nll": 0.28408135960450687,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9727272727272728,
+        "balanced_accuracy": 0.9647619047619047,
+        "set_accuracy": 0.9727272727272728,
+        "nll": 0.1901538061813891,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8181818181818182,
+        "balanced_accuracy": 0.7510369532428355,
+        "set_accuracy": 0.8181818181818182,
+        "nll": 1.1026835300708675,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 1.1317717692888016e-05,
+      "head": 0.00011317717692888013
+    },
+    "seconds": 137.45236563682556
+  },
+  {
+    "epoch": 14,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.14169626924418102,
+      "life_stage": 0.0473458134409421,
+      "engorgement_level": 0.0017576701506933762
+    },
+    "selection_score": 0.8602481962569787,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.8420245398773006,
+        "balanced_accuracy": 0.7716536796800273,
+        "set_accuracy": 0.8420245398773006,
+        "nll": 0.4944055462648779,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.9255861365953109,
+        "balanced_accuracy": 0.8352370062787106,
+        "set_accuracy": 0.9260326609029779,
+        "nll": 0.2815444403779574,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9636363636363636,
+        "balanced_accuracy": 0.9504761904761905,
+        "set_accuracy": 0.9636363636363636,
+        "nll": 0.20371037815570162,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8454545454545455,
+        "balanced_accuracy": 0.7894042232277526,
+        "set_accuracy": 0.8454545454545455,
+        "nll": 1.113793000634387,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 8.974568630205458e-06,
+      "head": 8.974568630205456e-05
+    },
+    "seconds": 138.6253845691681
+  },
+  {
+    "epoch": 15,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.1276299910056166,
+      "life_stage": 0.04063674291556964,
+      "engorgement_level": 0.002990181639917332
+    },
+    "selection_score": 0.861714419124708,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.8558282208588958,
+        "balanced_accuracy": 0.7851432573741242,
+        "set_accuracy": 0.8558282208588958,
+        "nll": 0.502347595249841,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.9276248725790011,
+        "balanced_accuracy": 0.8409981745601893,
+        "set_accuracy": 0.9279538904899135,
+        "nll": 0.282782124719234,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9545454545454546,
+        "balanced_accuracy": 0.9361904761904762,
+        "set_accuracy": 0.9545454545454546,
+        "nll": 0.21088400736143023,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8454545454545455,
+        "balanced_accuracy": 0.789498491704374,
+        "set_accuracy": 0.8454545454545455,
+        "nll": 1.1360025597369114,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 6.795777628163593e-06,
+      "head": 6.795777628163592e-05
+    },
+    "seconds": 137.4441316127777
+  },
+  {
+    "epoch": 16,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.12009421188156363,
+      "life_stage": 0.03644430158799372,
+      "engorgement_level": 0.0012186213809545967
+    },
+    "selection_score": 0.8609957720093027,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.848159509202454,
+        "balanced_accuracy": 0.7738964069369989,
+        "set_accuracy": 0.848159509202454,
+        "nll": 0.506727769187167,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.9306829765545361,
+        "balanced_accuracy": 0.8484694389280055,
+        "set_accuracy": 0.930835734870317,
+        "nll": 0.2895373906045985,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9636363636363636,
+        "balanced_accuracy": 0.9504761904761905,
+        "set_accuracy": 0.9636363636363636,
+        "nll": 0.2197087985145198,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8454545454545455,
+        "balanced_accuracy": 0.789498491704374,
+        "set_accuracy": 0.8454545454545455,
+        "nll": 1.1715086000111556,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 4.840776425613886e-06,
+      "head": 4.840776425613885e-05
+    },
+    "seconds": 137.4619390964508
+  },
+  {
+    "epoch": 17,
+    "phase": "all",
+    "training_loss": {
+      "species": 0.11108809953465268,
+      "life_stage": 0.04080837174525171,
+      "engorgement_level": 0.0009644285571550059
+    },
+    "selection_score": 0.8576259427886314,
+    "dev": {
+      "inaturalist/species": {
+        "accuracy": 0.8473926380368099,
+        "balanced_accuracy": 0.7546960101840762,
+        "set_accuracy": 0.8473926380368099,
+        "nll": 0.5035460846970423,
+        "labeled": 1304
+      },
+      "inaturalist/life_stage": {
+        "accuracy": 0.9306829765545361,
+        "balanced_accuracy": 0.8392740366291549,
+        "set_accuracy": 0.930835734870317,
+        "nll": 0.2898039741860304,
+        "labeled": 1041
+      },
+      "penn/life_stage": {
+        "accuracy": 0.9727272727272728,
+        "balanced_accuracy": 0.9647619047619047,
+        "set_accuracy": 0.9727272727272728,
+        "nll": 0.21471618562575467,
+        "labeled": 110
+      },
+      "penn/engorgement_level": {
+        "accuracy": 0.8454545454545455,
+        "balanced_accuracy": 0.789498491704374,
+        "set_accuracy": 0.8454545454545455,
+        "nll": 1.161704807769058,
+        "labeled": 110
+      }
+    },
+    "learning_rates": {
+      "backbone": 3.162892359054097e-06,
+      "head": 3.1628923590540963e-05
+    },
+    "seconds": 137.4264178276062
+  }
+]

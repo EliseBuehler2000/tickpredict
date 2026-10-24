@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17392F58985028423E988005 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D69F5D11644CCC5E8C4E0B /* HistoryView.swift */; };
+		39C1ED2FA710E64B4EC6B5B9 /* TickClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9D071366EF1D2BAB3CBE5 /* TickClassifier.swift */; };
+		4C0AA6FF5E39789D095365ED /* ImagePreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A391DB7676F7CF9A8FBB46 /* ImagePreparation.swift */; };
+		5E77692BAAFECE4981F482CF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E459BFC987464967E20E35D9 /* Theme.swift */; };
+		5EA107559B7BE4AA2A394618 /* TickPredictApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6168C401509357FB1F230A4 /* TickPredictApp.swift */; };
+		5EAE53B1E2F0ABE48AB30949 /* TickPredictV2.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = C8341DA7DEA1C38450485F6B /* TickPredictV2.mlpackage */; };
+		766BD37EAE1A1F16D3B86492 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AF5367203CAAFF2CCBD877 /* Species.swift */; };
+		90242C454A0E9E2F752E583A /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C369F4582E188A16213E03E9 /* Scan.swift */; };
+		93ABCB688D0F1DA22044E96D /* FindCareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28AF981986F88F7408909A7 /* FindCareView.swift */; };
+		9FF4C9157477D343DBE2AEF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A11501B49C9621A6689747 /* Assets.xcassets */; };
+		A5948BA30C6032375120AA50 /* DebugLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A435C29E2D44B9F7D2F4CC9 /* DebugLaunch.swift */; };
+		B5A15B3C1A3562248B992BBE /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F525C4FF4299185ED8538 /* GuideView.swift */; };
+		B6A8DCC2DBA7285911B316ED /* EngorgementLevel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 1EAADB739FD41ED3C36164D3 /* EngorgementLevel.mlpackage */; };
+		C590C15785AB360FB40ABFC4 /* ClassifierService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022C86AC9D306E9E8F492B1 /* ClassifierService.swift */; };
+		C6784283D13F724E917A2D2D /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5480908AC42DBD80676A3FE /* CaptureView.swift */; };
+		D7B26EC8B86B79FB93A14315 /* PhotoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CADF3A0535537210499CEF /* PhotoLoader.swift */; };
+		DD646EE096AA47C0FBFCEA7B /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D76B91B0D37ED284149174 /* Camera.swift */; };
+		E0776CDCA98CF03B559595B7 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08238CCFCE9A9A0F9F8C214 /* ResultView.swift */; };
+		E2A9F40CD69EA9DCB6E2E544 /* SaveScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AE90F88A60710E94286CFF /* SaveScanView.swift */; };
+		F3A528DF3BCFEC12A5ED9E9E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE19B6E9FE0FEC0B54AB1515 /* HomeView.swift */; };
+		FDE41E5297774775EDE56857 /* ScanFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC62B2FBD55753369FE40F /* ScanFlowTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD1ABD8DA41BF34F609D3CBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCF3B65D3B1C85CA698943D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67037E0709DB1BF4AD13FAD0;
+			remoteInfo = TickPredict;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A1F525C4FF4299185ED8538 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		1022C86AC9D306E9E8F492B1 /* ClassifierService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierService.swift; sourceTree = "<group>"; };
+		17A391DB7676F7CF9A8FBB46 /* ImagePreparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreparation.swift; sourceTree = "<group>"; };
+		17AE90F88A60710E94286CFF /* SaveScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveScanView.swift; sourceTree = "<group>"; };
+		1A435C29E2D44B9F7D2F4CC9 /* DebugLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLaunch.swift; sourceTree = "<group>"; };
+		1EAADB739FD41ED3C36164D3 /* EngorgementLevel.mlpackage */ = {isa = PBXFileReference; name = EngorgementLevel.mlpackage; path = ../../models/v1.0/coreml/EngorgementLevel.mlpackage; sourceTree = "<group>"; };
+		32E73A4F0A1B7BA3070D3329 /* TickPredictUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TickPredictUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38FC62B2FBD55753369FE40F /* ScanFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanFlowTests.swift; sourceTree = "<group>"; };
+		56A11501B49C9621A6689747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99F88D69F6AA27CCE23F6F8A /* TickPredict.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TickPredict.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB9D071366EF1D2BAB3CBE5 /* TickClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickClassifier.swift; sourceTree = "<group>"; };
+		AE19B6E9FE0FEC0B54AB1515 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B3D76B91B0D37ED284149174 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		C369F4582E188A16213E03E9 /* Scan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scan.swift; sourceTree = "<group>"; };
+		C8341DA7DEA1C38450485F6B /* TickPredictV2.mlpackage */ = {isa = PBXFileReference; name = TickPredictV2.mlpackage; path = ../../models/v2.0/coreml/TickPredictV2.mlpackage; sourceTree = "<group>"; };
+		D2CADF3A0535537210499CEF /* PhotoLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLoader.swift; sourceTree = "<group>"; };
+		D7D69F5D11644CCC5E8C4E0B /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		E28AF981986F88F7408909A7 /* FindCareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCareView.swift; sourceTree = "<group>"; };
+		E459BFC987464967E20E35D9 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		E6168C401509357FB1F230A4 /* TickPredictApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickPredictApp.swift; sourceTree = "<group>"; };
+		F08238CCFCE9A9A0F9F8C214 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		F5480908AC42DBD80676A3FE /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+		F8AF5367203CAAFF2CCBD877 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		5EEC929A5230A000774A69D9 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				1EAADB739FD41ED3C36164D3 /* EngorgementLevel.mlpackage */,
+				C8341DA7DEA1C38450485F6B /* TickPredictV2.mlpackage */,
+			);
+			name = MLModels;
+			sourceTree = "<group>";
+		};
+		61CE48B775AEC9537F6C4383 /* TickPredict */ = {
+			isa = PBXGroup;
+			children = (
+				56A11501B49C9621A6689747 /* Assets.xcassets */,
+				E6168C401509357FB1F230A4 /* TickPredictApp.swift */,
+				FFA0B58CA674F3B3C697B9E1 /* Inference */,
+				5EEC929A5230A000774A69D9 /* MLModels */,
+				A3F9A96A079C946D6A8BA19D /* Model */,
+				93DCFC6B42C740924682B5B6 /* Support */,
+				FA12C7FBE2DF7C4721AB8FD8 /* Views */,
+			);
+			path = TickPredict;
+			sourceTree = "<group>";
+		};
+		816EE3938E55A8B7790F8C23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99F88D69F6AA27CCE23F6F8A /* TickPredict.app */,
+				32E73A4F0A1B7BA3070D3329 /* TickPredictUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93DCFC6B42C740924682B5B6 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1A435C29E2D44B9F7D2F4CC9 /* DebugLaunch.swift */,
+				D2CADF3A0535537210499CEF /* PhotoLoader.swift */,
+				E459BFC987464967E20E35D9 /* Theme.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A3F9A96A079C946D6A8BA19D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1022C86AC9D306E9E8F492B1 /* ClassifierService.swift */,
+				C369F4582E188A16213E03E9 /* Scan.swift */,
+				F8AF5367203CAAFF2CCBD877 /* Species.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD6C7109030ED82237612826 = {
+			isa = PBXGroup;
+			children = (
+				61CE48B775AEC9537F6C4383 /* TickPredict */,
+				CFDE7882DA49BC42E8C4C892 /* TickPredictUITests */,
+				816EE3938E55A8B7790F8C23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFDE7882DA49BC42E8C4C892 /* TickPredictUITests */ = {
+			isa = PBXGroup;
+			children = (
+				38FC62B2FBD55753369FE40F /* ScanFlowTests.swift */,
+			);
+			path = TickPredictUITests;
+			sourceTree = "<group>";
+		};
+		FA12C7FBE2DF7C4721AB8FD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3D76B91B0D37ED284149174 /* Camera.swift */,
+				F5480908AC42DBD80676A3FE /* CaptureView.swift */,
+				E28AF981986F88F7408909A7 /* FindCareView.swift */,
+				0A1F525C4FF4299185ED8538 /* GuideView.swift */,
+				D7D69F5D11644CCC5E8C4E0B /* HistoryView.swift */,
+				AE19B6E9FE0FEC0B54AB1515 /* HomeView.swift */,
+				F08238CCFCE9A9A0F9F8C214 /* ResultView.swift */,
+				17AE90F88A60710E94286CFF /* SaveScanView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FFA0B58CA674F3B3C697B9E1 /* Inference */ = {
+			isa = PBXGroup;
+			children = (
+				17A391DB7676F7CF9A8FBB46 /* ImagePreparation.swift */,
+				9CB9D071366EF1D2BAB3CBE5 /* TickClassifier.swift */,
+			);
+			path = Inference;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67037E0709DB1BF4AD13FAD0 /* TickPredict */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AD3CF04BDB79A63F0990C1E /* Build configuration list for PBXNativeTarget "TickPredict" */;
+			buildPhases = (
+				B45ED2261BC94C389EBAC955 /* Sources */,
+				67125E5C4CC5A30ECB49346E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TickPredict;
+			packageProductDependencies = (
+			);
+			productName = TickPredict;
+			productReference = 99F88D69F6AA27CCE23F6F8A /* TickPredict.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AAA18D0DBAF3C3416591F2B /* TickPredictUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E289C384AAC179BDA39955A0 /* Build configuration list for PBXNativeTarget "TickPredictUITests" */;
+			buildPhases = (
+				003EAF61C54F961D1C8155F8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15A3CBEB2F40680737F686AF /* PBXTargetDependency */,
+			);
+			name = TickPredictUITests;
+			packageProductDependencies = (
+			);
+			productName = TickPredictUITests;
+			productReference = 32E73A4F0A1B7BA3070D3329 /* TickPredictUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCF3B65D3B1C85CA698943D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					67037E0709DB1BF4AD13FAD0 = {
+						DevelopmentTeam = C37KDP6ZQ2;
+						ProvisioningStyle = Automatic;
+					};
+					9AAA18D0DBAF3C3416591F2B = {
+						DevelopmentTeam = C37KDP6ZQ2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 67037E0709DB1BF4AD13FAD0;
+					};
+				};
+			};
+			buildConfigurationList = 38BF8DA14D9A67FFB954F217 /* Build configuration list for PBXProject "TickPredict" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CD6C7109030ED82237612826;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 816EE3938E55A8B7790F8C23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67037E0709DB1BF4AD13FAD0 /* TickPredict */,
+				9AAA18D0DBAF3C3416591F2B /* TickPredictUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67125E5C4CC5A30ECB49346E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FF4C9157477D343DBE2AEF1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		003EAF61C54F961D1C8155F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE41E5297774775EDE56857 /* ScanFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45ED2261BC94C389EBAC955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD646EE096AA47C0FBFCEA7B /* Camera.swift in Sources */,
+				C6784283D13F724E917A2D2D /* CaptureView.swift in Sources */,
+				C590C15785AB360FB40ABFC4 /* ClassifierService.swift in Sources */,
+				A5948BA30C6032375120AA50 /* DebugLaunch.swift in Sources */,
+				B6A8DCC2DBA7285911B316ED /* EngorgementLevel.mlpackage in Sources */,
+				93ABCB688D0F1DA22044E96D /* FindCareView.swift in Sources */,
+				B5A15B3C1A3562248B992BBE /* GuideView.swift in Sources */,
+				17392F58985028423E988005 /* HistoryView.swift in Sources */,
+				F3A528DF3BCFEC12A5ED9E9E /* HomeView.swift in Sources */,
+				4C0AA6FF5E39789D095365ED /* ImagePreparation.swift in Sources */,
+				D7B26EC8B86B79FB93A14315 /* PhotoLoader.swift in Sources */,
+				E0776CDCA98CF03B559595B7 /* ResultView.swift in Sources */,
+				E2A9F40CD69EA9DCB6E2E544 /* SaveScanView.swift in Sources */,
+				90242C454A0E9E2F752E583A /* Scan.swift in Sources */,
+				766BD37EAE1A1F16D3B86492 /* Species.swift in Sources */,
+				5E77692BAAFECE4981F482CF /* Theme.swift in Sources */,
+				39C1ED2FA710E64B4EC6B5B9 /* TickClassifier.swift in Sources */,
+				5EA107559B7BE4AA2A394618 /* TickPredictApp.swift in Sources */,
+				5EAE53B1E2F0ABE48AB30949 /* TickPredictV2.mlpackage in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15A3CBEB2F40680737F686AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67037E0709DB1BF4AD13FAD0 /* TickPredict */;
+			targetProxy = AD1ABD8DA41BF34F609D3CBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10F5A0DC2B13312DD89536D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericbuehler.TickPredictUITests;
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TickPredict;
+			};
+			name = Debug;
+		};
+		1AA5D0C1E7043975DE7D6190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = C37KDP6ZQ2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 2.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		1FE6D11B4B4C741974421EB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COREML_CODEGEN_LANGUAGE = None;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TickPredict;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_NSCameraUsageDescription = "TickPredict uses the camera to photograph a tick. Photos stay on your iPhone.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used once to find care nearby. It is never stored.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericbuehler.TickPredict;
+				PRODUCT_NAME = TickPredict;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		67373A924CD7D8EEB6A65D7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericbuehler.TickPredictUITests;
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TickPredict;
+			};
+			name = Release;
+		};
+		BE94F6F43240A9626068747B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COREML_CODEGEN_LANGUAGE = None;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TickPredict;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_NSCameraUsageDescription = "TickPredict uses the camera to photograph a tick. Photos stay on your iPhone.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used once to find care nearby. It is never stored.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericbuehler.TickPredict;
+				PRODUCT_NAME = TickPredict;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DDEF54DF5FA8A5EFFF5E938F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C37KDP6ZQ2;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 2.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AD3CF04BDB79A63F0990C1E /* Build configuration list for PBXNativeTarget "TickPredict" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FE6D11B4B4C741974421EB3 /* Debug */,
+				BE94F6F43240A9626068747B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		38BF8DA14D9A67FFB954F217 /* Build configuration list for PBXProject "TickPredict" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AA5D0C1E7043975DE7D6190 /* Debug */,
+				DDEF54DF5FA8A5EFFF5E938F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E289C384AAC179BDA39955A0 /* Build configuration list for PBXNativeTarget "TickPredictUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10F5A0DC2B13312DD89536D2 /* Debug */,
+				67373A924CD7D8EEB6A65D7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCF3B65D3B1C85CA698943D6 /* Project object */;
+}

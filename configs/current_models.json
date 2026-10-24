@@ -1,0 +1,51 @@
+{
+  "status": "Locked development release v1.0; independent test not evaluated.",
+  "selection": "Among eligible candidates: development accuracy, then balanced accuracy, then lower NLL. Selected explicitly after bounded trials; not an independent test result.",
+  "test_images_used": 0,
+  "models": {
+    "life_stage": {
+      "predictor": {
+        "target": "life_stage",
+        "checkpoints": [
+          "models/v1.0/life_stage/best.pt"
+        ],
+        "tta": "none"
+      },
+      "checkpoint_sha256": {
+        "models/v1.0/life_stage/best.pt": "eda382670dd9a590a5eaabce33d9d4434320ba2e1dea0b89a850dc686eda519d"
+      },
+      "development_result": {
+        "validation_file": "models/v1.0/life_stage/validation.json",
+        "correct": 107,
+        "n": 110,
+        "accuracy": 0.9727272727272728,
+        "balanced_accuracy": 0.9647619047619047,
+        "nll": 0.11509789917399622
+      },
+      "description": "ConvNeXt Tiny, 320 pixels"
+    },
+    "engorgement_level": {
+      "predictor": {
+        "target": "engorgement_level",
+        "checkpoints": [
+          "models/v1.0/engorgement_level/best.pt"
+        ],
+        "tta": "d4"
+      },
+      "checkpoint_sha256": {
+        "models/v1.0/engorgement_level/best.pt": "e906b784d7854f606280776683725cc217ce6daefff94d60a927851ffe1aa2d5"
+      },
+      "development_result": {
+        "validation_file": "models/v1.0/evaluations/engorgement_level_d4/validation.json",
+        "correct": 95,
+        "n": 110,
+        "accuracy": 0.8636363636363636,
+        "balanced_accuracy": 0.8629336349924586,
+        "nll": 0.5391458702395799
+      },
+      "description": "EfficientNet V2 S, 384 pixels, eight-view averaging"
+    }
+  },
+  "release": "v1.0",
+  "locked": true
+}

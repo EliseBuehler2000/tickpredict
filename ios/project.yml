@@ -1,0 +1,68 @@
+name: TickPredict
+options:
+  bundleIdPrefix: com.ericbuehler
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+    SWIFT_APPROACHABLE_CONCURRENCY: YES
+    MARKETING_VERSION: "2.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: C37KDP6ZQ2
+  configs:
+    # Image preparation is pixel-by-pixel Swift; unoptimized it takes ~30 s per scan.
+    Debug:
+      SWIFT_OPTIMIZATION_LEVEL: "-O"
+targets:
+  TickPredict:
+    type: application
+    platform: iOS
+    sources:
+      - path: TickPredict
+      # Exported by scripts/export_coreml.py; kept out of Git like the .pt weights.
+      - path: ../models/v2.0/coreml/TickPredictV2.mlpackage
+        group: TickPredict/MLModels
+      - path: ../models/v1.0/coreml/EngorgementLevel.mlpackage
+        group: TickPredict/MLModels
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ericbuehler.TickPredict
+        PRODUCT_NAME: TickPredict
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: TickPredict
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_NSCameraUsageDescription: TickPredict uses the camera to photograph a tick. Photos stay on your iPhone.
+        INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: Your location is used once to find care nearby. It is never stored.
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.medical
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        COREML_CODEGEN_LANGUAGE: None
+        ENABLE_PREVIEWS: YES
+  TickPredictUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: TickPredictUITests
+    dependencies:
+      - target: TickPredict
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ericbuehler.TickPredictUITests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: TickPredict
+        SWIFT_DEFAULT_ACTOR_ISOLATION: nonisolated
+schemes:
+  TickPredict:
+    build:
+      targets:
+        TickPredict: all
+        TickPredictUITests: [test]
+    test:
+      targets:
+        - TickPredictUITests

@@ -1,0 +1,30 @@
+{
+  "config": {
+    "target": "engorgement_level",
+    "seed": 20261012,
+    "epochs": 12,
+    "patience": 4,
+    "batch_size": 16,
+    "head_lr": 0.001,
+    "backbone_lr": 0.0001,
+    "weight_decay": 0.0001
+  },
+  "classes": [
+    "fully engorged",
+    "semi-engorged",
+    "unengorged"
+  ],
+  "train_n": 241,
+  "validation_n": 110,
+  "device": "mps",
+  "smoke_only": false,
+  "weights_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "manifest_sha256": "c758ff23b8c2de782d5ca03c56ecf9b49a9897dbb2258538ab3e094856c3dfd3",
+  "source_sha256": "65f46d9589d55216224ed7d44f8326d1629cfdaa620bc1f542155ee90f91f228",
+  "script_sha256": "474b1e378fd3dc15872d8bdc96767ab3b50c25ef36a8a678c963ffc2527be3f6",
+  "torch": "2.14.1",
+  "torchvision": "0.29.1",
+  "test_images_used": 0,
+  "preprocessing": "Penn only: EXIF transpose, bottom 4% strip removed, letterbox 224; ImageNet normalization",
+  "uncertainty": "Softmax scores are uncalibrated; not clinical or phone validation."
+}

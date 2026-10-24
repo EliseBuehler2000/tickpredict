@@ -1,0 +1,10 @@
+{
+  "target": "engorgement_level",
+  "seed": 20261012,
+  "epochs": 12,
+  "patience": 4,
+  "batch_size": 16,
+  "head_lr": 0.001,
+  "backbone_lr": 0.0001,
+  "weight_decay": 0.0001
+}

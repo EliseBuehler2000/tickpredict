@@ -1,0 +1,69 @@
+{
+  "config": {
+    "target": "engorgement_level"
+  },
+  "predictor_spec": {
+    "target": "engorgement_level",
+    "checkpoints": [
+      "/Users/ericbuehler/Dropbox/cac_elise_2026/experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384/best.pt"
+    ],
+    "tta": "d4"
+  },
+  "inputs": [
+    {
+      "checkpoint": "/Users/ericbuehler/Dropbox/cac_elise_2026/experiments/runs/20261019-100001-725151_engorgement_level_efficientnet_v2_s_384/best.pt",
+      "sha256": "e906b784d7854f606280776683725cc217ce6daefff94d60a927851ffe1aa2d5",
+      "architecture": "efficientnet_v2_s",
+      "epoch": 13,
+      "classes": [
+        "fully engorged",
+        "semi-engorged",
+        "unengorged"
+      ],
+      "preprocessing": {
+        "exif_transpose": true,
+        "image_size": 384,
+        "bottom_crop_fraction": 0.04,
+        "resize": "letterbox",
+        "resampling": "lanczos",
+        "pad_color": [
+          240,
+          240,
+          240
+        ],
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      }
+    }
+  ],
+  "classes": [
+    "fully engorged",
+    "semi-engorged",
+    "unengorged"
+  ],
+  "validation_n": 110,
+  "evaluation_split": "dev",
+  "source_sha256": "65f46d9589d55216224ed7d44f8326d1629cfdaa620bc1f542155ee90f91f228",
+  "manifest_sha256": "c758ff23b8c2de782d5ca03c56ecf9b49a9897dbb2258538ab3e094856c3dfd3",
+  "device": "mps",
+  "batch_size": 8,
+  "torch": "2.14.1",
+  "script_sha256": "3c06ca1cf80c814db2556da7f1e2a18f43a6d638c0c703c9ac30e76755a6400e",
+  "inference_sha256": "402d5a6e58ba4e9410acaf7abd05ea3361d16bae24031e0206907a542daad46f",
+  "modeling_sha256": "9b38093e14e2c4add22ca149daa73043ccc570633e0e8a51b9d28d5ae4287c1e",
+  "image_preprocessing_sha256": "011fa24cc0b29a3e4072ac7465b7a9853fb9c6281eac876b3512fdceb7607ef3",
+  "smoke_only": false,
+  "test_images_used": 0,
+  "weights_fitted": false,
+  "aggregation": "Equal probability average over views within each model, then over explicit inputs.",
+  "d4_definition": "After saved crop/letterbox/normalization: rot90 k=0,1,2,3; each with/without horizontal flip.",
+  "caveat": "Development data reused for selection; not an independent test estimate. Confidence remains uncalibrated."
+}

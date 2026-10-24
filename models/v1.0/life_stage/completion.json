@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "epochs": 22,
+  "smoke_only": false,
+  "selection_metric": "accuracy",
+  "best_selection_score": 0.9727272727272728,
+  "best_epoch": 16,
+  "best_validation_accuracy": 0.9727272727272728,
+  "best_validation_balanced_accuracy": 0.9647619047619047,
+  "best_validation_macro_f1": 0.9683270947307803,
+  "elapsed_seconds": 204.54523420333862,
+  "test_images_used": 0
+}
